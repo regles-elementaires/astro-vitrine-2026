@@ -18,8 +18,21 @@ export default defineConfig({
       config: {
         backend: {
           name: 'git-gateway',
+					repo: 'regles-elementaires/astro-vitrine-2026',
           branch: 'main',
+					identity_url: 'https://auth.decapbridge.com/sites/cb668fcf-536e-4289-8a69-dc6a0f147ff1',
+  				gateway_url: 'https://gateway.decapbridge.com',
         },
+  			commit_messages: {
+					create: 'Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge',
+					update: 'Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge',
+					delete: 'Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge',
+					uploadMedia: 'Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge',
+					deleteMedia: 'Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge',
+					openAuthoring: 'Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge',
+				},
+				logo_url: 'https://decapbridge.com/decapcms-with-bridge.svg',
+				site_url: 'https://re-vitrine-2026.netlify.app',
         media_folder: 'src/assets',
 				public_folder: '../../assets',
         collections: [
