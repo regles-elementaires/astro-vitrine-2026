@@ -78,6 +78,15 @@ export default defineConfig({
 								required: false,
 							},
 							{
+								label: 'Tags',
+								name: 'tags',
+								widget: 'list',
+								allow_add: true,
+								allow_delete: true,
+								collapsed: false,
+								field: { label: 'Tag', name: 'tag', widget: 'string' },
+							},
+							{
 								name: 'body',
 								widget: 'markdown',
 								label: 'Post Content',
