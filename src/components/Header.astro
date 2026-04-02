@@ -4,152 +4,53 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <!-- ========== HEADER ========== -->
-<header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-navbar border-b border-navbar-line">
-  <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center gap-x-1">
-      <a class="flex-none font-semibold text-xl text-foreground focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Brand</a>
-
-      <!-- Collapse Button -->
-      <button type="button" class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg bg-layer border border-layer-line text-layer-foreground hover:bg-layer-hover focus:outline-hidden focus:bg-layer-focus disabled:opacity-50 disabled:pointer-events-none" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
-        <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-        <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-      <!-- End Collapse Button -->
-    </div>
-
-    <!-- Collapse -->
-    <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block "  aria-labelledby="hs-header-base-collapse" >
-      <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-none [&::-webkit-scrollbar-track]:bg-scrollbar-track [&::-webkit-scrollbar-thumb]:bg-scrollbar-thumb">
-        <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
-          <div class="grow">
-            <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
-              <a class="p-2 flex items-center text-sm bg-navbar-nav-active text-navbar-nav-foreground hover:bg-navbar-nav-hover rounded-lg focus:outline-hidden focus:bg-navbar-nav-focus" href="/" aria-current="page">
-                Home
-              </a>
-
-              <!-- Mega Menu -->
-              <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] [--is-collapse:true] md:[--is-collapse:false] ">
-                <button id="hs-header-base-mega-menu-fullwidth" type="button" class="hs-dropdown-toggle w-full p-2 flex items-center text-sm text-navbar-nav-foreground hover:bg-navbar-nav-hover rounded-lg focus:outline-hidden focus:bg-navbar-nav-focus" aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
-                  Mega menu
-                </button>
-
-                <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full min-w-60 hidden z-10 top-full start-0 before:absolute before:-top-5 before:start-0 before:w-full before:h-5" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-mega-menu-fullwidth">
-                  <div class="md:mx-6 lg:mx-8 md:bg-layer md:rounded-lg md:shadow-md">
-                    <!-- Grid -->
-                    <div class="py-1 md:p-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      <div class="flex flex-col">
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">Support Docs</p>
-                            <p class="text-sm text-muted-foreground-1">Explore advice and explanations for all of Preline's features.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">Integrations</p>
-                            <p class="text-sm text-muted-foreground-1">Discover the huge range of tools that Preline integrates with.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">API Reference</p>
-                            <p class="text-sm text-muted-foreground-1">Build custom integrations with our first-class API.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-                      </div>
-                      <!-- End Col -->
-
-                      <div class="flex flex-col">
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">Help Center</p>
-                            <p class="text-sm text-muted-foreground-1">Learn how to install, set up, and use Preline.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">Developer Hub</p>
-                            <p class="text-sm text-muted-foreground-1">Learn how to integrate or build on top of Preline.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-4 hover:bg-navbar-nav-hover focus:outline-hidden focus:bg-navbar-nav-focus rounded-lg" href="#">
-                          <div class="grow">
-                            <p class="font-medium text-sm text-foreground">Community Forum</p>
-                            <p class="text-sm text-muted-foreground-1">Learn, share, and connect with other Preline users.</p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-                      </div>
-                      <!-- End Col -->
-
-                      <div class="mt-2 md:mt-0 flex flex-col">
-                        <span class="ms-2.5 mb-2 font-semibold text-xs uppercase text-foreground">Customer stories</span>
-
-                        <!-- Link -->
-                        <a class="p-3 flex gap-x-5 items-center rounded-xl hover:bg-muted-hover focus:outline-hidden focus:bg-muted-focus" href="#">
-                          <img class="size-32 rounded-lg" src="https://images.unsplash.com/photo-1648737967328-690548aec14f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=320&q=80" alt="Avatar">
-                          <div class="grow">
-                            <p class="text-sm text-foreground">
-                              Preline Projects has proved to be most efficient cloud based project tracking and bug tracking tool.
-                            </p>
-                            <p class="mt-3 inline-flex items-center gap-x-1 text-sm text-primary decoration-2 group-hover:underline group-focus:underline font-medium">
-                              Learn more
-                            </p>
-                          </div>
-                        </a>
-                        <!-- End Link -->
-                      </div>
-                      <!-- End Col -->
-                    </div>
-                    <!-- End Grid -->
-                  </div>
-                </div>
-              </div>
-              <!-- End Mega Menu -->
-
-              <a class="p-2 flex items-center text-sm text-navbar-nav-foreground hover:bg-navbar-nav-hover rounded-lg focus:outline-hidden focus:bg-navbar-nav-focus" href="/about">
-                About
-              </a>
-              <a class="p-2 flex items-center text-sm text-navbar-nav-foreground hover:bg-navbar-nav-hover rounded-lg focus:outline-hidden focus:bg-navbar-nav-focus" href="/blog">
-                Blog
-              </a>
-            </div>
-          </div>
-
-          <div class="my-2 md:my-0 md:mx-2">
-            <div class="w-full h-px md:h-4 md:border-s border-navbar-divider"></div>
-          </div>
-
-          <!-- Button Group -->
-          <div class=" flex flex-wrap items-center gap-x-1.5">
-            <a class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-layer border border-layer-line text-layer-foreground shadow-2xs hover:bg-layer-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-layer-focus" href="#">
-              Ressources
-            </a>
-            <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-primary text-primary-foreground hover:bg-primary-hover focus:outline-hidden focus:bg-primary-focus disabled:opacity-50 disabled:pointer-events-none" href="#">
-              Faire un don
-            </a>
-          </div>
-          <!-- End Button Group -->
+<header class="">
+  <nav>
+  <div class="wrapper">
+    <div class="logo"><a href="#">Logo</a></div>
+    <input type="checkbox" name="menu" id="menu-btn">
+    <label for="menu-btn" class="btn menu-btn">Menu</label>
+    <div id="mega-box">
+      <div class="content">
+        <div class="row">
+          <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
+        </div>
+        <div class="row">
+          <header>Design Services</header>
+          <ul class="mega-links">
+            <li><a href="#">Graphics</a></li>
+            <li><a href="#">Vectors</a></li>
+            <li><a href="#">Business cards</a></li>
+            <li><a href="#">Custom logo</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <header>Email Services</header>
+          <ul class="mega-links">
+            <li><a href="#">Personal Email</a></li>
+            <li><a href="#">Business Email</a></li>
+            <li><a href="#">Mobile Email</a></li>
+            <li><a href="#">Web Marketing</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <header>Security services</header>
+          <ul class="mega-links">
+            <li><a href="#">Site Seal</a></li>
+            <li><a href="#">VPS Hosting</a></li>
+            <li><a href="#">Privacy Seal</a></li>
+            <li><a href="#">Website design</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- End Collapse -->
-  </nav>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+    
+  </div>
+</nav>
 </header>
 <!-- ========== END HEADER ========== -->
