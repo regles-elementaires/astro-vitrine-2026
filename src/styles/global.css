@@ -33,7 +33,7 @@
 }
 @font-face {
 	font-family: "Parkinsans";
-	src: url("/fonts/Parkinsans-Semibold.ttf") format("truetype");
+	src: url("/fonts/Parkinsans-SemiBold.ttf") format("truetype");
 	font-weight: 600;
 }
 
@@ -44,8 +44,7 @@ body {
 	padding: 0;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	font-size: 20px;
-	line-height: 1.7;
+	font-size: 18px;
 }
 main {
 	padding: 122px 60px;
@@ -77,8 +76,7 @@ img {
 	border-radius: 8px;
 }
 
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
+.square-button {
+	border: 1px solid black;
+	padding: 6px 16px;
 }
