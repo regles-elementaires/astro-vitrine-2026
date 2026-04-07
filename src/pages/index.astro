@@ -5,30 +5,57 @@ import { SITE_TITLE } from '../consts';
 
 <Base title={SITE_TITLE}>
 	<main>
-		<h1 class="underline text-rered">Bonjour, Astronaut!</h1>
-		<p class="font-light">
-			Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-			serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-			website, blog, or portfolio with Astro.
-		</p>
-		<p>
-			This template comes with a few integrations already configured in your
-			<code>astro.config.mjs</code> file. You can customize your setup with
-			<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-			React, or Vue to your project.
-		</p>
-		<p class="font-medium">Here are a few ideas on how to get started with the template:</p>
-		<ul>
-			<li>Edit this page in <code>src/pages/index.astro</code></li>
-			<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-			<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-			<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-			<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-		</ul>
-		<p class="font-semibold">
-			Have fun! If you get stuck, remember to
-			<a href="https://docs.astro.build/">read the docs</a>
-			or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-		</p>
+		<div class="hero flex justify-center">
+			<div class="w-10/12 flex flex-col items-end">
+				<div class="w-full flex justify-between">
+					<h1>Changer<br/>les règles</h1>
+					<h1 class="text-right">Pour<br/>changer<br/>le monde !</h1>
+				</div>
+				<div class="w-1/2 mt-10">
+					<p class="mb-10"><b>Règles Élémentaires agit pour l’égalité et la justice menstruelle.</b> Depuis 2015, nous faisons des règles un enjeu de société pour qu’elles ne soient plus jamais un obstacle à la dignité, à la santé et à l’égalité.</p>
+					<a class="square-button font-semibold underline" href="/">Nous soutenir</a>
+				</div>				
+			</div>
+		</div>
+		<div class="flex flex-col items-center">
+			<div class="w-10/12 flex flex-col items-center">
+				<div class="flex">
+					<h2 class="w-4/10">Les règles,<br/>un enjeu<br/>de société</h2>
+					<div class="w-4/10 mt-24">
+						<p class="font-semibold mb-6">Les règles concernent tout le monde, parce qu’elles ont des conséquences sur toute la société.</p>
+						<p>Éducation, santé, travail, sport, précarité, égalité : les règles restent encore aujourd’hui une source d’inégalités bien réelles. Les comprendre, c’est mieux comprendre les mécanismes qui freinent l’égalité réelle.</p>
+					</div>
+				</div>
+				<div class="w-6/10 flex flex-col items-center mt-30">
+					<span class="square-button bg-black text-white text-2xl">Les piliers d'action</span>
+					<p class="text-center mt-6">Nous souhaitons un monde où les règles ne sont plus un frein à l’égalité d’opportunités, de droits, ou d’accès à la santé et à l'information. Chez Règles Élémentaires, nos revendications s’articulent autour de trois piliers :</p>
+				</div>
+				<div class="flex flex-wrap mt-12">
+					<div class="w-full md:w-1/3 md:mt-16">
+						<div class="mx-2 bg-repink px-7 py-9 rounded-xl">
+							<h3>L’accessibilité des produits périodiques</h3>
+							<p class="mt-6">Nous pensons qu’il faut rendre accessibles les produits périodiques en quantité suffisante et que toute personne qui en a besoin doit pouvoir en bénéficier gratuitement.</p>
+						</div>
+					</div>
+					<div class="w-full md:w-1/3">
+						<div class="mx-2 bg-repink px-7 py-9 rounded-xl">
+							<h3>L’accessibilité des produits périodiques</h3>
+							<p class="mt-6">Nous pensons qu’il faut rendre accessibles les produits périodiques en quantité suffisante et que toute personne qui en a besoin doit pouvoir en bénéficier gratuitement.</p>
+						</div>
+					</div>
+					<div class="w-full md:w-1/3 md:mt-16">
+						<div class="mx-2 bg-repink px-7 py-9 rounded-xl">
+							<h3>L’accessibilité des produits périodiques</h3>
+							<p class="mt-6">Nous pensons qu’il faut rendre accessibles les produits périodiques en quantité suffisante et que toute personne qui en a besoin doit pouvoir en bénéficier gratuitement.</p>
+						</div>
+					</div>
+				</div>
+				<a class="square-button font-semibold underline md:-mt-4" href="/">Découvrir nos actions</a>
+			</div>
+			<div class="w-10/12 flex flex-col mt-10">
+				<h2 class="text-white text-border-black mb-6">Notre impact</h2>
+				<h2>Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois.</h2>
+			</div>
+		</div>		
 	</main>
 </Base>
