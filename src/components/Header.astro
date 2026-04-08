@@ -9,7 +9,7 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
 <header class="">
   <nav>
     <div class="wrapper">
-      <div class="nav-column first-nav-column">
+      <div class="nav-column first-nav-column flex items-center">
         <div class="logo">
           <a href="/">
             <Image id="red-logo" src={RedLogo} alt="Règles élémentaires" />
@@ -17,34 +17,82 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
           </a>
         </div>
         <input type="checkbox" name="menu" id="menu-btn">
-        <label for="menu-btn" class="btn menu-btn">Menu</label>
+        <label for="menu-btn" class="ms-4">
+          <svg id="menu-svg" role="img" aria-label="Menu" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="37.8281" height="37.8281" rx="4.5"/>
+            <line x1="8.26572" y1="11.7031" x2="30.5626" y2="11.7031" stroke-linecap="round"/>
+            <line x1="8.26553" y1="19.1914" x2="30.5624" y2="19.1914" stroke-linecap="round"/>
+            <line x1="8.26553" y1="27.5117" x2="30.5624" y2="27.5117" stroke-linecap="round"/>
+          </svg>
+        </label>
       </div>
       <div class="nav-column second-nav-column"></div>
-      <div class="nav-column third-nav-column">
+      <div class="nav-column third-nav-column flex justify-end">
         <div class="nav-right-buttons">
-          <a class="square-button font-semibold bg-black text-white" href="/">Faire un don</a>
+          <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4" href="/">Ressources</a>
+          <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="/">Faire un don</a>
         </div>        
       </div>
     </div>
     <div id="mega-box">
         <div class="content">
-          <div class="nav-column bg-rered">
-            <ul class="mega-links">
+          <div class="nav-column bg-rered ps-15 py-6">
+            <ul class="mega-links text-rebeige-300">
               <li><a href="#">Qui sommes-nous ?</a></li>
               <li><a id="nos-actions-link" href="#">Nos actions</a></li>
               <li><a href="#">Notre impact</a></li>
+              <li><a id="sengager-link" href="#">S'engager</a></li>
+              <li><a href="#">S'informer</a></li>
+              <li><a href="#">Notre plaidoyer</a></li>
             </ul>
           </div>
-          <div class="nav-column actu-column bg-regreen">
-            <ul id="mega-nos-actions-submenu">
-              <li><a href="/about">Lutter contre la précarité menstruelle</a></li>
+          <div class="nav-column bg-remaroon py-6">
+            <div id="mega-actu" class="text-rebeige-300">
+              Nos actus
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              Test
+            </div>
+            <ul id="mega-nos-actions-submenu" class="text-rebeige-300">
+              <li><a href="#">Lutter contre la précarité menstruelle</a></li>
               <li><a href="#">Déployer l'éducation menstruelle</a></li>
               <li><a href="#">Informer</a></li>
               <li><a href="#">Former</a></li>
               <li><a href="#">Mobiliser</a></li>
+              <li><a href="#">Changer les règles</a></li>
+              <li><a href="#">Actions à l’échelle européenne</a></li>
+            </ul>
+            <ul id="mega-sengager-submenu" class="text-rebeige-300">
+              <li><a href="#">Faire un don</a></li>
+              <li><a href="#">Organiser une collecte</a></li>
+              <li><a href="#">Devenir bénévole</a></li>
+              <li><a href="#">Devenir partenaire</a></li>
+              <li><a href="#">Devenir une entreprise engagée</a></li>
+              <li><a href="#">Devenir une collectivité engagée</a></li>
+              <li><a href="#">Devenir un établissement engagé</a></li>
             </ul>
           </div>
-          <div class="nav-column bg-reyellow">
+          <div class="nav-column bg-rebeige-100 pe-15 flex-wrap">
+            <div class="w-full flex py-6">
+              <div class="w-5/12">
+                
+              </div>
+              <div class="w-7/12">
+                <p>Notre solution pour généraliser l’éducation menstruelle</p>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
+              </div>
+            </div>
+            <div class="w-full flex bg-rebeige-300 py-6">
+              <div class="w-5/12">
+                
+              </div>
+              <div class="w-7/12">
+                <p>Notre solution pour mobiliser et lutter contre la précarité menstruelle</p>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

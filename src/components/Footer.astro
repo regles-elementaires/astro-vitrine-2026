@@ -2,6 +2,31 @@
 const today = new Date();
 ---
 
-<footer class="bg-rered">
+<footer>
+	<div class="bg-remaroon px-5 md:px-15 pt-15 pb-10">
+		<div class="w-11/12 md:w-10/12 mx-auto flex flex-row flex-wrap">
+			<div class="w-full md:w-1/2 flex-row">
+				<span class="text-rebeige-300 text-4xl font-lorimer-condensed pb-4">LA MENS(TR)UELLE</span>
+				<p class="text-rebeige-300 mt-4 md:pe-16">
+					C'est la newsletter version Règles Élémentaires. Actualités, informations, annonces en avant-première, vous ne voulez pas louper ça !
+				</p>                
+			</div>
+			<div class="w-full md:w-1/2 flex-row">
+				<form class="mt-4 flex flex-col w-full md:ps-16"
+					action="//regleselementaires.us12.list-manage.com/subscribe/post?u=d920a045417cea49ec8048c5f&amp;id=76cba65ade"
+					method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+					<div class="flex-grow md:pr-4">
+						<label for="email_newsletter" class="sr-only">Adresse e-mail</label>
+						<input class="w-full h-full required email border-b border-rebeige-300 text-rebeige-300 placeholder-rebeige-300 pb-2"
+						type="email" value="" name="EMAIL" id="email_newsletter" placeholder="Votre email">
+					</div>
+					<div class="mt-6">
+						<input class="square-button bg-rebeige-300 font-semibold text-sm text-remaroon cursor-pointer" type="submit" value="S'abonner" name="subscribe">
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+    
 	&copy; {today.getFullYear()} Your name here. All rights reserved.
 </footer>

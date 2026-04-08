@@ -26,16 +26,14 @@ nav{
       visibility: hidden;
       display: none;
     }
-    .btn{
-      font-size: 20px;
-      cursor: pointer;
+    #menu-svg {
+      transition: all 0.3s ease;
+      stroke: black;
     }
   }
 }
 .nav-column{
   width: calc(33.3333%);
-  display: flex;
-  align-items: center;
 }
 .first-nav-column, .second-nav-column, .third-nav-column{
   background-color: white;
@@ -46,7 +44,6 @@ nav{
 }
 .third-nav-column {
   padding-right: 60px;
-  justify-content: right;
 }
 
 #mega-box{
@@ -74,24 +71,26 @@ nav:has(.wrapper #menu-btn:checked){
     visibility: hidden;
     display: none;
   }
+  #menu-svg {
+      stroke: white;
+    }
   .first-nav-column{
-    background-color: #e30033;
+    background-color: var(--color-rered);
   }
   .second-nav-column{
-    background-color: #79cca8;
+    background-color: var(--color-remaroon)
   }
   .third-nav-column{
-    background-color: #f7cb73;
+    background-color: var(--color-rebeige-100);
   }
 }
 
 #mega-box .content{
   display: flex;
   .mega-links {
-    padding-left: 60px;
     width: 100%;
     li a{
-      font-family: "Lorimer";
+      font-family: "LorimerCondensed";
       text-transform: uppercase;
       font-size: 40px;
       line-height: 40px;
@@ -99,39 +98,34 @@ nav:has(.wrapper #menu-btn:checked){
       padding: 7px 0;
     }
   }
-  #mega-nos-actions-submenu {
+  #mega-nos-actions-submenu, #mega-sengager-submenu {
+    background-color: var(--color-remaroon);
+    width: calc(33.3333%);
+    position: absolute;
+    top: 0;
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
     padding-left: 30px;
     li a {
-      font-family: "Lorimer";
+      font-family: "LorimerCondensed";
       text-transform: uppercase;
       font-size: 34px;
       line-height: 34px;
-      display: block;
+      display: inline-block;
       padding: 10px 0;
     }
   }
-  .actu-column{
-    transition: all 0.3s ease;
-  }
 }
 
-#mega-nos-actions-submenu:hover {
+#mega-nos-actions-submenu:hover, #mega-sengager-submenu:hover {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-nav:has(#mega-nos-actions-submenu:hover){
-  #mega-actu {
-    display: none;
-  }
+nav:has(#mega-nos-actions-submenu:hover), nav:has(#mega-sengager-submenu:hover){
   .second-nav-column{
-    background-color: #f5c8fa !important;
-  }
-  .actu-column{
-    background-color: #f5c8fa !important;
+    /* ADD ARROW */
   }
 }
 
@@ -140,14 +134,18 @@ nav:has(#nos-actions-link:hover){
     opacity: 1;
     visibility: visible;
   }
-  #mega-actu {
-    display: none;
+  .second-nav-column{
+    /* ADD ARROW */
+  }
+}
+
+nav:has(#sengager-link:hover){
+  #mega-sengager-submenu {
+    opacity: 1;
+    visibility: visible;
   }
   .second-nav-column{
-    background-color: #f5c8fa !important;
-  }
-  .actu-column{
-    background-color: #f5c8fa !important;
+    /* ADD ARROW */
   }
 }
 
