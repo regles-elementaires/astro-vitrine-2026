@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { SITE_TITLE } from '../consts';
+import FAQ from '../components/FAQ.astro';
 ---
 
 <Base title={SITE_TITLE}>
 	<main>
-		<div class="hero flex justify-center">
-			<div class="w-10/12 flex flex-col items-end">
+		<div class="hero px-5 md:px-15 flex justify-center">
+			<div class="w-11/12 md:w-10/12 flex flex-col items-end">
 				<div class="w-full flex justify-between">
 					<h1>Changer<br/>les règles</h1>
 					<h1 class="text-right">Pour<br/>changer<br/>le monde !</h1>
@@ -17,8 +18,8 @@ import { SITE_TITLE } from '../consts';
 				</div>				
 			</div>
 		</div>
-		<div class="flex flex-col items-center">
-			<div class="w-10/12 flex flex-col items-center">
+		<div class="px-5 md:px-15 flex flex-col items-center">
+			<div class="w-11/12 md:w-10/12 flex flex-col items-center">
 				<div class="flex">
 					<h2 class="w-4/10">Les règles,<br/>un enjeu<br/>de société</h2>
 					<div class="w-4/10 mt-24">
@@ -52,10 +53,92 @@ import { SITE_TITLE } from '../consts';
 				</div>
 				<a class="square-button font-semibold underline md:-mt-4" href="/">Découvrir nos actions</a>
 			</div>
-			<div class="w-10/12 flex flex-col mt-10">
+			<div class="w-11/12 md:w-10/12 flex flex-col mt-16">
 				<h2 class="text-white text-border-black mb-6">Notre impact</h2>
 				<h2>Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois.</h2>
+				<div class="flex flex-wrap mt-10">
+					<div class="w-full md:w-1/2 flex justify-center">
+						<p class="w-10/12 border-s ps-6 md:ps-10">Ce qui a commencé par une collecte citoyenne est devenu un mouvement national capable de faire évoluer les mentalités, les politiques publiques et l’accès concret aux droits.</p>
+					</div>
+					<div class="w-full md:w-1/2 flex flex-col justify-center mt-10 md: mt-0 md:ps-10">
+						<div class="mb-8">
+							<a class="square-button font-semibold underline md:-mt-4" href="/">Notre impact</a>
+						</div>
+						<div>
+							<a class="square-button font-semibold underline md:-mt-4" href="/">Nos avancées législatives</a>
+						</div>						
+					</div>
+				</div>
 			</div>
-		</div>		
+		</div>	
+		<div class="px-5 md:px-15 flex flex-col items-center bg-reyellow mt-20 py-14">
+			<span class="square-button bg-black text-white text-2xl">Chiffres clés</span>
+			<div class="w-full md:w-8/12 flex flex-wrap mt-10">
+				<div class="w-full md:w-1/4 flex flex-col px-4">
+					<div class="font-lorimer text-5xl">+25<br/>millions</div>
+					<div class="mt-2">de protections périodiques redistribuées</div>
+				</div>
+				<div class="w-full md:w-1/4 flex flex-col px-4">
+					<div class="font-lorimer text-5xl">+1<br/>million</div>
+					<div class="mt-2">de personnes bénéficiaires</div>
+				</div>
+				<div class="w-full md:w-1/4 flex flex-col px-4">
+					<div class="font-lorimer text-5xl">+ de<br/>35 000</div>
+					<div class="mt-2">jeunes sensibilisé·es</div>
+				</div>
+				<div class="w-full md:w-1/4 flex flex-col px-4">
+					<div class="font-lorimer text-5xl">99,9%</div>
+					<div class="mt-2">estiment que nous contribuons à faire reculer le tabou des règles</div>
+				</div>
+			</div>
+		</div>	
+		<div class="flex flex-wrap">
+			<div class="ps-0 md:ps-15 py-14 w-full md:w-1/2 bg-regreen">
+				<div class="w-3/4 mx-auto px-7 py-9 bg-repink h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+					<h2>S'engager</h2>
+				</div>
+				<p class="w-3/4 mx-auto mt-10">
+					<b>Tout le monde peut agir à son échelle.</b><br/>
+					Faire un don, organiser une collecte, devenir bénévole, mobiliser son entreprise, son école ou sa collectivité : chaque engagement contribue à faire avancer la justice menstruelle.
+				</p>
+				<div class="flex flex-wrap w-3/4 mx-auto mt-6">
+					<div class="me-2 mt-4">
+						<a class="square-button inline-block font-semibold bg-black text-white" href="/">Faire un don</a>
+					</div>
+					<div class="me-2 mt-4">
+						<a class="square-button inline-block font-semibold bg-black text-white" href="/">Organiser une collecte</a>
+					</div>
+					<div class="me-2 mt-4">
+						<a class="square-button inline-block font-semibold bg-black text-white" href="/">Devenir bénévole</a>
+					</div>
+					<div class="me-2 mt-4">
+						<a class="square-button inline-block font-semibold bg-black text-white" href="/">Devenir partenaire</a>
+					</div>
+					<div class="me-2 mt-4">
+						<a class="square-button inline-block font-semibold bg-black text-white" href="/">Engager son entreprise, son école ou sa collectivité</a>
+					</div>
+				</div>
+			</div>
+			<div class="pe-0 md:pe-15 py-14 w-full md:w-1/2 bg-reorange">
+				<div class="w-3/4 mx-auto px-7 py-9 bg-repink h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+					<h2>S'informer</h2>
+				</div>
+				<p class="w-3/4 mx-auto mt-10">
+					<b>Comprendre pour mieux agir.</b><br/>
+					Règles, santé menstruelle, précarité, tabous, chiffres clés, idées reçues : nous mettons à disposition des ressources fiables pour informer toutes et tous.
+				</p>
+				<div class="w-3/4 mx-auto mt-10">
+					<a class="square-button inline-block font-semibold underline" href="/">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+		<div class="px-5 md:px-15">
+			<div class="w-11/12 md:w-10/12 flex flex-col mt-16 mx-auto">
+				<div class="w-full md:w-1/2 flex md:justify-end">
+					<h2 class="md:text-right">Questions<br/>fréquentes</h2>
+				</div>				
+				<FAQ />
+			</div>            
+		</div>
 	</main>
 </Base>

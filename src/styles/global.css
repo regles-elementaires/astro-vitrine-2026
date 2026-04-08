@@ -47,9 +47,7 @@ body {
 	font-size: 18px;
 }
 main {
-	padding: 122px 60px;
-	max-width: 1440px;
-	margin: auto;
+	padding: 122px 0;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Lorimer", sans-serif;
@@ -79,6 +77,11 @@ img {
 	border-radius: 8px;
 }
 
+.font-lorimer {
+	font-family: "Lorimer", sans-serif;
+	text-transform: uppercase;
+}
+
 .square-button {
 	border: 1px solid black;
 	padding: 6px 16px;
@@ -91,6 +94,8 @@ img {
 @media (width < 48rem) { 
 	h1 {
 		font-size: 4em;
-		line-height: 95%;
 	} 
+	h2 {
+		font-size: 3em;
+	}
 }
