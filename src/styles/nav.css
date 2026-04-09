@@ -95,14 +95,15 @@ nav:has(.wrapper #menu-btn:checked){
       font-size: 40px;
       line-height: 40px;
       display: block;
-      padding: 7px 0;
+      padding-bottom: 14px;
     }
   }
   #mega-nos-actions-submenu, #mega-sengager-submenu {
+    z-index: 300;
     background-color: var(--color-remaroon);
     width: calc(33.3333%);
     position: absolute;
-    top: 0;
+    top: 24px;
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
@@ -113,7 +114,7 @@ nav:has(.wrapper #menu-btn:checked){
       font-size: 34px;
       line-height: 34px;
       display: inline-block;
-      padding: 10px 0;
+      padding-bottom: 14px;
     }
   }
 }

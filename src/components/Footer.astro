@@ -1,17 +1,22 @@
 ---
-const today = new Date();
+import { Image } from 'astro:assets';
+import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
+import Facebook from '../assets/facebook.svg';
+import Instagram from '../assets/instagram.svg';
+import Youtube from '../assets/youtube.svg';
+import Tiktok from '../assets/tiktok.svg';
 ---
 
 <footer>
-	<div class="bg-remaroon px-5 md:px-15 pt-15 pb-10">
-		<div class="w-11/12 md:w-10/12 mx-auto flex flex-row flex-wrap">
-			<div class="w-full md:w-1/2 flex-row">
+	<div class="bg-remaroon px-5 md:px-15">
+		<div class="flex flex-row flex-wrap">
+			<div id="goutte-fond" class="w-full md:w-9/16 flex-row pt-15 md:pb-10 md:ps-36">
 				<span class="text-rebeige-300 text-4xl font-lorimer-condensed pb-4">LA MENS(TR)UELLE</span>
 				<p class="text-rebeige-300 mt-4 md:pe-16">
 					C'est la newsletter version Règles Élémentaires. Actualités, informations, annonces en avant-première, vous ne voulez pas louper ça !
 				</p>                
 			</div>
-			<div class="w-full md:w-1/2 flex-row">
+			<div class="w-full md:w-6/16 flex-row md:pt-15 pb-10">
 				<form class="mt-4 flex flex-col w-full md:ps-16"
 					action="//regleselementaires.us12.list-manage.com/subscribe/post?u=d920a045417cea49ec8048c5f&amp;id=76cba65ade"
 					method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
@@ -26,7 +31,84 @@ const today = new Date();
 				</form>
 			</div>
 		</div>
+	</div>
+	<div class="bg-rered py-15 flex flex-col">
+		<div class="flex">
+			<div class="w-12/16 md:-ms-5">
+				<div class="font-lorimer-condensed text-rebeige-300 md:text-[224px] md:leading-[95%]">Changeons<br/>les<br/>règles</div>
+			</div>
+			<div class="w-3/16 flex flex-col items-end">
+				<Image class="md:mt-4" src={WhiteLogo} alt="" />
+				<ul class="font-lorimer-condensed text-rebeige-300 text-4xl text-right mt-6">
+				<li><a href="#">Qui sommes-nous ?</a></li>
+				<li><a id="nos-actions-link" href="#">Nos actions</a></li>
+				<li><a href="#">Notre impact</a></li>
+				<li><a id="sengager-link" href="#">S'engager</a></li>
+				<li><a href="#">S'informer</a></li>
+				<li><a href="#">Notre plaidoyer</a></li>
+				</ul>
+				<div class="mt-6">
+					<a class="small-beige-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="/">Faire un don</a>
+				</div>
+				<div class="mt-14 flex items-center">
+					<a class="inline-block w-6 mx-3" href="https://www.facebook.com/regleselementaires/" target="_blank" rel="noopener noreferrer">
+						<Image src={Facebook} alt="Facebook" />
+					</a>
+					<a class="inline-block w-10 mx-3" href="https://www.instagram.com/regleselementaires/" target="_blank" rel="noopener noreferrer">
+						<Image src={Instagram} alt="Instagram" />
+					</a>
+					<a class="inline-block w-12 mx-3" href="https://www.youtube.com/@regleselementaires2888" target="_blank" rel="noopener noreferrer">
+						<Image src={Youtube} alt="Youtube" />
+					</a>
+					<a class="inline-block w-10 mx-3" href="https://www.tiktok.com/@regleselementaires" target="_blank" rel="noopener noreferrer">
+						<Image src={Tiktok} alt="Tiktok" />
+					</a>
+				</div>
+			</div>
 		</div>
-    
-	&copy; {today.getFullYear()} Your name here. All rights reserved.
+		<div class="w-10/12 mx-auto mt-14">
+			<div class="font-lorimer-condensed text-rebeige-300 text-4xl mb-6">Prendre contact</div>
+			<form class="flex flex-wrap justify-center text-rebeige-300" name="contact-form" action="" method="post">
+				<div class="w-full md:w-1/2 md:pe-6">
+					<!-- Name -->
+					<div class="border border-rebeige-300 rounded-xl mb-6">
+						<label for="name" class="sr-only">votre nom et prénom</label>
+						<input required type="text" id="name" name="name" placeholder="Nom & prénom*" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+					</div>
+					<!-- Email -->
+					<div class="border border-rebeige-300 rounded-xl mb-6">
+						<label for="email_contact" class="sr-only">votre adresse email</label>
+						<input required type="email" id="email_contact" name="email" placeholder="E-mail*" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+					</div>
+
+					<!-- Sujet -->
+					<div class="border border-rebeige-300 rounded-xl">
+						<label for="email_contact" class="sr-only">votre adresse email</label>
+						<input required type="text" id="subject" name="subject" placeholder="Objet :" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+					</div>
+				</div>
+				<div class="w-full md:w-1/2 mt-6 md:mt-0 md:ps-6">
+					<!-- Message -->    
+					<div class="border border-rebeige-300 rounded-xl">
+						<label for="message" class="sr-only">votre message</label>
+						<textarea required id="message" rows="4" name="message" placeholder="Votre message*" class="w-full h-full placeholder-rebeige-300 py-2.5 px-6"></textarea>
+					</div>					
+
+					<!-- div to show reCAPTCHA -->
+					<div class="g-recaptcha mt-6" 
+						data-sitekey="6LepVFsrAAAAAGuJHJ3qaTdOIVCmE492iU5h_gda"
+						data-action="CONTACT_FORM">
+					</div>
+				</div>				
+
+				<!-- Button -->
+				<div class="mt-6">
+					<button type="submit" class="small-beige-shadow font-lorimer bg-rered text-rebeige-300 p-2.5">Envoyer</button>
+				</div>			
+			</form>
+			
+		</div>
+	</div>
 </footer>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

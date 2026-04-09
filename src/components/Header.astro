@@ -1,9 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import { SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
 import RedLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-ROUGE.svg';
 import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
+import RightArrow from '../assets/right-arrow.svg';
 ---
 
 <header class="">
@@ -47,13 +46,23 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
             </ul>
           </div>
           <div class="nav-column bg-remaroon py-6">
-            <div id="mega-actu" class="text-rebeige-300">
-              Nos actus
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              Test
+            <div id="mega-actu" class="text-rebeige-300 px-6 flex flex-col">
+              <div>
+                <span class="square-button inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
+              </div>              
+              <span class="font-lorimer-condensed text-4xl mt-6">Actu à venir</span>
+              <p class="font-extrabold text-sm mt-2">20 mars 2026</p>
+              <p class="mt-2">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, r adipiscing elit. Etiam eu turpis molestie, dictu</p>
+              <div class="mt-2">
+                <a href="#" class="inline-block">
+                  <div class="flex items-center">
+                      <div class="bg-rebeige-300 rounded-full flex items-center justify-center h-10 w-10 border-4 border-remaroon -me-4 z-200">
+                          <Image class="w-2/3" src={RightArrow} alt="" />
+                      </div>    
+                      <div class="bg-rebeige-300 text-remaroon font-bold text-sm ps-6 py-0.5 pe-2">Voir toutes les actus</div>
+                  </div>
+                </a>
+              </div>              
             </div>
             <ul id="mega-nos-actions-submenu" class="text-rebeige-300">
               <li><a href="#">Lutter contre la précarité menstruelle</a></li>
@@ -74,8 +83,8 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
               <li><a href="#">Devenir un établissement engagé</a></li>
             </ul>
           </div>
-          <div class="nav-column bg-rebeige-100 pe-15 flex-wrap">
-            <div class="w-full flex py-6">
+          <div class="nav-column bg-rebeige-100 flex-wrap">
+            <div class="w-full flex py-8 pe-15">
               <div class="w-5/12">
                 
               </div>
@@ -84,13 +93,26 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
                 <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
               </div>
             </div>
-            <div class="w-full flex bg-rebeige-300 py-6">
+            <div class="w-full flex bg-rebeige-300 py-8 pe-15">
               <div class="w-5/12">
                 
               </div>
               <div class="w-7/12">
                 <p>Notre solution pour mobiliser et lutter contre la précarité menstruelle</p>
                 <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
+              </div>
+            </div>
+            <div class="w-full flex flex-col bg-regreen py-6 ps-6 pe-15">
+              <span class="font-lorimer-condensed text-remaroon text-4xl">Nos ressources</span>
+              <div class="mt-2">
+                <a href="#" class="inline-block">
+                  <div class="flex items-center">
+                      <div class="bg-rebeige-300 rounded-full flex items-center justify-center h-10 w-10 border-4 border-regreen -me-4 z-200">
+                          <Image class="w-2/3" src={RightArrow} alt="" />
+                      </div>    
+                      <div class="bg-rebeige-300 text-remaroon font-bold text-sm ps-6 py-0.5 pe-2">Voir toutes les ressources</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
