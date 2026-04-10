@@ -9,6 +9,7 @@ import Communaute from '../assets/COMMUNAUTE.png';
 import Sororite from '../assets/SORORITE.png';
 import DoigtsTampon from '../assets/DOIGTS-TAMPON.png';
 import Journal from '../assets/JOURNAL.png';
+import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 ---
 
 <Base title={SITE_TITLE}>
@@ -171,8 +172,13 @@ import Journal from '../assets/JOURNAL.png';
 		</div>
 		<div class="px-5 md:px-15 pt-20 pb-30 bg-rebeige-100">
 			<div class="w-11/12 md:w-10/12 flex flex-col mx-auto">
-				<div class="w-full md:w-1/2 flex md:justify-end mb-10">
-					<h2 class="md:text-right text-rered md:pe-10">Questions<br/>fréquentes</h2>
+				<div class="flex mb-10">
+					<div class="w-full md:w-1/2 flex md:justify-end mb-10">
+						<h2 class="md:text-right text-rered md:pe-10">Questions<br/>fréquentes</h2>
+					</div>				
+					<div class="w-full md:w-1/5 mx-auto">
+						<Image src={BoiteServiettes} alt="" />
+					</div>
 				</div>				
 				<FAQ />
 			</div>            

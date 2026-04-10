@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import RedLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-ROUGE.svg';
 import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
 import RightArrow from '../assets/right-arrow.svg';
+import ParlonsRegles from '../assets/parlons-regles.png';
+import Regla from '../assets/regla.png';
 ---
 
 <header class="">
@@ -86,20 +88,20 @@ import RightArrow from '../assets/right-arrow.svg';
           <div class="nav-column bg-rebeige-100 flex-wrap">
             <div class="w-full flex py-8 pe-15">
               <div class="w-5/12">
-                
+                 <Image class="w-3/4 mx-auto" src={ParlonsRegles} alt="Parlons Règles" />
               </div>
               <div class="w-7/12">
                 <p>Notre solution pour généraliser l’éducation menstruelle</p>
-                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.parlonsregles.fr/" target="_blank">En savoir plus</a>
               </div>
             </div>
             <div class="w-full flex bg-rebeige-300 py-8 pe-15">
               <div class="w-5/12">
-                
+                <Image class="w-3/4 mx-auto" src={Regla} alt="Reglà" />
               </div>
               <div class="w-7/12">
                 <p>Notre solution pour mobiliser et lutter contre la précarité menstruelle</p>
-                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="/">En savoir plus</a>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.regla-app.fr/" target="_blank">En savoir plus</a>
               </div>
             </div>
             <div class="w-full flex flex-col bg-regreen py-6 ps-6 pe-15">
