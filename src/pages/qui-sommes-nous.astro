@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+//import HeaderImage from '../assets/nos-actions.jpg';
+import NotreRaison from '../assets/notre-raison.jpg';
+import { SITE_TITLE } from '../consts';
+---
+
+<Base title={SITE_TITLE}>
+	<main>
+		<div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-20">
+				<div class="text-rered">
+					<h1>
+                        L'asociation qui agit pour l'égalité et la justice menstruelle
+                    </h1>
+				</div>			
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-20 flex">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-7/12">
+                        <Image src={NotreRaison} alt="" />
+                    </div>                    
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2>Notre<br/>raison d'être</h2>
+                    <p class="mt-10 font-bold">Règles Élémentaires œuvre pour que les femmes et toutes les personnes qui ont, avaient et auront leurs règles puissent les vivre dignement, sans tabou et en sécurité.</p>
+                    <p class="mt-4">Pour ce faire, elle forme et informe sur les règles, promeut la santé menstruelle et lutte contre la précarité menstruelle en favorisant l’accès aux produits périodiques.</p>
+                    <p class="mt-4">Depuis 2015, Règles Élémentaires change les mentalités et les lois pour construire une société plus juste et égalitaire.</p>	
+                </div>	
+                				
+			</div>
+		</div>
+	</main>
+</Base>
