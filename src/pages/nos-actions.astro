@@ -1,13 +1,19 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import HeaderImage from '../assets/nos-actions.jpg';
-import LutterPrecarite from '../assets/lutter-precarite.png';
-import RightArrow from '../assets/right-arrow.svg';
-import { SITE_TITLE } from '../consts';
+import HeaderImage from '../assets/actions/nos-actions.jpg';;
+import SmallRightArrow from '../assets/actions/small-right-arrow.svg';
+import BigRightArrow from '../assets/actions/big-right-arrow.svg';
+import LutterPrecarite from '../assets/actions/lutter-precarite.png'
+import EducationMenstruelle from '../assets/actions/education-menstruelle.png'
+import InformerSensibiliser from '../assets/actions/informer-sensibiliser.png'
+import Former from '../assets/actions/former.png'
+import Mobiliser from '../assets/actions/mobiliser.png'
+import ChangerRegles from '../assets/actions/changer-regles.png'
+import Europe from '../assets/actions/europe.svg'
 ---
 
-<Base title={SITE_TITLE}>
+<Base title="Nos actions - Règles Élémentaires">
 	<main>
 		<div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
 			<div class="w-11/12 md:w-10/12 py-20">
@@ -17,7 +23,7 @@ import { SITE_TITLE } from '../consts';
 			</div>
 		</div>
         <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-20 flex">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
                 <div class="w-full md:w-1/2">
                     <p>
                         Parce que les règles touchent à la dignité, à la santé, à l’égalité et à l’accès aux droits, nous développons des actions complémentaires : répondre à l’urgence, transmettre des connaissances, produire des données, mobiliser les acteur·ices et faire évoluer les politiques publiques. 
@@ -25,54 +31,174 @@ import { SITE_TITLE } from '../consts';
                     </p>	
                 </div>	
                 <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="w-7/12 -mt-50">
+                    <div class="md:w-7/12 mt-6 md:-mt-50">
                         <Image src={HeaderImage} alt="" />
                     </div>                    
                 </div>				
 			</div>
 		</div>
-        <div class="w-full flex flex-col">
-            <div class="px-5 md:px-15 flex flex-col items-start w-full bg-regreen">
-                <div class="actions-header flex items-center justify-between w-full py-10 cursor-pointer transition-all">
-                    <h5 class="font-lorimer-condensed-black">Lutter contre la précarité menstruelle</h5>    
-                    <Image class="actions-icon transition-all duration-500" src={RightArrow} alt="" />        
+        <div class="w-full flex flex-col text-remaroon">
+            <div class="flex flex-col items-start w-full bg-rebeige-100">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Lutter contre la précarité menstruelle</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                            
                 </div>
-                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-wrap">
-                    <div class="w-full md:w-1/2">
-                        <p class="font-bold">Garantir un accès digne aux produits périodiques.</p>
-                        <p class="mt-4">Parce qu’aucune personne ne devrait avoir à choisir entre se nourrir et se protéger, nous agissons pour favoriser l’accès aux protections périodiques partout où les besoins existent : collectes citoyennes, redistribution, partenariats avec les structures de terrain, accompagnement des dispositifs de gratuité et développement de solutions innovantes.</p>
-                        <p class="mt-4"><b>Notre objectif</b> : répondre aux besoins immédiats tout en construisant des réponses durables.</p>
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <Image class="mt-4 md:mt-0 md:w-3/4 mx-auto" src={LutterPrecarite} alt="" />
-                    </div>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Garantir un accès digne aux produits périodiques.</p>
+                            <p class="mt-4">Parce qu’aucune personne ne devrait avoir à choisir entre se nourrir et se protéger, nous agissons pour favoriser l’accès aux protections périodiques partout où les besoins existent : collectes citoyennes, redistribution, partenariats avec les structures de terrain, accompagnement des dispositifs de gratuité et développement de solutions innovantes.</p>
+                            <p class="mt-4"><b>Notre objectif</b> : répondre aux besoins immédiats tout en construisant des réponses durables.</p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={LutterPrecarite} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/lutter-contre-la-precarite-menstruelle">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
                 </div>
             </div>
-            <div class="px-5 md:px-15 flex flex-col items-start w-full bg-reyellow">
-                <div class="actions-header flex items-center justify-between w-full py-10 cursor-pointer transition-all">
-                    <h5 class="font-lorimer-condensed-black">Déployer l’éducation menstruelle</h5>    
-                    <Image class="actions-icon transition-all duration-500" src={RightArrow} alt="" />        
+            <div class="flex flex-col items-start w-full bg-reorange">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Déployer l’éducation menstruelle</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                            
                 </div>
-                <p class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500">
-                    Règles Élémentaires est une association qui agit pour l’égalité, l’éducation et la justice menstruelle.
-                    <br/>Règles Élémentaires œuvre pour que les femmes et toutes les personnes qui ont, avaient et auront leurs règles puissent les vivre dignement, sans tabou et en sécurité.
-                    <br/>Pour ce faire, elle forme et informe sur les règles, promeut la santé menstruelle et lutte contre la précarité menstruelle en favorisant l’accès aux produits périodiques.
-                    <br/>Depuis 2015, Règles Élémentaires change les mentalités et les lois pour construire une société plus juste et égalitaire.
-                </p>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Permettre à chacun·e de comprendre les règles dès le plus jeune âge.</p>
+                            <p class="mt-4">Nous développons des contenus, outils et interventions pour rendre l’éducation menstruelle accessible, inclusive et adaptée aux différents publics.<br/>Parce qu’une information juste et accessible est essentielle pour lutter contre les tabous, prévenir les inégalités et favoriser la santé menstruelle.</p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={EducationMenstruelle} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/deployer-education-menstruelle">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
+                </div>
             </div>
-            <div class="px-5 md:px-15 flex flex-col items-start w-full bg-reorange">
-                <div class="actions-header flex items-center justify-between w-full py-10 cursor-pointer transition-all">
-                    <h5 class="font-lorimer-condensed-black">Informer et sensibiliser</h5>    
-                    <Image class="actions-icon transition-all duration-500" src={RightArrow} alt="" />        
+            <div class="flex flex-col items-start w-full bg-regreen">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Informer et sensibiliser</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                           
                 </div>
-                <p class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500">
-                    Règles Élémentaires est une association qui agit pour l’égalité, l’éducation et la justice menstruelle.
-                    <br/>Règles Élémentaires œuvre pour que les femmes et toutes les personnes qui ont, avaient et auront leurs règles puissent les vivre dignement, sans tabou et en sécurité.
-                    <br/>Pour ce faire, elle forme et informe sur les règles, promeut la santé menstruelle et lutte contre la précarité menstruelle en favorisant l’accès aux produits périodiques.
-                    <br/>Depuis 2015, Règles Élémentaires change les mentalités et les lois pour construire une société plus juste et égalitaire.
-                </p>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Rendre visibles les règles.</p>
+                            <p class="mt-4">Campagnes, enquêtes, contenus pédagogiques, interventions médiatiques, publications : nous produisons et diffusons des ressources pour faire exister les règles comme un véritable enjeu de société.<br/>Informer, c’est aussi créer les conditions d’un changement durable des représentations.</p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={InformerSensibiliser} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/informer-et-sensibiliser">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="flex flex-col items-start w-full bg-reyellow">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Former</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                            
+                </div>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Former celles et ceux qui accompagnent, transmettent et décident.</p>
+                            <p class="mt-4">Professionnel·les de l’éducation, du médico-social, du sport, de l’entreprise ou des collectivités : nous développons des formations pour permettre une meilleure prise en compte des règles et de leurs impacts dans tous les environnements.<br/>Comprendre les enjeux menstruels, déconstruire les idées reçues, adapter les pratiques : former est un levier concret de transformation.</p>
+                            <p class="mt-4"><b>Notre organisme de formation est certifié Qualiopi.</b></p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={Former} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/former">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="flex flex-col items-start w-full bg-rebeige-300">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Mobiliser</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                          
+                </div>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Faire de l’engagement un moteur de changement.</p>
+                            <p class="mt-4">Depuis la première collecte en 2015, nous faisons de la mobilisation un levier central : bénévoles, relais locaux, partenaires, organisations engagées… chacun·e peut contribuer à faire avancer la justice menstruelle.<br/>Cette mobilisation collective permet d’ancrer les règles dans le débat public et dans les territoires.</p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={Mobiliser} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/mobiliser">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="flex flex-col items-start w-full bg-repink">
+                <div class="px-5 md:px-15 actions-header flex items-center justify-between w-full cursor-pointer transition-all">
+                    <h5 class="w-5/6 font-lorimer-condensed-black py-10">Changer les règles</h5>    
+                    <div class="w-1/6 py-4 flex justify-end">
+                        <Image class="actions-icon transition-all duration-500" src={SmallRightArrow} alt="" />
+                    </div>                           
+                </div>
+                <div class="actions-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="px-5 md:px-15 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="font-bold">Faire évoluer les lois, les pratiques et les politiques publiques.</p>
+                            <p class="mt-4">Parce que les règles sont aussi un sujet politique, nous interpellons les institutions, produisons des données, formulons des propositions et portons des revendications pour faire évoluer durablement le cadre collectif.<br/>Nos actions ont contribué à plusieurs avancées majeures : accès gratuit en milieu carcéral, encadrement de la composition des protections périodiques, remboursement annoncé des protections réutilisables.</p>
+                        </div>
+                        <div class="w-1/2">
+                            <Image class="mt-4 md:-mt-24 md:w-2/5 mx-auto" src={ChangerRegles} alt="" />
+                        </div>
+                    </div>                    
+                    <div class="flex justify-end -mt-30">
+                        <a href="/actions/changer-les-regles">
+                            <Image class="" src={BigRightArrow} alt="En savoir plus" />
+                        </a>
+                    </div>                    
+                </div>
             </div>
         </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
+            <div class="w-11/12 md:w-10/12 flex flex-wrap">
+                <div class="w-full md:w-4/10 py-4">
+                    <Image src={Europe} alt="" />
+                </div>
+                <div class="w-full md:w-6/10 py-10 md:py-20 md:px-6">
+                    <div class="bg-redarkpink big-maroon-shadow text-white px-6 md:px-12 py-9">
+                        <h5 class="font-lorimer-condensed-black">Nos actions à l’échelle européenne</h5>
+                        <p class="mt-6">Faire avancer la justice menstruelle au-delà des frontières. Parce que les inégalités liées aux règles existent partout et que les réponses restent encore très inégales selon les pays, nous développons des coopérations européennes pour partager les connaissances, faire émerger des données et porter une vision commune de la santé menstruelle.<br/>Études, partenariats, programmes de coopération, plaidoyer : nous contribuons à inscrire les règles comme un enjeu d’égalité et de santé publique à l’échelle européenne. </p>
+                        <a class="mt-6 small-maroon-shadow inline-block text-remaroon bg-rebeige-100 p-2.5 font-lorimer" href="/actions/europe">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
 	</main>
 </Base>
 
@@ -86,14 +212,15 @@ import { SITE_TITLE } from '../consts';
                 if (i === index) {
                     const isOpen = el.classList.contains('opacity-100');
                     el.classList.toggle('opacity-100', !isOpen);
-                    el.classList.toggle('max-h-[800px]', !isOpen);
+                    el.classList.toggle('max-h-[1000px]', !isOpen);
                     el.classList.toggle('translate-y-0', !isOpen);
-                    el.classList.toggle('py-8', !isOpen);
+                    el.classList.toggle('pt-8', !isOpen);
                     el.classList.toggle('max-h-0', isOpen);
                     el.classList.toggle('-translate-y-2', isOpen);
+                    el.classList.toggle('overflow-hidden', isOpen);
                     allIcons[i].classList.toggle('opacity-0', !isOpen);
                 } else {
-                    el.classList.remove('opacity-100', 'max-h-[800px]', 'translate-y-0', 'py-8');
+                    el.classList.remove('opacity-100', 'max-h-[1000px]', 'translate-y-0', 'pt-8');
                     el.classList.add('max-h-0', '-translate-y-2');
                     allIcons[i].classList.remove('opacity-0');
                 }

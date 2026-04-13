@@ -7,7 +7,10 @@ import ExclamationMark from '../assets/exclamation-mark.svg';
 import DownArrow from '../assets/down-arrow.svg';
 import Communaute from '../assets/COMMUNAUTE.png';
 import Sororite from '../assets/SORORITE.png';
+import Impact from '../assets/home/impact.png';
 import DoigtsTampon from '../assets/DOIGTS-TAMPON.png';
+import Sengager from '../assets/home/sengager.png';
+import Sinformer from '../assets/home/sinformer.png';
 import Journal from '../assets/JOURNAL.png';
 import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 ---
@@ -83,8 +86,15 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 		</div>
 		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-100 pt-76">
 			<div class="w-11/12 md:w-10/12 flex flex-col mt-16">
-				<h2 class="text-rered">Notre impact</h2>
-				<h2 class="text-remaroon">Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois</h2>
+				<div class="flex flex-wrap">
+					<div class="w-full md:w-4/7">
+						<h2 class="text-rered">Notre impact</h2>
+						<h2 class="text-remaroon">Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois</h2>
+					</div>
+					<div class="w-full md:w-3/7">
+						<Image src={Impact} alt="" />
+					</div>
+				</div>				
 				<div class="flex flex-wrap mt-10 mb-20">
 					<div class="w-full md:w-6/12 md:ps-20">
 						<p class="w-10/12 border-s-4 border-remaroon text-remaroon ps-6 md:ps-10">Ce qui a commencé par une collecte citoyenne est devenu un mouvement national capable de faire évoluer les mentalités, les politiques publiques et l’accès concret aux droits.</p>
@@ -97,7 +107,7 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 							<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Nos avancées législatives</a>
 						</div>						
 					</div>
-					<div class="w-2/12 -mt-20">
+					<div class="w-2/12 -mt-30">
 						<Image src={DoigtsTampon} alt="" />
 					</div>
 				</div>
@@ -126,8 +136,8 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 		</div>	
 		<div class="flex flex-wrap">
 			<div class="ps-0 md:ps-15 py-14 w-full md:w-1/2 bg-rered">
-				<div class="w-3/4 mx-auto px-7 py-9 bg-repink h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
-					
+				<div class="w-3/4 mx-auto h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+					<Image src={Sengager} alt="" />
 				</div>
 				<h2 class="text-center text-rebeige-300 mt-10">S'engager</h2>
 				<p class="w-3/4 mx-auto mt-10 text-rebeige-300">
@@ -153,7 +163,8 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 				</div>
 			</div>
 			<div class="pe-0 md:pe-15 py-14 w-full md:w-1/2 bg-remaroon">
-				<div class="w-3/4 mx-auto px-7 py-9 bg-repink h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+				<div class="w-3/4 mx-auto h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+					<Image src={Sinformer} alt="" />
 				</div>
 				<h2 class="text-center text-rebeige-300 mt-10">S'informer</h2>
 				<p class="w-3/4 mx-auto mt-10 text-rebeige-300">
