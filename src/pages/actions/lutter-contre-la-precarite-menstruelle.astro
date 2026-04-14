@@ -1,9 +1,199 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
+import HeaderImage from '../../assets/actions/lutter-precarite.png';
+import Precarite1 from '../../assets/actions/precarite-1.png';
+import Precarite2 from '../../assets/actions/precarite-2.png';
+import SangAccepte from '../../assets/actions/SANG-ACCEPTE.png';
+import WhiteGoutte from '../../assets/white-goutte.svg';
+import MaroonGoutte from '../../assets/maroon-goutte.svg';
+import MiseADispo from '../../assets/actions/SCENETTE-COLLECTE-MIRACULEUSE.png';
+import Application from '../../assets/actions/NUMERIQUE-MOBILE.png';
+import AccompagnementAsso from '../../assets/actions/accompagnement-asso.png';
 ---
 
 <Base title="Lutter contre la précarité menstruelle - Règles Élémentaires">
 	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
+			<div class="w-11/12 md:w-10/12 py-20 flex">
+				<div class="w-full md:w-7/10 text-rered">
+					<h1>Lutter contre<br/>la précarité<br/>menstruelle</h1>
+				</div>
+                <div class="w-3/10 mt-40 -mb-50">
+                    <Image src={HeaderImage} alt="" />
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10 md:pe-6">
+                    <p class="mb-6">Chaque mois, des millions de personnes rencontrent des difficultés pour accéder aux protections périodiques dont elles ont besoin. Cette réalité, appelée précarité menstruelle, a des conséquences directes sur la santé, la scolarité, le travail, la participation sociale et la dignité.</p>
+                    <p>Depuis 2015, Règles Élémentaires agit pour répondre à cette urgence tout en construisant des solutions durables pour que l’accès aux protections périodiques devienne une évidence et non un privilège. Nos actions reposent sur plusieurs leviers complémentaires : la collecte et la redistribution de protections périodiques, le développement de dispositifs d’accès, l’innovation sociale et l’accompagnement des structures de terrain.</p>
+                </div>
+                <div class="w-full md:w-6/10 flex flex-col justify-end mt-10 md:mt-0">
+                    <h3 class="text-maroon-shadow text-rebeige-100 md:ms-16">Chiffres clés<br/>depuis 2025</h3>
+                    <div class="flex flex-wrap mt-14 text-remaroon md:ms-6">
+                        <div class="w-full md:w-1/3 px-10 border-e-4 border-remaroon">
+                            <div class="font-lorimer-condensed-black text-4xl">+5<br/>millions</div>
+                            <div class="mt-2">de protections périodiques redistribuées</div>
+                        </div>
+                        <div class="w-full md:w-1/3 px-10 border-e-4 border-remaroon">
+                            <div class="font-lorimer-condensed-black text-4xl">plus de<br/>457 000</div>
+                            <div class="mt-2">personnes bénéficiaires</div>
+                        </div>
+                        <div class="w-full md:w-1/3 px-10">
+                            <div class="font-lorimer-condensed-black text-4xl">plus de<br/>400</div>
+                            <div class="mt-2">associations partenaires</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap md:h-200">
+                <div class="w-full md:w-1/3 md:pe-2 flex flex-col">
+                    <div class="bg-rebeige-500 rounded-xl p-14 text-remaroon mb-4">
+                        <div class="font-lorimer-condensed-black text-4xl">29 millions</div>
+                        <div>de protections périodiques redistribuées</div>
+                    </div>
+                    <div id="img-precarite-1" class="grow rounded-xl"></div>
+                    <Image class="md:hidden" src={Precarite1} alt="" />
+                </div>
+                <div class="w-full md:w-1/3 md:px-2 flex flex-col">                    
+                    <div id="img-precarite-2" class="grow rounded-xl"></div>
+                    <div class="bg-rered rounded-xl p-14 text-white mt-4">
+                        <div class="font-lorimer-condensed-black text-4xl">plus de 1500</div>
+                        <div>structures bénéficiaires de dons, de sensibilisations ou de formations de RE</div>
+                    </div>
+                    <Image class="md:hidden my-4" src={Precarite2} alt="" />
+                </div>
+                <div class="w-full md:w-1/3 md:ps-2 flex flex-col">
+                    <div class="bg-rebeige-100 rounded-xl p-14 text-remaroon mb-4">
+                        <div class="font-lorimer-condensed-black text-4xl">3 millions</div>
+                        <div>de mois de règles couverts</div>
+                    </div>
+                    <div id="img-precarite-3" class="grow rounded-xl"></div>
+                    <Image class="hidden md:block absolute w-40 -ms-24 mt-72" src={SangAccepte} alt="" />
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-rered">Collecte et redistribution</h2>
+                    <div class="square-title mt-8 inline-block bg-remaroon text-rebeige-300 text-2xl">Pour répondre aux besoins immédiats</div>
+                    <p class="mt-8">La collecte de protections périodiques est à l’origine de l’association et reste aujourd’hui un levier essentiel pour répondre aux besoins des personnes en situation de précarité.</p>
+                    <p class="mt-6">Partout en France, des citoyen·nes, entreprises, écoles et collectivités organisent des collectes de produits menstruels qui sont ensuite redistribuées à des associations et structures médico-sociales partenaires. Plus de 4 200 collectes ont été organisées depuis 2015.</p>
+                    <p class="mt-6">Depuis la création de l’association en 2015, 29 millions de protections périodiques ont été collectées et redistribuées, permettant d’accompagner des centaines de milliers de personnes sur tout le territoire chaque année. </p>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Bénéficier de protections périodiques</a>
+                    </div>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Organiser une collecte</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col justify-center">
+                    <div class="md:w-3/5 mt-6 md:mt-0 mx-auto bg-rered big-maroon-shadow text-white px-6 md:px-12 py-9">
+                        <h5 class="font-lorimer-condensed-black">Ces collectes<br/>permettent<br/>à la fois :</h5>
+                        <p class="mt-6 flex items-center">
+                            <Image class="w-8" src={WhiteGoutte} alt="" />
+                            <span class="ms-4">d’apporter une réponse concrète à des besoins immédiats;</span>
+                        </p>
+                        <p class="mt-6 flex items-center">
+                            <Image class="w-8" src={WhiteGoutte} alt="" />
+                            <span class="ms-4">de sensibiliser le grand public à la précarité menstruelle;</span>
+                        </p>
+                        <p class="mt-6 flex items-center">
+                            <Image class="w-8" src={WhiteGoutte} alt="" />
+                            <span class="ms-4">de mobiliser les territoires autour de la justice menstruelle.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 pt-10 pb-20 flex flex-wrap">
+                <div class="w-full md:w-1/2 md:pe-20">
+                    <Image src={MiseADispo} alt="" />
+                </div>
+                <div class="w-full md:w-1/2 mt-10 md:mt-0">
+                    <h2 class="text-rered">Mise à disposition</h2>
+                    <p class="mt-8">Au-delà des collectes, nous travaillons à développer des solutions permettant de faciliter l’accès aux protections périodiques dans les lieux de vie du quotidien : structures associatives, collectivités, lieux d’accueil et d’accompagnement social.</p>
+                    <p class="mt-6"><b>L’objectif :</b> faire en sorte que les protections menstruelles soient disponibles là où elles sont nécessaires, de manière simple, digne et durable. Ces dispositifs contribuent à réduire les situations d’urgence tout en inscrivant la question des règles dans les politiques sociales et éducatives.</p>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-white">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10 md:pe-20 flex items-center">
+                    <Image class="w-3/4" src={Application} alt="" />
+                </div>
+                <div class="w-full md:w-6/10 mt-10 md:mt-0">
+                    <h2>L'application Reglà</h2>
+                    <p class="mt-8 font-semibold">Pour répondre aux besoins de manière innovante, nous avons développé Reglà, une application permettant de géolocaliser les lieux accessibles au public (tiers lieux, commerces, restaurants, CCAS,..) où il est possible d’accéder gratuitement à des protections périodiques.</p>
+                    <p class="mt-6">L’application collaborative permet aux personnes qui découvrent des lieux où les protections périodiques sont disponibles gratuitement de les ajouter à l’application et elle permet aux personnes qui cherchent une protection périodique de trouver rapidement des solutions près de chez elles.L’application contribue à rendre plus visibles les dispositifs existants et la solidarité locale.</p>
+                    <p class="mt-6">Reglà s’inscrit dans une approche tech for good, qui met la technologie au service de l’accès aux droits et de la santé menstruelle.</p>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer text-remaroon" href="https://www.regla-app.fr/" target="_blank">Accéder à l'application</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 pt-20 flex flex-wrap">                
+                <div class="w-full md:w-1/2">
+                    <h2>Accompagnement des associations</h2>
+                    <div class="bg-rebeige-500 mt-10 big-maroon-shadow px-6 md:px-12 py-9 relative md:ms-20 md:-me-20 md:-mb-40">
+                        <p class="">La lutte contre la précarité menstruelle repose sur un réseau d’acteur·ices engagés au plus près des publics concernés : associations de solidarité, associations de lutte pour les droits des femmes et des minorités, structures médico-sociales, centres d’accueil, épiceries solidaires, centres d’hébergement et de réinsertion sociale.</p>
+                        <p class="mt-6">Nous travaillons en lien étroit avec ces structures partenaires afin d’identifier les besoins, redistribuer les protections collectées et développer des actions adaptées aux réalités locales. Nous proposons des outils, des temps de sensibilisation et de formation afin de permettre aux structures partenaires de mieux accompagner la santé menstruelle de leurs publics bénéficiaires.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-10 md:mt-0 pb-10 md:pb-0">
+                    <Image src={AccompagnementAsso} alt="" />
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-repink text-remaroon">
+			<div class="w-11/12 md:w-10/12 pb-20 pt-20 md:pt-40 flex flex-wrap justify-center">        
+                <div class="square-title inline-block bg-remaroon text-rebeige-300 text-2xl">Depuis la création de Règles Élémentaires en 2015 :</div>
+                <div class="w-full mt-14 flex flex-wrap">
+                    <div class="w-full md:w-6/10 flex flex-wrap md:border-e-4 border-remaroon">
+                        <div class="w-full md:w-1/2 px-6 md:px-10 md:border-e-4 border-remaroon">
+                            <div class="font-lorimer-condensed-black text-5xl">1 165</div>
+                            <div class="mt-4">structures partenaires ont bénéficié au moins une fois de protections périodiques redistribuées</div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-6 md:px-10 mt-10 md:mt-0">
+                            <div class="font-lorimer-condensed-black text-5xl">400</div>
+                            <div class="mt-4">structures sensibilisées ou formées par Règles Élémentaires</div>
+                        </div>
+                        <div class="w-full mx-6 md:mx-10 md:mt-10 md:border-t-4 border-remaroon">
+                            <div class="font-lorimer-condensed-black text-5xl mt-10">1 900</div>
+                            <div class="mt-4 md:w-3/4">associations et structures médico-sociales ont accès à nos outils et ressources</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/10 px-6 md:px-10 mt-10 md:mt-0">
+                        <div class="font-lorimer-condensed-black text-5xl">Cette collaboration permet :</div>
+                        <div class="mt-10 flex items-start">
+                            <div class="w-1/12 pt-2">
+                                <Image src={MaroonGoutte} alt="" />
+                            </div>                            
+                            <div class="w-11/12">de répondre plus efficacement aux besoins des bénéficiaires;</div>
+                        </div>
+                        <div class="mt-2 flex items-start">
+                            <div class="w-1/12 pt-2">
+                                <Image src={MaroonGoutte} alt="" />
+                            </div>                            
+                            <div class="w-11/12">de renforcer le maillage territorial;</div>
+                        </div>
+                        <div class="mt-2 flex items-start">
+                            <div class="w-1/12 pt-2">
+                                <Image src={MaroonGoutte} alt="" />
+                            </div>                            
+                            <div class="w-11/12">d’améliorer la prise en compte de la santé menstruelle dans l’accompagnement social.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
     </main>
 </Base>

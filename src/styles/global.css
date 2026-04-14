@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 } 
 h1 {
 	font-size: 122px;
-	line-height: 95%;
+	line-height: 110%;
 }
 h2 {
 	font-size: 80px;
@@ -113,7 +113,7 @@ img {
 	text-transform: uppercase;
 }
 
-.square-button {
+.square-title, .square-button {
 	padding: 6px 16px;
 }
 
@@ -161,4 +161,24 @@ img {
 	#goutte-fond {
 		background: none;
 	}
+}
+
+
+/* ACTIONS */
+
+#img-precarite-1,#img-precarite-2, #img-precarite-3 {
+	background-position: center;
+	background-size: cover;
+}
+
+#img-precarite-1 {
+	background-image: url('../assets/actions/precarite-1.png');
+}
+
+#img-precarite-2 {
+	background-image: url('../assets/actions/precarite-2.png');
+}
+
+#img-precarite-3 {
+	background-image: url('../assets/actions/precarite-3.png');
 }
