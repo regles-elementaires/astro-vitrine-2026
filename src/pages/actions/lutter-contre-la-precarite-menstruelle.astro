@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import HeaderImage from '../../assets/actions/lutter-precarite.png';
 import Precarite1 from '../../assets/actions/precarite-1.png';
 import Precarite2 from '../../assets/actions/precarite-2.png';
+import Precarite3 from '../../assets/actions/precarite-3.png';
 import SangAccepte from '../../assets/actions/SANG-ACCEPTE.png';
 import WhiteGoutte from '../../assets/white-goutte.svg';
 import MaroonGoutte from '../../assets/maroon-goutte.svg';
@@ -52,27 +53,32 @@ import AccompagnementAsso from '../../assets/actions/accompagnement-asso.png';
         <div class="px-5 md:px-15 flex justify-center bg-remaroon">
 			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap md:h-200">
                 <div class="w-full md:w-1/3 md:pe-2 flex flex-col">
-                    <div class="bg-rebeige-500 rounded-xl p-14 text-remaroon mb-4">
+                    <div class="bg-rebeige-500 grow flex flex-col justify-center rounded-xl px-14 py-10 text-remaroon mb-4">
                         <div class="font-lorimer-condensed-black text-4xl">29 millions</div>
                         <div>de protections périodiques redistribuées</div>
                     </div>
-                    <div id="img-precarite-1" class="grow rounded-xl"></div>
-                    <Image class="md:hidden" src={Precarite1} alt="" />
+                    <div class="rounded-xl">
+                        <Image class="" src={Precarite1} alt="" />
+                    </div>
                 </div>
                 <div class="w-full md:w-1/3 md:px-2 flex flex-col">                    
-                    <div id="img-precarite-2" class="grow rounded-xl"></div>
-                    <div class="bg-rered rounded-xl p-14 text-white mt-4">
+                    <div class="rounded-xl">
+                        <Image class="hidden md:block" src={Precarite2} alt="" />
+                    </div>
+                    <div class="bg-rered grow flex flex-col justify-center rounded-xl px-14 py-10 text-white mt-4">
                         <div class="font-lorimer-condensed-black text-4xl">plus de 1500</div>
                         <div>structures bénéficiaires de dons, de sensibilisations ou de formations de RE</div>
                     </div>
                     <Image class="md:hidden my-4" src={Precarite2} alt="" />
                 </div>
                 <div class="w-full md:w-1/3 md:ps-2 flex flex-col">
-                    <div class="bg-rebeige-100 rounded-xl p-14 text-remaroon mb-4">
+                    <div class="bg-rebeige-100 grow flex flex-col justify-center rounded-xl px-14 py-10 text-remaroon mb-4">
                         <div class="font-lorimer-condensed-black text-4xl">3 millions</div>
                         <div>de mois de règles couverts</div>
                     </div>
-                    <div id="img-precarite-3" class="grow rounded-xl"></div>
+                    <div class="rounded-xl">
+                        <Image class="" src={Precarite3} alt="" />
+                    </div>
                     <Image class="hidden md:block absolute w-40 -ms-24 mt-72" src={SangAccepte} alt="" />
                 </div>
             </div>
