@@ -1,9 +1,275 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
+import HeaderPicto from '../../assets/actions/FORMATION-ECOLE.png';
+import Idee from '../../assets/actions/IDEE.png';
+import MaroonGoutte from '../../assets/maroon-goutte.svg';
+import Discussion from '../../assets/actions/DISCUSSION.png';
+import PRDesktop from '../../assets/actions/NUMERIQUE-DESKTOP.png';
+import DoigtsTampon from '../../assets/DOIGTS-TAMPON.png';
+import GameOvaire from '../../assets/actions/GAME-OVAIRE.png';
+import Communaute from '../../assets/COMMUNAUTE.png';
+
 ---
 
 <Base title="Déployer l'éducation menstruelle - Règles Élémentaires">
 	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
+			<div class="w-11/12 md:w-10/12 py-20 flex">
+				<div class="w-full md:w-7/10 text-rered relative z-1">
+					<h1>Déployer<br/>l'éducation<br/>menstruelle</h1>
+				</div>
+                <Image class="hidden md:block w-2/10 absolute z-0 left-[40%] -mt-[2%]" src={HeaderPicto} alt="" />
+                <div class="w-3/10">
+                    
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-100">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10"></div>
+                <div class="w-full md:w-6/10">
+                    <h2>Faire de l’éducation menstruelle un levier d’égalité</h2>
+                    <div class="mt-10 md:w-4/6 mx-auto">
+                        <p class="font-bold">Aujourd’hui encore, beaucoup de jeunes découvrent les règles sans y avoir été préparé·es, avec peu d’informations fiables et souvent dans un contexte de gêne ou d’incompréhension.</p>
+                        <p class="mt-4">Chez Règles Élémentaires, nous défendons une éducation menstruelle accessible dès le plus jeune âge, pour permettre aux enfants et adolescent·es de mieux comprendre leur corps, de vivre les règles sans tabou et de construire un rapport plus serein à la santé menstruelle.</p>
+                        <p class="mt-4">Parce que mieux comprendre les règles dès le départ, c’est aussi prévenir les inégalités qui peuvent en découler plus tard.</p>
+                    </div>                    
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+            <div class="hidden md:block w-1/12"></div>
+			<div class="w-11/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10">
+                    <h2 class="text-rered">C’est quoi l’éducation menstruelle ?</h2>
+                    <p class="w-full md:w-3/4 mt-10 font-bold">C’est une pédagogie visant à diffuser un socle de connaissances et d'informations suffisant pour :</p>
+                </div>
+                <div class="w-full md:w-6/10 flex flex-wrap">
+                    <div class="w-full md:w-3/10 flex px-4">
+                        <div class="bg-redarkpink flex-1 big-maroon-shadow p-6 mt-20 md:mt-0">
+                            <div class="font-lorimer-condensed text-7xl -mt-18">01.</div>
+                            <div class="text-white">bien vivre ses règles à tout âge et quel que soit son vécu</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-3/10 flex px-4">
+                        <div class="bg-redarkpink flex-1 big-maroon-shadow p-6 mt-20 md:mt-0">
+                            <div class="font-lorimer-condensed text-7xl -mt-18">02.</div>
+                            <div class="text-white">prévenir les risques de précarité menstruelle</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/10 flex px-4">
+                        <div class="bg-redarkpink flex-1 big-maroon-shadow p-6 mt-20 md:mt-0">
+                            <div class="font-lorimer-condensed text-7xl -mt-18">03.</div>
+                            <div class="text-white">prévenir les maladies liées aux règles (endométriose, adénomyose, SOPK)</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-3/10 flex px-4">
+                        <div class="bg-redarkpink flex-1 big-maroon-shadow p-6 mt-20">
+                            <div class="font-lorimer-condensed text-7xl -mt-18">04.</div>
+                            <div class="text-white hyphens-manual">mettre fin aux tabous et aux discrimi&shy;nations liés aux règles</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-3/10 flex px-4">
+                        <div class="bg-redarkpink flex-1 big-maroon-shadow p-6 mt-20">
+                            <div class="font-lorimer-condensed text-7xl -mt-18">05.</div>
+                            <div class="text-white">favoriser l'égalité active</div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-3/10 flex px-4">
+                        <Image class="w-50 hidden md:block absolute mt-20" src={Idee} alt="" />
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10"></div>
+                <div class="w-full md:w-6/10">
+                    <h2>Les ateliers</h2>
+                    <p class="mt-6 font-bold w-full md:w-3/4">Nous développons des ateliers d’éducation menstruelle destinés aux enfants, adolescent·es et jeunes adultes, dans différents cadres éducatifs.</p>
+                    <div class="bg-white mt-6 rounded-xl p-10">
+                        <p class="font-bold">Ces ateliers permettent de :</p>
+                        <div class="flex">
+                            <Image class="" src={MaroonGoutte} alt="" />
+                            <p class="ms-2">comprendre ce que sont les règles et le cycle menstruel</p>
+                        </div>
+                        <div class="flex">
+                            <Image class="" src={MaroonGoutte} alt="" />
+                            <p class="ms-2">découvrir les protections périodiques</p>
+                        </div>
+                        <div class="flex">
+                            <Image class="" src={MaroonGoutte} alt="" />
+                            <p class="ms-2">poser ses questions librement</p>
+                        </div>
+                        <div class="flex">
+                            <Image class="" src={MaroonGoutte} alt="" />
+                            <p class="ms-2">déconstruire les idées reçues</p>
+                        </div>
+                        <div class="flex">
+                            <Image class="" src={MaroonGoutte} alt="" />
+                            <p class="ms-2">mieux vivre ses premières règles</p>
+                        </div>
+                        <div class="flex mt-6">
+                            <p>Les ateliers sont pensés pour favoriser la participation, la parole et l’appropriation des connaissances.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Nous contacter pour organiser</a>
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer mt-4 md:mt-0 md:ms-4" href="/">Brochure primaire</a>
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer mt-4" href="/">Brochure collège / lycée</a>
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer md:ms-4 mt-4" href="/">Nos formations</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 pt-20 pb-20 md:pb-40 flex flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-rered">Accompagnement des établissements</h2>
+                    <div class="w-full md:w-3/4 square-title mt-8 bg-remaroon text-rebeige-300 text-2xl">Faire évoluer durablement les environnements éducatifs</div>
+                    <p class="mt-8">L’éducation menstruelle ne repose pas uniquement sur une intervention ponctuelle : elle suppose aussi un travail avec les établissements pour intégrer durablement ces enjeux dans les pratiques.</p>
+                    <p class="mt-6">Nous accompagnons les jeunes et les équipes éducatives des écoles, collèges, lycées, établissements d’enseignement supérieur et toutes autres structures éducatives qui souhaitent :</p>
+                    <div class="flex mt-6 items-start">
+                        <Image class="mt-2" src={MaroonGoutte} alt="" />
+                        <p class="ms-2">développer des actions de sensibilisation : organiser une semaine ou une journée thématique sur les règles, créer des ateliers d’éducation menstruelle, créer des animations autour des règles...</p>
+                    </div>
+                    <div class="flex items-start">
+                        <Image class="mt-2" src={MaroonGoutte} alt="" />
+                        <p class="ms-2">former les équipes</p>
+                    </div>
+                    <div class="flex items-start">
+                        <Image class="mt-2" src={MaroonGoutte} alt="" />
+                        <p class="ms-2">améliorer l’accès aux protections périodiques</p>
+                    </div>
+                    <div class="flex items-start">
+                        <Image class="mt-2" src={MaroonGoutte} alt="" />
+                        <p class="ms-2">mieux prendre en compte les besoins liés aux règles dans la vie quotidienne</p>
+                    </div>
+                    <div class="flex items-start">
+                        <Image class="mt-2" src={MaroonGoutte} alt="" />
+                        <p class="ms-2">aménager les espaces</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:ps-20 flex items-end mt-10 md:mt-0">
+                    <div class="bg-rered text-white p-10 rounded-xl md:w-7/10">
+                        <Image class="hidden md:block absolute w-40 -mt-[7%] -ms-[7%]" src={Discussion} alt="" />
+                        <p>Si vous souhaitez mener un projet sur les règles dans votre structure, n’hésitez pas à nous contacter, nous sommes là pour vous accompagner !</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 pb-20 pt-20 md:pt-0 flex flex-wrap md:-mt-10">
+                <div class="w-full md:w-1/2 flex items-end">
+                    <div class="bg-white p-10 rounded-xl md:w-3/4">
+                        <p><b>L’objectif :</b> leur permettre de mieux comprendre les enjeux liés aux règles, de répondre aux questions, d’animer des temps d’échange et d’intégrer progressivement l’éducation menstruelle dans leurs pratiques éducatives.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2>Accompagner les enseignant·es et relais éducatifs</h2>
+                    <p class="mt-6 w-full md:w-3/4">L’éducation menstruelle ne repose pas uniquement sur les jeunes : elle suppose aussi que les adultes qui les accompagnent disposent d’outils adaptés pour aborder ces sujets avec justesse et sérénité.</p>
+                    <p class="mt-6 w-full md:w-3/4">C’est pourquoi nous développons des ressources pédagogiques, des supports d’animation et des formations destinés aux enseignant·es, éducateur·ices, animateur·ices, professionnel·les de jeunesse et autres relais éducatifs.</p>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Découvrir notre plateforme parlons règles</a>
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer mt-4" href="/">Découvrir nos formations</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-white">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <h2>Parlons règles</h2>
+                    <div class="square-title md:w-3/4 mt-8 bg-rebeige-300 text-remaroon text-2xl">Une plateforme digitale pour démocratiser l’éducation menstruelle</div>
+                    <p class="mt-8 md:w-3/4">Parlons Règles est une plateforme digitale gratuite dédiée à l’éducation menstruelle, développée par Règles Élémentaires. Elle a été pensée pour permettre aux jeunes, aux parents et aux relais éducatifs d’accéder facilement à des informations fiables sur les règles et la santé menstruelle.</p>
+                    <Image class="mt-10 md:mt-14 md:-mb-40" src={PRDesktop} alt="" />
+                </div>
+                <div class="w-full md:w-1/2 md:ps-20">
+                    <p class="font-bold mt-10 md:mt-0">La plateforme propose :</p>
+                    <div class="bg-rebeige-300 p-6 rounded-xl text-remaroon mt-6">
+                        <p>des vidéos pédagogiques pour comprendre les règles</p>
+                    </div>
+                    <div class="bg-rebeige-300 p-6 rounded-xl text-remaroon mt-6">
+                        <p>des réponses aux questions les plus fréquentes des jeunes, notamment grâce à un chatbot innovant baptisé Timi !</p>
+                    </div>
+                    <div class="bg-rebeige-300 p-6 rounded-xl text-remaroon mt-6">
+                        <p>des contenus pour aider les parents à accompagner leurs enfants</p>
+                    </div>
+                    <div class="bg-rebeige-300 p-6 rounded-xl text-remaroon mt-6">
+                        <p>des ressources d’animation pour les enseignant·es, éducateur·ices et professionnel·les au contact des jeunes</p>
+                    </div>
+                    <p class="mt-6">Co-construite avec des élèves, des enseignant·es, des parents et des professionnel·les de santé, Parlons Règles vise à rendre l’éducation menstruelle accessible à toutes et tous et à faire des règles un sujet du quotidien, sans tabou.</p>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-col items-center">
+                <h2>Règles et sport</h2>
+                <div class="square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Prendre en compte les règles dans la pratique sportive</div>
+                <p class="text-center mt-6 md:w-2/3">Les règles influencent encore fortement la pratique sportive, notamment chez les jeunes : inconfort, douleurs, manque d’information, gêne ou absence d’adaptation des environnements. Nous développons des actions spécifiques pour mieux intégrer les enjeux menstruels dans le sport :</p>
+                <div class="flex flex-wrap mt-10">
+                    <div class="w-full md:w-1/4 px-4 flex flex-col">
+                        <div class="bg-rebeige-300 h-48 py-4 flex justify-center rounded-lg mt-4 md:mt-0">
+                            <Image class="max-h-40 w-auto" src={DoigtsTampon} alt="" />
+                        </div>
+                        <div class="bg-rebeige-500 rounded-lg mt-4 py-2 px-4 text-center">
+                            <span class="font-lorimer-condensed text-2xl">Sensibilisation des jeunes athlètes</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4 flex flex-col">
+                        <div class="bg-rebeige-300 h-48 py-4 flex justify-center rounded-lg mt-4 md:mt-0">
+                            <Image class="max-h-40 w-auto" src={HeaderPicto} alt="" />
+                        </div>
+                        <div class="bg-rebeige-500 rounded-lg mt-4 py-2 px-4 text-center">
+                            <span class="font-lorimer-condensed text-2xl">Formation des encadrant·es</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4 flex flex-col">
+                        <div class="bg-rebeige-300 h-48 py-4 flex justify-center rounded-lg mt-4 md:mt-0">
+                            <Image class="max-h-40 w-auto" src={GameOvaire} alt="" />
+                        </div>
+                        <div class="bg-rebeige-500 rounded-lg mt-4 py-2 px-4 text-center">
+                            <span class="font-lorimer-condensed text-2xl">Production de contenus adaptés</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4 flex flex-col">
+                        <div class="bg-rebeige-300 h-48 py-4 flex justify-center rounded-lg mt-4 md:mt-0">
+                            <Image class="max-h-40 w-auto" src={Communaute} alt="" />
+                        </div>
+                        <div class="bg-rebeige-500 rounded-lg mt-4 py-2 px-4 text-center">
+                            <span class="font-lorimer-condensed text-2xl">Travail avec les structures sportives</span>
+                        </div>
+                    </div>
+                </div> 
+                <p class="mt-10"><b>L’objectif :</b> que les règles ne soient plus un frein à la pratique sportive.</p>      
+                <div class="mt-8">
+                    <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Découvrir notre campagne et notre enquête carton rouge</a>
+                </div>
+                <div class="mt-4">
+                    <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Télécharger la brochure “j’ai mes règles, je fais du sport”</a>
+                </div>
+                <div class="mt-4">
+                    <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Découvrir notre travail avec la fondaction du football</a>
+                </div>
+                <div class="mt-4">
+                    <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Nous contacter</a>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-reorange text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-20 flex flex-wrap">
+                <div class="w-full md:w-6/10">
+                    <h2>À l'échelle européenne</h2>
+                    <p class="mt-8">Parce que les enjeux de l’éducation menstruelle se posent bien au-delà des frontières françaises, nous développons des coopérations avec d’autres organisations européennes afin de partager les pratiques, croiser les expériences et construire de nouveaux outils communs.</p>
+                    <p class="mt-6">Le Menstrual Education Network réunit aujourd’hui des associations françaises, belges (Bruzelle) et macédoniennes (Tiiiit. inc / period skopje) autour d’un objectif commun : <b>renforcer l’éducation menstruelle à l’échelle européenne.</b></p>
+                    <p class="mt-6">Ce réseau a permis la création du premier guide européen destiné aux éducateur·ices jeunesse, conçu pour accompagner les professionnel·les dans leurs actions d’éducation menstruelle et aujourd’hui disponible en quatre langues.</p>
+                    <div class="mt-6">
+                        <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Consulter le guide</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-4/10"></div>                
+            </div>
+		</div>
     </main>
 </Base>
