@@ -172,13 +172,13 @@ img {
 }
 
 #img-precarite-1 {
-	background-image: url('../assets/actions/precarite-1.png');
+	background-image: url('@assets/actions/precarite-1.png');
 }
 
 #img-precarite-2 {
-	background-image: url('../assets/actions/precarite-2.png');
+	background-image: url('@assets/actions/precarite-2.png');
 }
 
 #img-precarite-3 {
-	background-image: url('../assets/actions/precarite-3.png');
+	background-image: url('@assets/actions/precarite-3.png');
 }
