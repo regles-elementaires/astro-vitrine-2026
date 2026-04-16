@@ -1,7 +1,7 @@
 nav{
   position: fixed;
   z-index: 99;
-  width: 100%;
+  width: 100vw;
   input{
     display: none;
   }
@@ -152,75 +152,32 @@ nav:has(#sengager-link:hover){
 
 
 
-
-@media screen and (max-width: 970px) {
-  .wrapper .nav-links{
-    position: fixed;
-    height: 100vh;
+@media (width < 48rem) { 
+  nav{
+    .wrapper{
+      height: 95px;
+      line-height: 95px;
+    }
+  }
+  .nav-column {
     width: 100%;
-    top: 0;
-    left: -100%;
-    background: #242526;
-    display: block;
-    padding: 50px 10px;
-    line-height: 50px;
-    overflow-y: auto;
-    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
-    transition: all 0.3s ease;
   }
-  /* custom scroll bar */
-  ::-webkit-scrollbar {
-    width: 10px;
+  .first-nav-column {
+    padding: 0;
   }
-  ::-webkit-scrollbar-track {
-    background: #242526;
+  #mega-box{
+    top: 95px;
   }
-  ::-webkit-scrollbar-thumb {
-    background: #3A3B3C;
-  }
-  .nav-links li{
-    margin: 15px 10px;
-  }
-  .nav-links li a{
-    padding: 0 20px;
-    display: block;
-    font-size: 20px;
-  }
-  .nav-links .mobile-item:hover{
-    background: #3A3B3C;
-  }
-  .mega-box{
-    position: static;
-    top: 65px;
-    opacity: 1;
-    visibility: visible;
-    padding: 0 20px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  .mega-box .content{
-    box-shadow: none;
+  #mega-box .content{
     flex-direction: column;
-    padding: 20px 20px 0 20px;
-  }
-  .mega-box .content .row{
-    width: 100%;
-    margin-bottom: 15px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .mega-box .content .row:nth-child(1),
-  .mega-box .content .row:nth-child(2){
-    border-top: 0px;
-  }
-  .content .row .mega-links{
-    border-left: 0px;
-    padding-left: 15px;
-  }
-  .row .mega-links li{
-    margin: 0;
-  }
-  .content .row header{
-    font-size: 19px;
+    .mega-links {
+      li a{
+        font-size: 24px;
+        line-height: 24px;
+        border-bottom: 1px solid white;
+        padding-bottom: 7px;
+        padding-top: 7px;
+      }
+    }
   }
 }

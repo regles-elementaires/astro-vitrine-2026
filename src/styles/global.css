@@ -129,6 +129,12 @@ img {
 	border-radius: 9px;
 }
 
+.small-beige-shadow-red-border {
+	border: 2px solid var(--color-rered);
+	box-shadow: 6px 7px 0px 0px var(--color-rebeige-300);
+	border-radius: 9px;
+}
+
 .small-black-shadow {
 	border: 2px solid black;
 	box-shadow: 6px 7px 0px 0px black;
@@ -152,13 +158,45 @@ img {
 }
 
 #goutte-fond {
-	background-image: url('@assets/goutte-fond.png');
+	background-image: url('/images/goutte-fond.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#hero {
+	background-image: url('/images/hero.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 @media (width < 48rem) { 
+	body {
+		font-size: 13px;
+	}
+	h1 {
+		font-size: 74px;
+		line-height: 95%;
+	}
+	h2 {
+		font-size: 64px;
+		line-height: 95%;
+	}
+	h3 {
+		font-size: 32px;
+		line-height: 95%;
+	}
+	h4 {
+		font-size: 24px;
+		line-height: 95%;
+	}
+	h5 {
+		font-size: 16px;
+		line-height: 100%;
+	}
 	#goutte-fond {
+		background: none;
+	}
+	#hero {
 		background: none;
 	}
 }

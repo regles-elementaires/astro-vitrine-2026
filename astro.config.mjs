@@ -1,7 +1,6 @@
 // @ts-check
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
-import { fileURLToPath, URL } from 'node:url';
 
 import tailwindcss from '@tailwindcss/vite';
 import DecapCMS from '@jee-r/astro-decap-cms';
@@ -100,11 +99,6 @@ export default defineConfig({
   ],
 
   vite: {
-    plugins: [tailwindcss()],
-	resolve: {
-      alias: {
-        '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
-      }
-    }
+    plugins: [tailwindcss()]
   },
 });

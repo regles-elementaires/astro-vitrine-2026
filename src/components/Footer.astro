@@ -9,14 +9,14 @@ import Tiktok from '../assets/tiktok.svg';
 
 <footer>
 	<div class="bg-remaroon px-5 md:px-15">
-		<div class="flex flex-row flex-wrap">
-			<div id="goutte-fond" class="w-full md:w-9/16 flex-row pt-15 md:pb-10 md:ps-36">
+		<div class="flex flex-row flex-wrap w-11/12 md:w-full mx-auto">
+			<div id="goutte-fond" class="w-full md:w-9/16 flex-row pt-6 md:pt-15 md:pb-10 md:ps-36">
 				<span class="text-rebeige-300 text-4xl font-lorimer-condensed pb-4">LA MENS(TR)UELLE</span>
 				<p class="text-rebeige-300 mt-4 md:pe-16">
 					C'est la newsletter version Règles Élémentaires. Actualités, informations, annonces en avant-première, vous ne voulez pas louper ça !
 				</p>                
 			</div>
-			<div class="w-full md:w-6/16 flex-row md:pt-15 pb-10">
+			<div class="w-full md:w-6/16 flex-row md:pt-15 pb-6 md:pb-10">
 				<form class="mt-4 flex flex-col w-full md:ps-16"
 					action="//regleselementaires.us12.list-manage.com/subscribe/post?u=d920a045417cea49ec8048c5f&amp;id=76cba65ade"
 					method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
@@ -32,12 +32,13 @@ import Tiktok from '../assets/tiktok.svg';
 			</div>
 		</div>
 	</div>
-	<div class="bg-rered pt-15 pb-5 flex flex-col">
+	<div class="bg-rered px-5 md:px-0 pt-10 md:pt-15 pb-5 flex flex-col">
 		<div class="flex">
-			<div class="w-12/16 md:-ms-5">
+			<!-- DESKTOP -->
+			<div class="hidden md:block w-12/16 md:-ms-5">
 				<div class="font-lorimer-condensed text-rebeige-300 md:text-[224px] md:leading-[95%]">Changer<br/>les<br/>règles</div>
 			</div>
-			<div class="w-3/16 flex flex-col items-end">
+			<div class="w-3/16 hidden md:flex flex-col items-end">
 				<Image class="md:mt-4" src={WhiteLogo} alt="" />
 				<ul class="font-lorimer-condensed text-rebeige-300 text-4xl text-right mt-6">
 					<li><a href="/qui-sommes-nous">Qui sommes-nous ?</a></li>
@@ -65,33 +66,56 @@ import Tiktok from '../assets/tiktok.svg';
 					</a>
 				</div>
 			</div>
+			<!-- END DESKTOP -->
+			<!-- MOBILE -->
+			<div class="block md:hidden w-11/12 mx-auto">
+				<Image class="" src={WhiteLogo} alt="" />
+				<div class="flex justify-center mt-6">
+					<a class="small-beige-shadow inline-block font-lorimer bg-rered text-rebeige-300 p-2" href="/">Faire un don</a>
+				</div>
+				<div class="flex justify-center items-center mt-10">
+					<a class="inline-block w-4 mx-3" href="https://www.facebook.com/regleselementaires/" target="_blank" rel="noopener noreferrer">
+						<Image src={Facebook} alt="Facebook" />
+					</a>
+					<a class="inline-block w-8 mx-3" href="https://www.instagram.com/regleselementaires/" target="_blank" rel="noopener noreferrer">
+						<Image src={Instagram} alt="Instagram" />
+					</a>
+					<a class="inline-block w-10 mx-3" href="https://www.youtube.com/@regleselementaires2888" target="_blank" rel="noopener noreferrer">
+						<Image src={Youtube} alt="Youtube" />
+					</a>
+					<a class="inline-block w-7 mx-3" href="https://www.tiktok.com/@regleselementaires" target="_blank" rel="noopener noreferrer">
+						<Image src={Tiktok} alt="Tiktok" />
+					</a>
+				</div>				
+			</div>			
+			<!-- END MOBILE -->
 		</div>
-		<div class="w-10/12 mx-auto mt-14">
-			<div class="font-lorimer-condensed text-rebeige-300 text-4xl mb-6">Prendre contact</div>
+		<div class="w-11/12 md:w-10/12 mx-auto mt-10 md:mt-14">
+			<div class="font-lorimer-condensed text-rebeige-300 text-2xl md:text-4xl mb-6">Prendre contact</div>
 			<form class="flex flex-wrap justify-center text-rebeige-300" name="contact-form" action="" method="post">
 				<div class="w-full md:w-1/2 md:pe-6">
 					<!-- Name -->
 					<div class="border border-rebeige-300 rounded-xl mb-6">
 						<label for="name" class="sr-only">votre nom et prénom</label>
-						<input required type="text" id="name" name="name" placeholder="Nom & prénom*" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+						<input required type="text" id="name" name="name" placeholder="Nom & prénom*" class="w-full placeholder-rebeige-300 py-2.5 px-4 md:px-6">
 					</div>
 					<!-- Email -->
 					<div class="border border-rebeige-300 rounded-xl mb-6">
 						<label for="email_contact" class="sr-only">votre adresse email</label>
-						<input required type="email" id="email_contact" name="email" placeholder="E-mail*" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+						<input required type="email" id="email_contact" name="email" placeholder="E-mail*" class="w-full placeholder-rebeige-300 py-2.5 px-4 md:px-6">
 					</div>
 
 					<!-- Sujet -->
 					<div class="border border-rebeige-300 rounded-xl">
 						<label for="email_contact" class="sr-only">votre adresse email</label>
-						<input required type="text" id="subject" name="subject" placeholder="Objet :" class="w-full placeholder-rebeige-300 py-2.5 px-6">
+						<input required type="text" id="subject" name="subject" placeholder="Objet :" class="w-full placeholder-rebeige-300 py-2.5 px-4 md:px-6">
 					</div>
 				</div>
 				<div class="w-full md:w-1/2 mt-6 md:mt-0 md:ps-6">
 					<!-- Message -->    
 					<div class="border border-rebeige-300 rounded-xl">
 						<label for="message" class="sr-only">votre message</label>
-						<textarea required id="message" rows="4" name="message" placeholder="Votre message*" class="w-full h-full placeholder-rebeige-300 py-2.5 px-6"></textarea>
+						<textarea required id="message" rows="4" name="message" placeholder="Votre message*" class="w-full h-full placeholder-rebeige-300 py-2.5 px-4 md:px-6"></textarea>
 					</div>					
 
 					<!-- div to show reCAPTCHA -->
@@ -103,12 +127,19 @@ import Tiktok from '../assets/tiktok.svg';
 
 				<!-- Button -->
 				<div class="mt-6">
-					<button type="submit" class="small-beige-shadow font-lorimer bg-rered text-rebeige-300 p-2.5">Envoyer</button>
+					<button type="submit" class="small-beige-shadow-red-border font-lorimer bg-rebeige-300 text-rered p-2.5">Envoyer</button>
 				</div>			
 			</form>			
 		</div>
-		<div class="flex justify-center mt-20 text-rebeige-300 text-sm">
-			<a href="/mentions-legales">Mentions légales</a>
+		<div class="flex justify-center mt-20 text-rebeige-300 text-base">
+			<a class="underline pb-8 border-b" href="/mentions-legales">Mentions légales</a>
+		</div>
+		<div class="flex flex-col md:flex-row items-center justify-center mt-10 text-rebeige-300 text-sm">
+			<span class="text-center">Graphisme & illustrations : <a class="underline" href="https://antoinepeltier.com/" target="_blank" rel="noreferrer">Antoine Pelletier</a></span>
+			<span class="hidden md:inline mx-2">/</span>
+			<span class="text-center">Webdesign : <a class="underline" href="https://www.agence-intrepide.fr/" target="_blank" rel="noreferrer">Agence Intrépide</a></span>
+			<span class="hidden md:inline mx-2">/</span>
+			<span class="text-center">Développement web : Règles Élémentaires</span>
 		</div>
 	</div>
 </footer>

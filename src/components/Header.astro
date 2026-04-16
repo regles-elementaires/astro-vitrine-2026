@@ -7,18 +7,18 @@ import ParlonsRegles from '../assets/parlons-regles.png';
 import Regla from '../assets/regla.png';
 ---
 
-<header class="">
+<header>
   <nav>
     <div class="wrapper">
-      <div class="nav-column first-nav-column flex items-center">
-        <div class="logo">
+      <div class="nav-column first-nav-column flex items-center justify-between md:justify-start">
+        <div class="logo ps-6 md:ps-0">
           <a href="/">
             <Image id="red-logo" src={RedLogo} alt="Règles élémentaires" />
             <Image id="white-logo" src={WhiteLogo} alt="Règles élémentaires" />
           </a>
         </div>
         <input type="checkbox" name="menu" id="menu-btn">
-        <label for="menu-btn" class="ms-4">
+        <label for="menu-btn" class="me-6 md:me-0 md:ms-4">
           <svg id="menu-svg" role="img" aria-label="Menu" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="37.8281" height="37.8281" rx="4.5"/>
             <line x1="8.26572" y1="11.7031" x2="30.5626" y2="11.7031" stroke-linecap="round"/>
@@ -27,8 +27,8 @@ import Regla from '../assets/regla.png';
           </svg>
         </label>
       </div>
-      <div class="nav-column second-nav-column"></div>
-      <div class="nav-column third-nav-column flex justify-end">
+      <div class="hidden md:block nav-column second-nav-column"></div>
+      <div class="hidden md:flex justify-end nav-column third-nav-column">
         <div class="nav-right-buttons">
           <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4" href="/">Ressources</a>
           <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="/">Faire un don</a>
@@ -37,7 +37,7 @@ import Regla from '../assets/regla.png';
     </div>
     <div id="mega-box">
         <div class="content">
-          <div class="nav-column bg-rered ps-15 py-6">
+          <div class="nav-column bg-rered px-8 md:ps-15 md:pe-0 md:py-6">
             <ul class="mega-links text-rebeige-300">
               <li><a href="/qui-sommes-nous">Qui sommes-nous ?</a></li>
               <li><a id="nos-actions-link" href="/nos-actions">Nos actions</a></li>
@@ -46,8 +46,36 @@ import Regla from '../assets/regla.png';
               <li><a href="/informer">S'informer</a></li>
               <li><a href="/plaidoyer">Notre plaidoyer</a></li>
             </ul>
+            <div class="mt-4 mb-8 md:mb-0">
+              <a class="small-maroon-shadow inline-block text-base font-lorimer bg-rebeige-300 text-remaroon p-2 md:p-2.5" href="/europe">Europe</a>
+            </div>                        
           </div>
-          <div class="nav-column bg-remaroon py-6">
+          <!-- MOBILE ONLY -->
+          <div class="block md:hidden">
+            <div class="bg-remaroon w-full p-4 flex flex-wrap justify-center">
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Ressources</a>
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Actualités</a>
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Faire un don</a>
+            </div>  
+            <div class="flex">
+              <div class="w-1/2 flex flex-col bg-rebeige-500 pt-6 pb-8 px-8">
+                <h4 class="text-rered">Parlons Règles</h4>
+                <p class="mt-4 text-xs">Notre solution pour généraliser l’éducation menstruelle</p>
+                <div class="mt-4">
+                  <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2" href="https://www.regla-app.fr/" target="_blank">Découvrir</a>
+                </div>
+              </div>
+              <div class="w-1/2 flex flex-col bg-rebeige-300 pt-6 pb-8 px-8">
+                <h4 class="text-rered">Reglà</h4>
+                <p class="mt-4 text-xs">Notre solution pour mobiliser et lutter contre la précarité menstruelle</p>
+                <div class="mt-4">
+                  <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2" href="https://www.regla-app.fr/" target="_blank">Découvrir</a>
+                </div>                  
+              </div>            
+            </div>
+          </div>
+          <!-- END MOBILE ONLY -->
+          <div class="hidden md:block nav-column bg-remaroon py-6">
             <div id="mega-actu" class="text-rebeige-300 px-6 flex flex-col">
               <div>
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
@@ -85,14 +113,14 @@ import Regla from '../assets/regla.png';
               <li><a href="/s-engager">Devenir un établissement engagé</a></li>
             </ul>
           </div>
-          <div class="nav-column bg-rebeige-100 flex-wrap">
+          <div class="hidden md:block nav-column bg-rebeige-100 flex-wrap">
             <div class="w-full flex py-8 pe-15">
               <div class="w-5/12">
                  <Image class="w-3/4 mx-auto" src={ParlonsRegles} alt="Parlons Règles" />
               </div>
               <div class="w-7/12">
                 <p>Notre solution pour généraliser l’éducation menstruelle</p>
-                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.parlonsregles.fr/" target="_blank">En savoir plus</a>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.parlonsregles.fr/" target="_blank">Découvrir</a>
               </div>
             </div>
             <div class="w-full flex bg-rebeige-300 py-8 pe-15">
@@ -101,7 +129,7 @@ import Regla from '../assets/regla.png';
               </div>
               <div class="w-7/12">
                 <p>Notre solution pour mobiliser et lutter contre la précarité menstruelle</p>
-                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.regla-app.fr/" target="_blank">En savoir plus</a>
+                <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.regla-app.fr/" target="_blank">Découvrir</a>
               </div>
             </div>
             <div class="w-full flex flex-col bg-regreen py-6 ps-6 pe-15">
