@@ -165,8 +165,8 @@ img {
 
 #hero {
 	background-image: url('/images/hero.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;	
 }
 
 @media (width < 48rem) { 
