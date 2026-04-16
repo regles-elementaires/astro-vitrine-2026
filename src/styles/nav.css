@@ -150,8 +150,6 @@ nav:has(#sengager-link:hover){
   }
 }
 
-
-
 @media (width < 48rem) { 
   nav{
     .wrapper{

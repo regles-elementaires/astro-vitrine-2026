@@ -173,6 +173,9 @@ img {
 	body {
 		font-size: 13px;
 	}
+	main {
+		padding-top: 95px;
+	}
 	h1 {
 		font-size: 74px;
 		line-height: 95%;
@@ -182,7 +185,7 @@ img {
 		line-height: 95%;
 	}
 	h3 {
-		font-size: 32px;
+		font-size: 38px;
 		line-height: 95%;
 	}
 	h4 {
@@ -190,13 +193,17 @@ img {
 		line-height: 95%;
 	}
 	h5 {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 100%;
+	}
+	.text-maroon-shadow {
+		-webkit-text-stroke: 1.76px var(--color-remaroon);
+		text-shadow: -2.63px 4.39px 0px var(--color-remaroon);
 	}
 	#goutte-fond {
 		background: none;
 	}
 	#hero {
-		background: none;
+		background-image: none;
 	}
 }

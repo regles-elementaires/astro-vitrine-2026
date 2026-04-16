@@ -3,11 +3,13 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import { SITE_TITLE } from '../consts';
 import FAQ from '../components/FAQ.astro';
-import ExclamationMark from '../assets/exclamation-mark.svg';
+import ExclamationMark from '../assets/home/exclamation-mark.svg';
+import HeroMobile from '../assets/home/hero-mobile.png';
 import DownArrow from '../assets/down-arrow.svg';
 import Communaute from '../assets/COMMUNAUTE.png';
 import Sororite from '../assets/SORORITE.png';
 import Impact from '../assets/home/impact.png';
+import ImpactMobile from '../assets/home/impact-mobile.png';
 import DoigtsTampon from '../assets/DOIGTS-TAMPON.png';
 import Sengager from '../assets/home/sengager.png';
 import Sinformer from '../assets/home/sinformer.png';
@@ -18,47 +20,52 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 <Base title={SITE_TITLE}>
 	<main>
 		<div id="hero" class="px-5 md:px-15 flex justify-center bg-rebeige-300">
-			<div class="w-11/12 md:w-10/12 flex flex-col items-end py-20">
-				<div class="w-full flex justify-between text-rered">
-					<h1>Changer<br/>les règles</h1>
-					<h1 class="text-right">Pour<br/>changer<br/>le monde !</h1>
+			<div class="w-11/12 md:w-10/12 flex flex-col items-end py-10 md:py-20">
+				<div class="w-full flex flex-col md:flex-row justify-between text-rered">
+					<h1 class="text-center md:text-left">Changer<br/>les règles</h1>
+					<Image class="block md:hidden my-6" src={HeroMobile} alt="" />
+					<h1 class="hidden md:block text-right">Pour<br/>changer<br/>le monde !</h1>
+					<h2 class="block md:hidden text-center">Pour<br/>changer<br/>le monde !</h2>
 				</div>
-				<div class="w-7/12 mt-16 text-remaroon flex ps-10">
-					<div class="w-full md:w-2/3">
+				<div class="md:w-7/12 mt-6 md:mt-16 text-remaroon flex md:ps-10">
+					<div class="w-full md:w-2/3 text-center md:text-left">
 						<p class="mb-10"><b>Règles Élémentaires agit pour l’égalité et la justice menstruelle.</b> Depuis 2015, nous faisons des règles un enjeu de société pour qu’elles ne soient plus jamais un obstacle à la dignité, à la santé et à l’égalité.</p>
 						<a class="small-maroon-shadow p-2.5 font-lorimer" href="/">Nous soutenir</a>
 					</div>		
 					<div class="md:w-1/3 flex justify-end">
-						<Image class="-me-10 -mt-10" src={ExclamationMark} alt="" />
+						<Image class="hidden md:block -me-10 -mt-10" src={ExclamationMark} alt="" />
 					</div>					
 				</div>				
 			</div>
 		</div>
 		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500">
-			<div class="w-11/12 md:w-10/12 flex flex-col items-center py-20">
-					<h2 class="text-rered text-center">Les règles,<br/>un enjeu de société</h2>
-					<div class="flex mt-24">
+			<div class="w-11/12 md:w-10/12 flex flex-col items-center py-10 md:py-20">
+					<h2 class="text-rered text-left md:text-center">
+						Les règles,<br/>un enjeu de société
+						<Image class="absolute right-6 -mt-20 block md:hidden w-32" src={Sororite} alt="" />
+					</h2>
+					<div class="flex mt-6 md:mt-24">
 						<div class="w-1/4 z-10">
-							<Image class="ms-10 -me-10" src={Sororite} alt="" />
+							<Image class="hidden md:block ms-10 -me-10" src={Sororite} alt="" />
 						</div>
-						<div class="w-1/2 flex flex-col items-center">
-							<div class="bg-white rounded-xl p-15 text-remaroon">
+						<div class="md:w-1/2 flex flex-col items-center">
+							<div class="bg-white rounded-xl p-6 md:p-15 text-remaroon">
 								<p class="font-bold mb-6">Les règles concernent tout le monde, parce qu’elles ont des conséquences sur toute la société.</p>
 								<p>Éducation, santé, travail, sport, précarité, égalité : les règles restent encore aujourd’hui une source d’inégalités bien réelles. Les comprendre, c’est mieux comprendre les mécanismes qui freinent l’égalité réelle.</p>
 							</div>
-							<div class="big-maroon-shadow bg-rebeige-100 h-16 w-16 flex items-center justify-center -mt-8">	
+							<div class="hidden md:flex big-maroon-shadow bg-rebeige-100 h-16 w-16 flex items-center justify-center -mt-8">	
 								<Image src={DownArrow} alt="" />
 							</div>	
 						</div>
-						<div class="w-1/4 flex items-end">
+						<div class="hidden md:block w-1/4 flex items-end">
 							<Image class="-ms-14" src={Communaute} alt="" />
 						</div>
 					</div>							
-				<div class="w-6/10 flex flex-col items-center mt-10">
+				<div class="md:w-6/10 flex flex-col items-center mt-10">
 					<h3 class="text-maroon-shadow text-rebeige-100 text-center">Nos piliers d’action</h3>
 					<p class="text-center mt-6 text-remaroon">Nous souhaitons un monde où les règles ne sont plus un frein à l’égalité d’opportunités, de droits, ou d’accès à la santé et à l'information.<br/>Chez Règles Élémentaires, nos revendications s’articulent autour de trois piliers :</p>
 				</div>
-				<div class="flex flex-col items-center -mb-80">
+				<div class="flex flex-col items-center md:-mb-80">
 					<div class="flex flex-wrap mt-12 text-white">
 						<div class="w-full md:w-1/3 md:mt-16">
 							<div class="mx-4 bg-rered big-maroon-shadow px-7 py-9">
@@ -66,128 +73,128 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 								<p class="mt-6">Nous pensons qu’il faut rendre accessibles les produits périodiques en quantité suffisante et que toute personne qui en a besoin doit pouvoir en bénéficier gratuitement.</p>
 							</div>
 						</div>
-						<div class="w-full md:w-1/3">
+						<div class="w-full md:w-1/3 mt-6 md:mt-0">
 							<div class="mx-4 bg-redarkpink big-maroon-shadow px-7 py-9">
 								<h5 class="font-lorimer-condensed-black">La généralisation<br/>de l’information<br/>et l’éducation menstruelle</h5>
 								<p class="mt-6">Nous pensons qu’il faut visibiliser et normaliser le sujet des règles afin de lutter contre les tabous et stigmas qui les entourent.</p>
 							</div>
 						</div>
-						<div class="w-full md:w-1/3 md:mt-16">
+						<div class="w-full md:w-1/3 mt-6 md:mt-16">
 							<div class="mx-4 bg-redarkred big-maroon-shadow px-7 py-9">
 								<h5 class="font-lorimer-condensed-black">La promotion de la santé menstruelle</h5>
 								<p class="mt-6">Nous pensons qu’il faut permettre un accès démocratique à des protections saines, à des soins, et à des parcours de prévention et de santé de qualité afin que les règles ne soient plus jamais synonymes de maladies, de douleurs  ou d’inconfort.</p>
 							</div>
 						</div>
 					</div>
-					<a class="inline-block small-maroon-shadow p-2.5 font-lorimer text-remaroon bg-rebeige-300 md:-mt-4" href="/">Découvrir nos actions</a>
-				</div>
-				
+					<a class="inline-block small-maroon-shadow p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300 mt-10 md:-mt-4" href="/">Découvrir nos actions</a>
+				</div>				
 			</div>
 		</div>
-		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-100 pt-76">
-			<div class="w-11/12 md:w-10/12 flex flex-col mt-16">
+		<div class="flex flex-col items-center bg-rebeige-100 md:pt-76">
+			<Image class="block md:hidden" src={ImpactMobile} alt="" />
+			<div class="px-5 md:px-15 w-11/12 md:w-10/12 flex flex-col mt-6 md:mt-16">
 				<div class="flex flex-wrap">
 					<div class="w-full md:w-4/7">
-						<h2 class="text-rered">Notre impact</h2>
-						<h2 class="text-remaroon">Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois</h2>
+						<h3 class="text-rered">Notre impact</h3>
+						<h3 class="text-remaroon">Depuis 2015<br/>Nous transformons<br/>les pratiques,<br/>les représentations<br/>et les lois</h3>
 					</div>
 					<div class="w-full md:w-3/7">
-						<Image src={Impact} alt="" />
+						<Image class="hidden md:block" src={Impact} alt="" />
 					</div>
 				</div>				
-				<div class="flex flex-wrap mt-10 mb-20">
+				<div class="flex flex-wrap mt-6 md:mt-10 mb-10 md:mb-20">
 					<div class="w-full md:w-6/12 md:ps-20">
 						<p class="w-10/12 border-s-4 border-remaroon text-remaroon ps-6 md:ps-10">Ce qui a commencé par une collecte citoyenne est devenu un mouvement national capable de faire évoluer les mentalités, les politiques publiques et l’accès concret aux droits.</p>
 					</div>
-					<div class="w-full md:w-4/12 flex flex-col mt-10 md:mt-0 md:ps-10">
-						<div class="mb-8">
-							<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Notre impact</a>
+					<div class="w-full md:w-4/12 flex flex-col mt-6 md:mt-0 md:ps-10">
+						<div class="mb-4 md:mb-8">
+							<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Notre impact</a>
 						</div>
 						<div>
-							<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Nos avancées législatives</a>
+							<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Nos avancées législatives</a>
 						</div>						
 					</div>
 					<div class="w-2/12 -mt-30">
-						<Image src={DoigtsTampon} alt="" />
+						<Image class="hidden md:block" src={DoigtsTampon} alt="" />
 					</div>
 				</div>
 			</div>
 		</div>	
-		<div class="px-5 md:px-15 flex flex-col items-center bg-repink py-14">
+		<div class="px-5 md:px-15 flex flex-col items-center bg-repink py-8 md:py-14">
 			<h3 class="text-maroon-shadow text-rebeige-100 text-center">Chiffres clés</h3>
 			<div class="w-11/12 md:w-10/12 flex flex-wrap mt-10 text-remaroon">
-				<div class="w-full md:w-1/4 px-14 border-e-4 border-remaroon">
-					<div class="font-lorimer-condensed-black text-5xl">+25<br/>millions</div>
+				<div class="w-1/2 md:w-1/4 ps-4 md:px-14 border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">+25<br/>millions</div>
 					<div class="mt-2">de protections périodiques redistribuées</div>
 				</div>
-				<div class="w-full md:w-1/4 px-14 border-e-4 border-remaroon">
-					<div class="font-lorimer-condensed-black text-5xl">+1<br/>million</div>
+				<div class="w-1/2 md:w-1/4 ps-4 md:px-14 md:border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">+1<br/>million</div>
 					<div class="mt-2">de personnes bénéficiaires</div>
 				</div>
-				<div class="w-full md:w-1/4 px-14 border-e-4 border-remaroon">
+				<div class="hidden md:block w-1/4 px-14 border-e-4 border-remaroon">
 					<div class="font-lorimer-condensed-black text-5xl">+ de<br/>35 000</div>
 					<div class="mt-2">jeunes sensibilisé·es</div>
 				</div>
-				<div class="w-full md:w-1/4 px-14">
+				<div class="hidden md:block w-1/4 px-14">
 					<div class="font-lorimer-condensed-black text-5xl">99,9%</div>
 					<div class="mt-2">estiment que nous contribuons à faire reculer le tabou des règles</div>
 				</div>
 			</div>
 		</div>	
 		<div class="flex flex-wrap">
-			<div class="ps-0 md:ps-15 py-14 w-full md:w-1/2 bg-rered">
-				<div class="w-3/4 mx-auto h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+			<div class="ps-0 md:ps-15 py-8 md:py-14 w-full md:w-1/2 bg-rered">
+				<div class="w-5/6 md:w-3/4 mx-auto md:h-94 flex flex-col justify-end items-center rounded-xl">
 					<Image src={Sengager} alt="" />
 				</div>
-				<h2 class="text-center text-rebeige-300 mt-10">S'engager</h2>
-				<p class="w-3/4 mx-auto mt-10 text-rebeige-300">
+				<h3 class="w-5/6 md:w-full mx-auto md:text-center text-rebeige-300 mt-6 md:mt-10">S'engager</h3>
+				<p class="w-5/6 md:w-3/4 mx-auto mt-6 md:mt-10 text-rebeige-300">
 					<b>Tout le monde peut agir à son échelle.</b><br/>
 					Faire un don, organiser une collecte, devenir bénévole, mobiliser son entreprise, son école ou sa collectivité : chaque engagement contribue à faire avancer la justice menstruelle.
 				</p>
-				<div class="flex flex-wrap w-3/4 gap-4 mx-auto mt-6">
+				<div class="flex flex-wrap w-5/6 md:w-3/4 gap-4 mx-auto mt-6">
 					<div class="">
-						<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Faire un don</a>
+						<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Faire un don</a>
 					</div>
 					<div class="">
-						<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Organiser une collecte</a>
+						<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Organiser une collecte</a>
 					</div>
 					<div class="">
-						<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Devenir bénévole</a>
+						<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Devenir bénévole</a>
 					</div>
 					<div class="">
-						<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Devenir partenaire</a>
+						<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Devenir partenaire</a>
 					</div>
 					<div class="">
-						<a class="small-maroon-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Engager son entreprise, son école ou sa collectivité</a>
+						<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">Engager sa structure</a>
 					</div>
 				</div>
 			</div>
 			<div class="pe-0 md:pe-15 py-14 w-full md:w-1/2 bg-remaroon">
-				<div class="w-3/4 mx-auto h-60 md:h-94 flex flex-col justify-end items-center rounded-xl">
+				<div class="w-5/6 md:w-3/4 mx-auto md:h-94 flex flex-col justify-end items-center rounded-xl">
 					<Image src={Sinformer} alt="" />
 				</div>
-				<h2 class="text-center text-rebeige-300 mt-10">S'informer</h2>
-				<p class="w-3/4 mx-auto mt-10 text-rebeige-300">
+				<h3 class="w-5/6 md:w-full mx-auto md:text-center text-rebeige-300 mt-6 md:mt-10">S'informer</h3>
+				<p class="w-5/6 md:w-3/4 mx-auto mt-6 md:mt-10 text-rebeige-300">
 					<b>Comprendre pour mieux agir.</b><br/>
 					Règles, santé menstruelle, précarité, tabous, chiffres clés, idées reçues : nous mettons à disposition des ressources fiables pour informer toutes et tous.
 				</p>
-				<div class="w-3/4 mx-auto mt-10 flex">
+				<div class="w-5/6 md:w-3/4 mx-auto mt-6 md:mt-10 flex">
 					<div class="md:me-10">
-						<a class="small-black-shadow inline-block p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">En savoir plus</a>
+						<a class="small-black-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="/">En savoir plus</a>
 					</div>			
-					<div class="w-1/2">
+					<div class="hidden md:block w-1/2">
 						<Image src={Journal} alt="" />
 					</div>							
 				</div>
 			</div>
 		</div>
-		<div class="px-5 md:px-15 pt-20 pb-30 bg-rebeige-100">
+		<div class="px-5 md:px-15 pt-10 md:pt-20 pb-15 md:pb-30 bg-rebeige-100">
 			<div class="w-11/12 md:w-10/12 flex flex-col mx-auto">
-				<div class="flex mb-10">
-					<div class="w-full md:w-1/2 flex md:justify-end mb-10">
-						<h2 class="md:text-right text-rered md:pe-10">Questions<br/>fréquentes</h2>
+				<div class="flex md:mb-10">
+					<div class="w-1/2 flex md:justify-end md:mb-10">
+						<h3 class="md:text-right text-rered md:pe-10">Questions<br/>fréquentes</h3>
 					</div>				
-					<div class="hidden md:block w-full md:w-1/5 mx-auto">
+					<div class="w-1/4 md:w-1/5 mx-auto">
 						<Image src={BoiteServiettes} alt="" />
 					</div>
 				</div>				
