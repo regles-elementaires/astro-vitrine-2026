@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 } 
 h1 {
 	font-size: 122px;
-	line-height: 110%;
+	line-height: 95%;
 }
 h2 {
 	font-size: 80px;
@@ -177,11 +177,11 @@ img {
 		padding-top: 95px;
 	}
 	h1 {
-		font-size: 74px;
+		font-size: 64px;
 		line-height: 95%;
 	}
 	h2 {
-		font-size: 64px;
+		font-size: 56px;
 		line-height: 95%;
 	}
 	h3 {

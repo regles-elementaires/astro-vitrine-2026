@@ -1,9 +1,193 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
+import HeaderImage from '../../assets/actions/mobiliser-header.jpg';
+import HeaderPicto from '../../assets/home/SORORITE.png';
+import Collecte from '../../assets/actions/collecte.jpg';
+import Stand from '../../assets/actions/stand.jpg';
+import Stand2 from '../../assets/actions/stand-2.jpg';
+import Mayotte from '../../assets/actions/mayotte.jpg';
+import StandNantes from '../../assets/actions/stand-nantes.jpg';
+import Europe from '../../assets/actions/europe-light.svg';
+import SangGoutte from '../../assets/actions/SANG-GOUTTE.png';
+import Men from '../../assets/actions/men.jpg';
+import ChinChin from '../../assets/actions/STICKER-CHIN-CHIN.png';
 ---
 
 <Base title="Mobiliser - Règles Élémentaires">
 	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
+			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 md:pt-10 flex">
+				<div class="w-full md:w-9/10 text-rered relative z-1">
+					<h1 class="hidden md:block">Faire<br/>de l’engagement collectif un<br/>moteur de changement</h1>                    
+					<h1 class="block md:hidden">Faire de l’engagement collectif un moteur de changement</h1>                    
+				</div>
+                <div class="absolute md:left-[65%]">
+                    <Image class="absolute w-30 md:w-60 md:-ms-40 md:mt-40 z-0" src={HeaderPicto} alt="" />
+                    <Image class="w-7/12 z-0 hidden md:block"src={HeaderImage} alt="" />
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-rered text-white">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap">
+				<div class="w-full md:w-4/11 md:pe-10">
+					<p><b>Depuis sa création, Règles Élémentaires s’appuie sur une conviction forte :</b> les règles ne deviendront pleinement un enjeu de société que si chacun·e peut se sentir concerné·e et agir à son échelle.</p>
+					<p class="mt-4">Mobiliser, c’est permettre à des citoyen·nes, des bénévoles, des associations, des territoires et des organisations de contribuer concrètement à faire reculer la précarité menstruelle et le tabou des règles.</p>
+					<p class="mt-4">Cette mobilisation collective fait partie de l’ADN de l’association et permet d’ancrer durablement les enjeux menstruels dans la société.</p>
+				</div>
+                <div class="w-full md:w-7/11 flex mt-4 md:mt-0">
+                    <div class="w-full md:w-1/2 md:pe-2">
+                        <Image class="" src={Collecte} alt="" />
+                    </div> 
+                    <div class="hidden md:block w-full md:w-1/2 ps-2">
+                        <Image class="" src={Stand} alt="" />
+                    </div>                      
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-6/10">
+                    <h2>Bénévoles</h2>
+                    <div class="w-full md:w-2/3 square-title mt-8 bg-remaroon text-rebeige-300 text-2xl">Un réseau citoyen partout sur le territoire</div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <p class="mt-6">Les bénévoles jouent un rôle essentiel dans le développement des actions de Règles Élémentaires.</p>
+                            <p class="mt-4">Collectes, événements, sensibilisation, relais locaux, mobilisation ponctuelle ou régulière : leur engagement permet de faire vivre l’association au plus près des réalités de terrain.</p>
+                        </div>
+                        <div class="w-full md:w-1/2 realtive z-1">
+                            <div class="bg-redarkpink big-maroon-shadow text-white p-6 mt-10 md:ms-20 md:-me-20">
+                                <p class="underline font-bold">Ce réseau contribue à :</p>
+                                <p class="mt-4 md:mt-6 font-lorimer-condensed text-2xl md:text-3xl">Faire émerger des initiatives locales</p>
+                                <p class="mt-4 md:mt-6 font-lorimer-condensed text-2xl md:text-3xl">Sensibiliser de nouveaux publics</p>
+                                <p class="mt-4 md:mt-6 font-lorimer-condensed text-2xl md:text-3xl">Renforcer la présence de l’association sur tout le territoire</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="w-full md:w-4/10 mt-10 md:mt-0 relative z-0">
+                    <Image class="" src={Stand2} alt="" />
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-6/11">
+                    <h2 class="text-rered">Enjeux territoriaux<br/>et européens</h2>
+                    <div class="w-full md:w-2/3 square-title mt-8 bg-remaroon text-rebeige-300 text-2xl">Un impact fort, partout en France</div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-5/6">
+                            <p class="mt-6">Notre action s’inscrit dans tout le territoire. Grâce à un réseau engagé de bénévoles et d’antennes locales, Règles Élémentaires agit aujourd’hui à l’échelle nationale, en métropole comme en outre-mer, jusqu’à Mayotte.</p>
+                            <p class="mt-4">Cette présence territoriale nous permet de déployer concrètement nos actions au plus près des besoins : collectes et redistribution de protections périodiques, actions de sensibilisation et de formation, interventions d’éducation menstruelle… Partout, nous adaptons nos actions aux réalités locales pour lutter efficacement contre la précarité menstruelle et les tabous qui persistent.</p>
+                            <p class="mt-4">Ce maillage national est en constante évolution, porté par des centaines de bénévoles et de partenaires, qui font des règles un enjeu de société sur tous les territoires.</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="w-full md:w-5/11 mt-10 md:mt-0">
+                    <Image class="" src={Mayotte} alt="" />
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:pe-15 md:ps-0 flex justify-center md:justify-start text-remaroon">
+			<div class="w-11/12 flex flex-wrap">
+                <div class="w-full md:w-5/11">
+                    <Image class="" src={StandNantes} alt="" />
+                </div>
+                <div class="w-full md:w-6/11 md:ps-20 pb-10">
+                    <div class="w-full md:w-2/3 square-title mt-8 bg-remaroon text-rebeige-300 text-2xl">Déployer l’action au plus près des territoires</div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-3/4">
+                            <p class="mt-6">Depuis 2024, nous avons entamé un déploiement territorial en créant 4 antennes salariées.</p>
+                            <p class="mt-4 font-bold">Ces antennes ont pour objectif :</p>
+                            <ul class="list-disc ms-5">
+                                <li>d’ancrer nos actions dans les territoires et de renforcer leur impact</li>
+                                <li>déployer nos programmes d’accompagnement en direct</li>
+                                <li>d’adapter nos actions aux besoins locaux</li>
+                                <li>de créer des dynamiques durables avec les acteur·ices de terrain de favoriser l'émergence de territoires “règles friendly”</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>                
+            </div>
+		</div>
+         <div class="px-5 md:px-15 flex justify-center bg-remaroon text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 flex flex-wrap justify-center">
+                <div class="hidden md:block w-2/10">
+                    <Image src={Europe} alt="" />
+                </div>
+                <div class="w-full md:w-5/10">
+                    <p>Cette logique territoriale se prolonge également à l’échelle européenne, avec le développement de coopérations internationales et de projets communs.</p>
+                    <a class="mt-6 small-maroon-shadow inline-block text-remaroon bg-rebeige-100 p-2 md:p-2.5 font-lorimer" href="/europe">En savoir plus</a>
+                    <Image class="ms-6 w-30 inline-block md:hidden" src={Europe} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <h2>Coordination des associations</h2>
+                    <div class="w-full md:w-3/4 square-title mt-8 bg-remaroon text-rebeige-300 text-2xl">Travailler avec les acteur·ices de terrain</div>                  
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="mt-6 md:mt-0">La mobilisation passe aussi par un travail étroit avec les associations partenaires, qui accompagnent au quotidien les publics concernés.</p>
+                    <p class="mt-4 font-bold">Règles Élémentaires coordonne, soutient et met en lien de nombreuses structures partout en France pour :</p>
+                    <ul class="list-disc ms-5">
+                        <li>faciliter la redistribution des protections périodiques</li>
+                        <li>identifier les besoins émergents sur les territoires</li>
+                        <li>partager des ressources et des outils</li>
+                        <li>faire remonter les réalités de terrain pour nourrir le plaidoyer</li>
+                    </ul>
+                    <p class="mt-4">Cette coordination permet de renforcer l’impact collectif et d’assurer une meilleure circulation des solutions, au plus près des besoins.</p>
+                    <a class="mt-6 small-maroon-shadow inline-block text-remaroon bg-rebeige-100 p-2 md:p-2.5 font-lorimer" href="">En savoir plus</a>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-reorange text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full flex justify-center flex-wrap">
+                    <h2 class="w-8/10 text-center">Mobiliser<br/>à l’échelle européenne</h2>
+                    <div class="w-full flex mt-6 md:mt-12">
+                        <div class="hidden md:block absolute z-10 w-30 md:w-40 -mt-20 -ms-20">
+                            <Image class="" src={SangGoutte} alt="" />
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-rebeige-300 rounded-xl flex flex-col items-center p-6 md:p-15">
+                                <div class="-mt-10 mb-4 md:-mt-20 md:mb-8">
+                                    <span class="bg-rered text-white font-lorimer-condensed text-2xl md:text-5xl px-6">#MenstrualMattersEU</span>
+                                </div>                                                                   
+                                <div class="flex flex-wrap">
+                                    <div class="hidden md:block w-1/2">
+                                        <Image class="" src={Men} alt="" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 md:ps-10">
+                                        <p>Parce que les enjeux liés aux règles dépassent les frontières, Règles Élémentaires coordonne également le mouvement européen #MenstrualMattersEU. Lancé avec plusieurs associations partenaires à travers l’Europe, ce mouvement vise à visibiliser un sujet encore largement absent des politiques européennes : la santé menstruelle.</p>
+                                        <p class="mt-4">À travers la mise en réseau, le partage d’expertise et l’action collective, #MenstrualMattersEU œuvre pour :</p>
+                                        <ul class="list-disc ms-5">
+                                            <li>faire reconnaître la santé menstruelle comme un droit fondamental</li>
+                                            <li>lutter contre la précarité menstruelle à l’échelle européenne</li>
+                                            <li>renforcer la coopération entre organisations engagées</li>
+                                        </ul>
+                                        <p class="mt-4">Cette dynamique européenne permet de porter plus loin notre plaidoyer et d’inscrire la justice menstruelle dans les agendas politiques internationaux.</p>
+                                    </div>
+                                </div>                                
+                            </div>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-4/10">
+                    <h2 class="">Mobiliser des partenaires engagés</h2>
+                    <p class="mt-6"><b>La mobilisation portée par Règles Élémentaires s’appuie aussi sur un réseau diversifié de partenaires engagés :</b> entreprises, collectivités, établissements scolaires, associations, fondations, institutions ou acteur·ices de terrain.</p>
+                    <p class="mt-4"><b>Chacun·e peut agir à son échelle :</b> soutenir financièrement les actions de l’association, organiser des collectes, développer des projets communs, sensibiliser ses publics, former ses équipes ou intégrer les enjeux menstruels dans ses pratiques.</p>
+                    <p class="mt-4 font-bold">Cette diversité d’engagements permet de faire progresser durablement la justice menstruelle dans tous les espaces de la société.</p>
+                </div>
+                <div class="w-full md:w-6/10">
+                    <Image class="w-70 md:w-80 rounded-xl" src={ChinChin} alt="" />
+                </div>
+            </div>
+        </div>
     </main>
 </Base>

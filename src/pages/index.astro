@@ -6,15 +6,15 @@ import FAQ from '../components/FAQ.astro';
 import ExclamationMark from '../assets/home/exclamation-mark.svg';
 import HeroMobile from '../assets/home/hero-mobile.png';
 import DownArrow from '../assets/down-arrow.svg';
-import Communaute from '../assets/COMMUNAUTE.png';
-import Sororite from '../assets/SORORITE.png';
+import Communaute from '../assets/home/COMMUNAUTE.png';
+import Sororite from '../assets/home/SORORITE.png';
 import Impact from '../assets/home/impact.png';
 import ImpactMobile from '../assets/home/impact-mobile.png';
-import DoigtsTampon from '../assets/DOIGTS-TAMPON.png';
+import DoigtsTampon from '../assets/home/DOIGTS-TAMPON.png';
 import Sengager from '../assets/home/sengager.png';
 import Sinformer from '../assets/home/sinformer.png';
-import Journal from '../assets/JOURNAL.png';
-import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
+import Journal from '../assets/home/JOURNAL.png';
+import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
 ---
 
 <Base title={SITE_TITLE}>
@@ -40,33 +40,33 @@ import BoiteServiettes from '../assets/BOITE-SERVIETTES.png';
 		</div>
 		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500">
 			<div class="w-11/12 md:w-10/12 flex flex-col items-center py-10 md:py-20">
-					<h2 class="text-rered text-left md:text-center">
-						Les règles,<br/>un enjeu de société
-						<Image class="absolute right-6 -mt-20 block md:hidden w-32" src={Sororite} alt="" />
-					</h2>
-					<div class="flex mt-6 md:mt-24">
-						<div class="w-1/4 z-10">
-							<Image class="hidden md:block ms-10 -me-10" src={Sororite} alt="" />
+				<h2 class="text-rered text-left md:text-center">
+					Les règles,<br/>un enjeu de société
+					<Image class="absolute right-6 -mt-20 block md:hidden w-32" src={Sororite} alt="" />
+				</h2>
+				<div class="flex mt-6 md:mt-24">
+					<div class="w-1/4 z-10">
+						<Image class="hidden md:block ms-10 -me-10" src={Sororite} alt="" />
+					</div>
+					<div class="md:w-1/2 flex flex-col items-center">
+						<div class="bg-white rounded-xl p-6 md:p-15 text-remaroon">
+							<p class="font-bold mb-6">Les règles concernent tout le monde, parce qu’elles ont des conséquences sur toute la société.</p>
+							<p>Éducation, santé, travail, sport, précarité, égalité : les règles restent encore aujourd’hui une source d’inégalités bien réelles. Les comprendre, c’est mieux comprendre les mécanismes qui freinent l’égalité réelle.</p>
 						</div>
-						<div class="md:w-1/2 flex flex-col items-center">
-							<div class="bg-white rounded-xl p-6 md:p-15 text-remaroon">
-								<p class="font-bold mb-6">Les règles concernent tout le monde, parce qu’elles ont des conséquences sur toute la société.</p>
-								<p>Éducation, santé, travail, sport, précarité, égalité : les règles restent encore aujourd’hui une source d’inégalités bien réelles. Les comprendre, c’est mieux comprendre les mécanismes qui freinent l’égalité réelle.</p>
-							</div>
-							<div class="hidden md:flex big-maroon-shadow bg-rebeige-100 h-16 w-16 flex items-center justify-center -mt-8">	
-								<Image src={DownArrow} alt="" />
-							</div>	
-						</div>
-						<div class="hidden md:block w-1/4 flex items-end">
-							<Image class="-ms-14" src={Communaute} alt="" />
-						</div>
-					</div>							
+						<div class="hidden md:flex big-maroon-shadow bg-rebeige-100 h-16 w-16 flex items-center justify-center -mt-8">	
+							<Image src={DownArrow} alt="" />
+						</div>	
+					</div>
+					<div class="hidden md:block w-1/4 flex items-end">
+						<Image class="-ms-14" src={Communaute} alt="" />
+					</div>
+				</div>							
 				<div class="md:w-6/10 flex flex-col items-center mt-10">
 					<h3 class="text-maroon-shadow text-rebeige-100 text-center">Nos piliers d’action</h3>
 					<p class="text-center mt-6 text-remaroon">Nous souhaitons un monde où les règles ne sont plus un frein à l’égalité d’opportunités, de droits, ou d’accès à la santé et à l'information.<br/>Chez Règles Élémentaires, nos revendications s’articulent autour de trois piliers :</p>
 				</div>
 				<div class="flex flex-col items-center md:-mb-80">
-					<div class="flex flex-wrap mt-12 text-white">
+					<div class="flex flex-wrap mt-8 md:mt-12 text-white">
 						<div class="w-full md:w-1/3 md:mt-16">
 							<div class="mx-4 bg-rered big-maroon-shadow px-7 py-9">
 								<h5 class="font-lorimer-condensed-black">L’accessibilité<br/>des produits<br/>périodiques</h5>

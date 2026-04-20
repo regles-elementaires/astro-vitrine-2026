@@ -10,9 +10,13 @@ import MaroonGoutte from '../../assets/maroon-goutte.svg';
 import Formation from '../../assets/actions/formation.jpg';
 import Discussion from '../../assets/actions/DISCUSSION.png';
 import PRDesktop from '../../assets/actions/NUMERIQUE-DESKTOP.png';
-import DoigtsTampon from '../../assets/DOIGTS-TAMPON.png';
+import DoigtsTampon from '../../assets/home/DOIGTS-TAMPON.png';
 import GameOvaire from '../../assets/actions/GAME-OVAIRE.png';
-import Communaute from '../../assets/COMMUNAUTE.png';
+import Communaute from '../../assets/home/COMMUNAUTE.png';
+import PROrdi from '../../assets/actions/parlons-regles-ordi.png';
+import Europe from '../../assets/actions/europe.jpg';
+import LogoUE from '../../assets/actions/logo-ue.png';
+import LogoErasmus from '../../assets/actions/logo-erasmus.png';
 
 ---
 
@@ -23,7 +27,7 @@ import Communaute from '../../assets/COMMUNAUTE.png';
 				<div class="w-full md:w-7/10 text-rered relative z-1">
 					<h1>Déployer<br/>l'éducation<br/>menstru&shy;elle</h1>
 				</div>
-                <Image class="w-40 md:w-2/10 absolute z-10 left-[50%] md:left-[40%] mt-50 md:-mt-[2%]" src={HeaderPicto} alt="" />
+                <Image class="w-40 md:w-2/10 absolute z-0 left-[55%] md:left-[40%] -mt-8 md:-mt-[2%]" src={HeaderPicto} alt="" />
                 <div class="hidden md:block">
                     <Image class="absolute w-3/10 mt-30" src={HeaderImage} alt="" />
                 </div> 		
@@ -36,7 +40,7 @@ import Communaute from '../../assets/COMMUNAUTE.png';
                 </div>
                 <div class="w-full md:w-6/10">
                     <h2>Faire de l’éducation menstruelle un levier d’égalité</h2>
-                    <div class="mt-10 md:w-4/6 mx-auto">
+                    <div class="mt-6 md:mt-10 md:w-4/6 mx-auto">
                         <p class="font-bold">Aujourd’hui encore, beaucoup de jeunes découvrent les règles sans y avoir été préparé·es, avec peu d’informations fiables et souvent dans un contexte de gêne ou d’incompréhension.</p>
                         <p class="mt-4">Chez Règles Élémentaires, nous défendons une éducation menstruelle accessible dès le plus jeune âge, pour permettre aux enfants et adolescent·es de mieux comprendre leur corps, de vivre les règles sans tabou et de construire un rapport plus serein à la santé menstruelle.</p>
                         <p class="mt-4">Parce que mieux comprendre les règles dès le départ, c’est aussi prévenir les inégalités qui peuvent en découler plus tard.</p>
@@ -170,8 +174,9 @@ import Communaute from '../../assets/COMMUNAUTE.png';
 		</div>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 md:pt-0 flex flex-wrap md:-mt-10">
-                <div class="hidden md:flex w-1/2 items-end">
-                    <div class="bg-white p-10 rounded-xl md:w-3/4">
+                <div class="hidden md:flex flex-col w-1/2">
+                    <Image class="w-5/6 mx-auto -mt-10" src={PROrdi} alt="" />
+                    <div class="bg-white p-10 rounded-xl w-3/4 -mt-20">
                         <p><b>L’objectif :</b> leur permettre de mieux comprendre les enjeux liés aux règles, de répondre aux questions, d’animer des temps d’échange et d’intégrer progressivement l’éducation menstruelle dans leurs pratiques éducatives.</p>
                     </div>
                 </div>
@@ -269,9 +274,9 @@ import Communaute from '../../assets/COMMUNAUTE.png';
                 </div>
             </div>
 		</div>
-        <div class="px-5 md:px-15 flex justify-center bg-reorange text-remaroon">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
-                <div class="w-full md:w-6/10">
+        <div class="px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-reorange text-remaroon">
+			<div class="w-11/12 pt-10 md:pt-20 flex flex-wrap">
+                <div class="w-full md:w-6/11 md:pe-20  md:pb-10">
                     <h2>À l'échelle européenne</h2>
                     <p class="mt-8">Parce que les enjeux de l’éducation menstruelle se posent bien au-delà des frontières françaises, nous développons des coopérations avec d’autres organisations européennes afin de partager les pratiques, croiser les expériences et construire de nouveaux outils communs.</p>
                     <p class="mt-6">Le Menstrual Education Network réunit aujourd’hui des associations françaises, belges (Bruzelle) et macédoniennes (Tiiiit. inc / period skopje) autour d’un objectif commun : <b>renforcer l’éducation menstruelle à l’échelle européenne.</b></p>
@@ -280,7 +285,17 @@ import Communaute from '../../assets/COMMUNAUTE.png';
                         <a class="inline-block bg-rebeige-300 small-maroon-shadow p-2.5 font-lorimer" href="/">Consulter le guide</a>
                     </div>
                 </div>
-                <div class="w-full md:w-4/10"></div>                
+                <div class="w-full flex flex-col justify-between md:w-5/11">
+                    <Image class="mt-6 md:mt-0" src={Europe} alt="" />
+                    <div class="flex mt-6 md:mt-0">
+                        <div class="bg-white w-40 mx-4 rounded-t-xl p-4">
+                            <Image class="rounded-t-xl" src={LogoErasmus} alt="Erasmus +" />
+                        </div>
+                        <div class="bg-white w-40 rounded-t-xl mx-4 p-4">
+                            <Image class="rounded-t-xl" src={LogoUE} alt="Union Européenne" />
+                        </div>
+                    </div>                    
+                </div>                
             </div>
 		</div>
     </main>

@@ -5,6 +5,7 @@ import WhiteLogo from '../assets/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
 import RightArrow from '../assets/right-arrow.svg';
 import ParlonsRegles from '../assets/parlons-regles.png';
 import Regla from '../assets/regla.png';
+import UEFlag from '../assets/ue-flag.png';
 ---
 
 <header>
@@ -47,7 +48,12 @@ import Regla from '../assets/regla.png';
               <li><a href="/plaidoyer">Notre plaidoyer</a></li>
             </ul>
             <div class="mt-4 mb-8 md:mb-0">
-              <a class="small-maroon-shadow inline-block text-base font-lorimer bg-rebeige-300 text-remaroon p-2 md:p-2.5" href="/europe">Europe</a>
+              <a class="small-maroon-shadow inline-block text-base font-lorimer bg-rebeige-300 text-remaroon p-2 md:p-2.5" href="/europe">
+                <div class="flex items-center">
+                  Europe
+                  <div class="ms-2 w-8"><Image src={UEFlag} alt="" /></div>    
+                </div>                            
+              </a>
             </div>                        
           </div>
           <!-- MOBILE ONLY -->
