@@ -1,9 +1,20 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
+import HeaderImage from '../../assets/actions/former-header.jpg';
 ---
 
 <Base title="Former - Règles Élémentaires">
 	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
+			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 md:pt-10 flex">
+				<div class="w-full md:w-6/10 text-rered ">
+					<h1>Former<br/>pour changer durablement les pratiques</h1>                 
+				</div>
+                <div class="w-4/10">
+                    <Image class=""src={HeaderImage} alt="" />
+                </div> 		
+			</div>
+		</div>
     </main>
 </Base>
