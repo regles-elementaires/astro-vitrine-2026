@@ -4,9 +4,13 @@ import Base from '../../layouts/Base.astro';
 import HeaderImage from '../../assets/actions/former-header.jpg';
 import Formation from '../../assets/actions/formation-2.jpg';
 import FormationFullWidth from '../../assets/actions/formation-full-width.jpg';
-import Questionner from '../../assets/actions/former-questionner.svg';
 import Formation2 from '../../assets/actions/formation.jpg';
 import Discussion from '../../assets/actions/DISCUSSION.png';
+import FormationEcole from '../../assets/actions/FORMATION-ECOLE.png';
+import Collecte from '../../assets/actions/COLLECTE-PERSONNE.png';
+import FormationEcole2 from '../../assets/actions/FORMATION-ECOLE-2.png';
+import SangCulotte from '../../assets/actions/SANG-CULOTTE.png';
+import MainTampon from '../../assets/actions/PROTEC-JETABLE-TAMPON.png';
 import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 ---
 
@@ -24,8 +28,8 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 		</div>
 		<div class="px-5 md:px-15 flex justify-center bg-rered text-white">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
-				<div class="w-4/10">
-                    
+				<div class="w-4/10 flex items-center">
+                    <Image class=""src={Discussion} alt="" />
                 </div> 
 				<div class="w-full md:w-6/10 mt-6 md:mt-0">
 					<p>Il est essentiel de donner aux professionnel·les, aux institutions et aux organisations les outils nécessaires pour mieux comprendre les enjeux et accompagner les publics concernés.<br/>Chez Règles Élémentaires, nous développons des formations pour permettre aux acteur·ices de terrain de mieux comprendre les règles, de briser les tabous et d’intégrer la santé menstruelle dans leurs pratiques professionnelles.</p>               
@@ -43,6 +47,9 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 					<Image class="md:w-2/3"src={Formation} alt="" />
 				</div> 
 				<div class="w-full flex justify-center mt-4 md:-mt-[12%]">
+					<div class="hidden md:block w-50">
+						<Image src={FormationEcole} alt="" />
+					</div>					
 					<div class="w-full md:w-1/2 bg-white rounded-xl p-6 md:p-10">
 						<p class="font-bold">Se former permet notamment de :</p>
 						<ul class="list-disc ms-5">
@@ -64,7 +71,7 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 				<h3 class="text-rered">Les objectifs de nos formations</h3>	
                 <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">Nos formations permettent aux participant·es de :</div>
 				<div class="w-full text-white pt-8 md:pt-12 flex flex-wrap justify-between">            
-					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+					<div class="flip-card w-full md:w-1/6 h-36 md:h-72 mb-4 md:mb-0">
 						<div class="flip-card-inner">
 							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
 								<p class="text-xl font-semibold px-8">Questionner</p>
@@ -74,44 +81,40 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 							</div>
 						</div>
 					</div>	
-					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+					<div class="flip-card w-full md:w-1/6 h-36 md:h-72 mb-4 md:mb-0">
 						<div class="flip-card-inner">
-							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
-								<Image class="mt-8" src={Questionner} alt="" />
-								<p class="mt-8 text-xl font-semibold px-8">Être attentif·ve</p>
+							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
+								<p class="text-xl font-semibold px-8">Être attentif·ve</p>
 							</div>
 							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
 								<p class="px-4 font-semibold">Être attentif·ve aux causes et conséquences sanitaires psychologiques et sociales de la précarité menstruelle</p>
 							</div>
 						</div>
 					</div>
-					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+					<div class="flip-card w-full md:w-1/6 h-36 md:h-72 mb-4 md:mb-0">
 						<div class="flip-card-inner">
-							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
-								<Image class="mt-8" src={Questionner} alt="" />
-								<p class="mt-8 text-xl font-semibold px-8">Savoir expliquer</p>
+							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
+								<p class="text-xl font-semibold px-8">Savoir expliquer</p>
 							</div>
 							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
 								<p class="px-4 font-semibold">Savoir expliquer simplement la physiologie des règles et l’utilisation des produits périodiques</p>
 							</div>
 						</div>
 					</div>
-					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+					<div class="flip-card w-full md:w-1/6 h-36 md:h-72 mb-4 md:mb-0">
 						<div class="flip-card-inner">
-							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
-								<Image class="mt-8" src={Questionner} alt="" />
-								<p class="mt-8 text-xl font-semibold px-8">Se sentir plus à l'aise</p>
+							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
+								<p class="text-xl font-semibold px-8">Se sentir plus à l'aise</p>
 							</div>
 							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
 								<p class="px-4 font-semibold">Se sentir plus à l’aise pour parler de santé menstruelle et accueillir des témoignages de personnes menstruées</p>
 							</div>
 						</div>
 					</div>
-					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+					<div class="flip-card w-full md:w-1/6 h-36 md:h-72 mb-4 md:mb-0">
 						<div class="flip-card-inner">
-							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
-								<Image class="mt-8" src={Questionner} alt="" />
-								<p class="mt-8 text-xl font-semibold px-8">Gagner en légitimité</p>
+							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
+								<p class="text-xl font-semibold px-8">Gagner en légitimité</p>
 							</div>
 							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
 								<p class="px-4 font-semibold">Gagner en légitimité pour monter des projets de lutte contre la précarité menstruelle dans vos structures</p>
@@ -141,7 +144,7 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
 						<div class="w-1/3 hidden md:flex items-center justify-center">
 							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
-								<Image class="w-3/4" src={Discussion} alt="" />
+								<Image class="w-3/4" src={Collecte} alt="" />
 							</div>							
 						</div>
 						<div class="w-full md:w-2/3 flex flex-col">
@@ -155,7 +158,79 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation relais médico-sociaux.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
 							</div>                        
 						</div>
-					</div>                
+					</div>
+					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
+						<div class="w-1/3 hidden md:flex items-center justify-center">
+							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
+								<Image class="w-3/4" src={Discussion} alt="" />
+							</div>							
+						</div>
+						<div class="w-full md:w-2/3 flex flex-col">
+							<p class="md:w-5/6 mx-auto text-xl font-semibold mb-4 leading-5">Changer les règles dans le milieu professionnel pour plus d’égalité au travail :</p>
+							<ul class='md:w-5/6 mx-auto leading-5 md:pl-12 pl-4' style='list-style-type: disc;'>
+								<li>Public : entreprises (salarié·es, managers, directeurices) et agent·es des collectivités territoriales</li>
+								<li>Durée de la formation : 3h30</li>
+							</ul>
+							<p class="md:w-5/6 mx-auto italic mt-3">Les stagiaires évaluent cette formation dans son ensemble à 9,0/10</p>
+							<div class="md:w-5/6 mx-auto flex flex-wrap mt-4">
+								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation entreprises et collectivités.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
+							</div>                        
+						</div>
+					</div>   
+					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
+						<div class="w-1/3 hidden md:flex items-center justify-center">
+							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
+								<Image class="w-2/3" src={FormationEcole2} alt="" />
+							</div>							
+						</div>
+						<div class="w-full md:w-2/3 flex flex-col">
+							<p class="md:w-5/6 mx-auto text-xl font-semibold mb-4 leading-5">Changer les règles dès le plus jeune âge, la formation à destination des relais éducatifs :</p>
+							<ul class='md:w-5/6 mx-auto leading-5 md:pl-12 pl-4' style='list-style-type: disc;'>
+								<li>Public : équipe pédagogique scolaire, professionnel·les de structures jeunesse, professionnel·les accompagnant des jeunes</li>
+								<li>Durée de la formation : journée entière (6 heures)</li>
+							</ul>
+							<p class="md:w-5/6 mx-auto italic mt-3">Les stagiaires évaluent cette formation dans son ensemble à 9,2/10</p>
+							<div class="md:w-5/6 mx-auto flex flex-wrap mt-4">
+								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation relais éducatifs.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
+							</div>                        
+						</div>
+					</div>   
+					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
+						<div class="w-1/3 hidden md:flex items-center justify-center">
+							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
+								<Image class="w-3/4" src={SangCulotte} alt="" />
+							</div>							
+						</div>
+						<div class="w-full md:w-2/3 flex flex-col">
+							<p class="md:w-5/6 mx-auto text-xl font-semibold mb-4 leading-5">Lutter contre la précarité menstruelle dans les structures accueillant des personnes en situation de handicap :</p>
+							<ul class='md:w-5/6 mx-auto leading-5 md:pl-12 pl-4' style='list-style-type: disc;'>
+								<li>Public : professionnel·les des structures sociales et médico-sociales, professionel·les de structures accompagnant des publics en situation de handicap, travailleurs sociaux et travailleuses sociales</li>
+								<li>Durée de la formation : journée entière (6 heures)</li>
+							</ul>
+							<p class="md:w-5/6 mx-auto italic mt-3">Les stagiaires évaluent cette formation dans son ensemble à 9,1/10</p>
+							<div class="md:w-5/6 mx-auto flex flex-wrap mt-4">
+								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation regles et situations de handicap.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
+							</div>                        
+						</div>
+					</div>   
+					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
+						<div class="w-1/3 hidden md:flex items-center justify-center">
+							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
+								<Image class="w-3/5" src={MainTampon} alt="" />
+							</div>							
+						</div>
+						<div class="w-full md:w-2/3 flex flex-col">
+							<p class="md:w-5/6 mx-auto text-xl font-semibold mb-4 leading-5">Lutter contre la précarité menstruelle en milieu pénitentiaire :</p>
+							<ul class='md:w-5/6 mx-auto leading-5 md:pl-12 pl-4' style='list-style-type: disc;'>
+								<li>Public :  Personnel pénitentiaire, intervenant·es en milieu carcéral, professionnel·les de santé, professionnel·les d’associations ou d’organismes accompagnant des personnes en situation de précarité, ainsi que travailleurs sociaux en lien avec le milieu pénitentiaire</li>
+								<li>Durée de la formation : journée entière (6 heures)</li>
+							</ul>
+							<p class="md:w-5/6 mx-auto italic mt-3">Les stagiaires évaluent cette formation dans son ensemble à 9,8/10</p>
+							<div class="md:w-5/6 mx-auto flex flex-wrap mt-4">
+								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation centre penitentier.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
+							</div>                        
+						</div>
+					</div>                   
             	</div>
 				<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/CGV_OF_la_formation_by_regles_elementaires_290424.pdf" target="_blank">Voir les conditions générales de vente</a>
 				<a class="md:w-1/4 mt-8" href="https://certifopac.fr/qualiopi/certification/verification/?siren=839628716" target="_blank">
@@ -164,6 +239,25 @@ import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 				<p class="">La certification qualité a été délivrée au titre de la catégorie d’action suivante :</p>
 				<p class="font-bold uppercase">Actions de formation</p>
 				<p class="mt-2">N° de déclaration d’activité : 11756889475</p>
+			</div>
+		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-reorange text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-16 flex flex-col items-center">
+				<h3>Témoignages</h3>
+				<div class="flex flex-wrap mt-6 md:mt-12 md:w-3/4">
+					<div class="w-full md:w-1/2 md:pe-4">
+						<div class="bg-white p-6 md:p-10 rounded-xl md:h-full">
+							<p class="italic">"La formation de Règles Élémentaires a permis non seulement de sensibiliser les managers au sujet des règles douloureuses, mais aussi de libérer la parole sur ce sujet. Elle a aidé de nombreuses femmes chez nous qui nous remercient régulièrement d’avoir organisé cette intervention."</p>
+							<p class="mt-6">Valérie Abou, Directrice adjointe RSE de Publicis Conseil</p>
+						</div>
+					</div>
+					<div class="w-full md:w-1/2 md:ps-4 mt-6 md:mt-0">
+						<div class="bg-white p-6 md:p-10 rounded-xl">
+							<p class="italic">"Cette formation a été animée par une intervenante remarquable. Elle m’a permis de prendre conscience des inégalités auxquelles certaines femmes en situation de grande précarité peuvent être confrontées. C’est grâce à ces moments que nous pouvons prendre un peu de recul par rapport à notre quotidien et faire évoluer nos pratiques."</p>
+							<p class="mt-6">Intervenante sociale au sein d'un établissement d'Adoma</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
     </main>
