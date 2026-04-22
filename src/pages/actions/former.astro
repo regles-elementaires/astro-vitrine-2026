@@ -2,18 +2,168 @@
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import HeaderImage from '../../assets/actions/former-header.jpg';
+import Formation from '../../assets/actions/formation-2.jpg';
+import FormationFullWidth from '../../assets/actions/formation-full-width.jpg';
+import Questionner from '../../assets/actions/former-questionner.svg';
+import Formation2 from '../../assets/actions/formation.jpg';
+import Discussion from '../../assets/actions/DISCUSSION.png';
+import Qualiopi from '../../assets/actions/logo-qualiopi.png';
 ---
 
 <Base title="Former - Règles Élémentaires">
 	<main>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-100">
-			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 md:pt-10 flex">
-				<div class="w-full md:w-6/10 text-rered ">
-					<h1>Former<br/>pour changer durablement les pratiques</h1>                 
+			<div class="w-11/12 md:w-10/12 py-10 md:pb-0 md:pt-10 flex flex-wrap">
+				<div class="w-full md:w-6/10 text-rered">
+					<h1>Former<br/>pour changer durable&shy;ment les pratiques</h1>                 
 				</div>
-                <div class="w-4/10">
+                <div class="hidden md:block w-4/10 md:-mb-10">
                     <Image class=""src={HeaderImage} alt="" />
                 </div> 		
+			</div>
+		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-rered text-white">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+				<div class="w-4/10">
+                    
+                </div> 
+				<div class="w-full md:w-6/10 mt-6 md:mt-0">
+					<p>Il est essentiel de donner aux professionnel·les, aux institutions et aux organisations les outils nécessaires pour mieux comprendre les enjeux et accompagner les publics concernés.<br/>Chez Règles Élémentaires, nous développons des formations pour permettre aux acteur·ices de terrain de mieux comprendre les règles, de briser les tabous et d’intégrer la santé menstruelle dans leurs pratiques professionnelles.</p>               
+					<p class="mt-4"><b>Notre ambition :</b> faire de la formation un levier concret pour améliorer l’accompagnement des personnes menstruées et faire évoluer les environnements de travail, d’éducation et de soin.</p>               
+				</div>                		
+			</div>
+		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+				<div class="w-full md:w-4/10">
+                    <h2>Pourquoi<br/>se former ?</h2>
+					<p class="mt-6">Les règles restent encore largement invisibilisées dans de nombreux espaces de la vie quotidienne. Pourtant, elles peuvent avoir des conséquences concrètes sur la santé, la scolarité, le travail ou l’accès aux droits.</p>               
+                </div> 
+				<div class="w-full md:w-6/10 mt-6 md:mt-0 flex md:justify-end">
+					<Image class="md:w-2/3"src={Formation} alt="" />
+				</div> 
+				<div class="w-full flex justify-center mt-4 md:-mt-[12%]">
+					<div class="w-full md:w-1/2 bg-white rounded-xl p-6 md:p-10">
+						<p class="font-bold">Se former permet notamment de :</p>
+						<ul class="list-disc ms-5">
+							<li>mieux comprendre la physiologie des règles et les différents produits périodiques</li>
+							<li>identifier les situations de précarité menstruelle et leurs conséquences sociales et sanitaires</li>
+							<li>déconstruire les tabous et les idées reçues</li>
+							<li>mieux accompagner les publics concernés</li>
+							<li>développer des actions concrètes dans sa structure. </li>
+						</ul>
+					</div>
+				</div>               		
+			</div>
+		</div>
+		<div>
+			<Image src={FormationFullWidth} alt="" />
+		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 flex flex-col items-center">
+				<h3 class="text-rered">Les objectifs de nos formations</h3>	
+                <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">Nos formations permettent aux participant·es de :</div>
+				<div class="w-full text-white pt-8 md:pt-12 flex flex-wrap justify-between">            
+					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front flex flex-col items-center justify-center rounded-xl bg-rered">
+								<p class="text-xl font-semibold px-8">Questionner</p>
+							</div>
+							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
+								<p class="px-4 font-semibold">Questionner les représentations liées aux règles pour briser le tabou</p>
+							</div>
+						</div>
+					</div>	
+					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
+								<Image class="mt-8" src={Questionner} alt="" />
+								<p class="mt-8 text-xl font-semibold px-8">Être attentif·ve</p>
+							</div>
+							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
+								<p class="px-4 font-semibold">Être attentif·ve aux causes et conséquences sanitaires psychologiques et sociales de la précarité menstruelle</p>
+							</div>
+						</div>
+					</div>
+					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
+								<Image class="mt-8" src={Questionner} alt="" />
+								<p class="mt-8 text-xl font-semibold px-8">Savoir expliquer</p>
+							</div>
+							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
+								<p class="px-4 font-semibold">Savoir expliquer simplement la physiologie des règles et l’utilisation des produits périodiques</p>
+							</div>
+						</div>
+					</div>
+					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
+								<Image class="mt-8" src={Questionner} alt="" />
+								<p class="mt-8 text-xl font-semibold px-8">Se sentir plus à l'aise</p>
+							</div>
+							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
+								<p class="px-4 font-semibold">Se sentir plus à l’aise pour parler de santé menstruelle et accueillir des témoignages de personnes menstruées</p>
+							</div>
+						</div>
+					</div>
+					<div class="flip-card w-full md:w-1/6 h-72 mb-4 md:mb-0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front flex flex-col items-center rounded-xl bg-rered">
+								<Image class="mt-8" src={Questionner} alt="" />
+								<p class="mt-8 text-xl font-semibold px-8">Gagner en légitimité</p>
+							</div>
+							<div class="flip-card-back flex items-center rounded-xl bg-redarkred">
+								<p class="px-4 font-semibold">Gagner en légitimité pour monter des projets de lutte contre la précarité menstruelle dans vos structures</p>
+							</div>
+						</div>
+					</div>				              
+				</div>
+			</div>
+		</div>
+		<div class="px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 py-10 md:py-0 flex flex-wrap">
+				<div class="w-full md:w-1/2 md:py-20">
+                    <h2>Notre<br/>expertise</h2>
+					<p class="md:w-3/4 mt-6">Depuis 5 ans l’équipe de sensibilisation de Règles Élémentaires a développé une expertise de terrain en intervenant auprès de différents publics : jeunes, public en situation de précarité menstruelle, professionnel·es sociaux et médico-sociaux, entreprises et collectivités...<br/>Face aux évolutions sociétales et aux volontés de créer des environnements plus inclusifs et adaptés aux personnes menstruées, nous lançons en 2024 notre organisme de formation.</p>               
+                </div> 
+				<div class="w-full md:w-1/2 mt-6 md:mt-0">
+					<Image class=""src={Formation2} alt="" />
+				</div>                		
+			</div>
+		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-rewhite text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+				<h2 class="text-rered text-center">Nos formations</h2>
+				<p class="w-full md:w-1/2 mt-10 text-center">Règles Élémentaires anime des formations auprès de différent·es publics relais identifiés comme alliés pour lutter contre la précarité menstruelle et les tabous liés aux règles dans la société.</p>
+				<p class="w-full md:w-1/2 mt-6 font-bold text-center">Ces formations peuvent avoir lieu en inter-associatif ou en intra au sein d’une même structure :</p>
+				<div class="flex flex-wrap my-8">
+					<div class="md:w-10/12 mx-auto bg-rered text-white flex p-8 mb-4">
+						<div class="w-1/3 hidden md:flex items-center justify-center">
+							<div class="bg-white rounded-full w-50 h-50 flex items-center justify-center">
+								<Image class="w-3/4" src={Discussion} alt="" />
+							</div>							
+						</div>
+						<div class="w-full md:w-2/3 flex flex-col">
+							<p class="md:w-5/6 mx-auto text-xl font-semibold mb-4 leading-5">Lutter contre la précarité menstruelle dans les structures médico-sociales : comprendre, prévenir, agir :</p>
+							<ul class='md:w-5/6 mx-auto leading-5 md:pl-12 pl-4' style='list-style-type: disc;'>
+								<li>Public : professionnel·les des structures sociales et  médico-sociales, professionel·les de structures accompagnant des publics en situation de précarité, travailleurs et travailleuses sociales</li>
+								<li>Durée de la formation : journée entière (6 heures)</li>
+							</ul>
+							<p class="md:w-5/6 mx-auto italic mt-3">Les stagiaires évaluent cette formation dans son ensemble à 9,1/10</p>
+							<div class="md:w-5/6 mx-auto flex flex-wrap mt-4">
+								<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/Programme de formation relais médico-sociaux.pdf" target="_blank" rel="noreferrer">Programme de la formation</a>
+							</div>                        
+						</div>
+					</div>                
+            	</div>
+				<a class="small-maroon-shadow inline-block p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/formations/CGV_OF_la_formation_by_regles_elementaires_290424.pdf" target="_blank">Voir les conditions générales de vente</a>
+				<a class="md:w-1/4 mt-8" href="https://certifopac.fr/qualiopi/certification/verification/?siren=839628716" target="_blank">
+					<Image src={Qualiopi} alt="Qualiopi, processus certifié, République française - Lien vers le Certificat">
+				</a>
+				<p class="">La certification qualité a été délivrée au titre de la catégorie d’action suivante :</p>
+				<p class="font-bold uppercase">Actions de formation</p>
+				<p class="mt-2">N° de déclaration d’activité : 11756889475</p>
 			</div>
 		</div>
     </main>
