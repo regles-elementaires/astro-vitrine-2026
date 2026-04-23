@@ -1,35 +1,215 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import Megaphone from '../assets/informer/URGENCE.png';
+import Equipe from '../assets/qui-sommes-nous/equipe-10-ans.jpg';
+import NotreRaison from '../assets/qui-sommes-nous/notre-raison.jpg';
+import ReglesFlag from '../assets/qui-sommes-nous/STICKER-FLAG.png';
+import Soria from '../assets/qui-sommes-nous/soria-blatmann.jpg';
+import Esther from '../assets/qui-sommes-nous/esther-vogel.jpg';
+import Emeline from '../assets/qui-sommes-nous/emeline-foster.jpg';
+import Nadege from '../assets/qui-sommes-nous/nadege-moreau.jpg';
+import Tess from '../assets/qui-sommes-nous/tess-pettavino.jpg';
+import Tara from '../assets/qui-sommes-nous/tara-heuze.jpg';
 
 ---
 
 <Base title="Qui sommes-nous ? - Règles Élémentaires">
 	<main>
-		<div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-20">
-				<div class="text-rered">
-					<h1>
-                        L'asociation qui agit pour l'égalité et la justice menstruelle
+		<div class="px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-rebeige-300">
+			<div class="w-full py-10 md:py-20 flex flex-wrap">
+				<div class="w-full md:w-6/11">
+					<h1 class="text-remaroon">
+                        L'asociation<br/>qui agit<br/><span class="text-rered">pour l'égalité et la justice menstruelle</span>
                     </h1>
-				</div>			
+				</div>		
+                <div class="w-full md:w-5/11 flex flex-col md:ps-10 mt-6 md:mt-0">
+                    <Image class=""src={Equipe} alt="" />
+                    <Image class="hidden md:block w-60 -mt-10"src={Megaphone} alt="" />
+                </div>	
 			</div>
 		</div>
         <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-20 flex">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
                 <div class="w-full md:w-1/2 flex justify-center">
-                    <div class="w-7/12">
-                        
+                    <div class="md:w-7/12">
+                         <Image class=""src={NotreRaison} alt="" />
                     </div>                    
                 </div>
-                <div class="w-full md:w-1/2">
+                <div class="w-full md:w-1/2 mt-6 md:mt-0">
                     <h2>Notre<br/>raison d'être</h2>
-                    <p class="mt-10 font-bold">Règles Élémentaires œuvre pour que les femmes et toutes les personnes qui ont, avaient et auront leurs règles puissent les vivre dignement, sans tabou et en sécurité.</p>
+                    <p class="mt-6 font-bold">Règles Élémentaires œuvre pour que les femmes et toutes les personnes qui ont, avaient et auront leurs règles puissent les vivre dignement, sans tabou et en sécurité.</p>
                     <p class="mt-4">Pour ce faire, elle forme et informe sur les règles, promeut la santé menstruelle et lutte contre la précarité menstruelle en favorisant l’accès aux produits périodiques.</p>
                     <p class="mt-4">Depuis 2015, Règles Élémentaires change les mentalités et les lois pour construire une société plus juste et égalitaire.</p>	
-                </div>	
-                				
+                </div>	                				
 			</div>
+		</div>
+         <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 pt-10 md:pt-20 flex flex-col items-center">
+                <h2 class="-mb-6 md:-mb-10 z-1 text-center">Notre manifeste</h2>
+                <div class="w-full md:w-7/10 bg-rebeige-100  px-10 md:px-20 pt-10 md:pt-20 pb-10 rounded-t-xl">
+                    <p>La moitié de l’humanité a, aura ou a eu ses règles. Et pourtant, ce phénomène naturel reste entouré de silence, de honte et de mépris. Les règles concernent tout le monde, mais leur invisibilisation crée des inégalités bien réelles.</p>
+                    <p class="mt-4 font-bold">Aujourd’hui encore, des millions de personnes :</p>
+                    <ul class="list-disc ms-5">
+                        <li>manquent l’école ou le travail à cause de leurs règles ;</li>
+                        <li>souffrent, sans diagnostic ni accompagnement ;</li>
+                        <li>vivent la précarité menstruelle, forcées de choisir entre se nourrir ou se protéger.</li>
+                    </ul>
+                    <p class="mt-4">Ces réalités sont des atteintes à la dignité, à la santé et à l’égalité.<br/>Il est temps d’y mettre fin.</p>
+                    <p class="mt-4">Parce qu’avoir ses règles ne devrait jamais rimer avec douleur, honte ou précarité.</p>
+                    <p class="mt-4">Parce que les règles ne devraient pas faire obstacle à l’égalité, ni réduire le champ des possibles.</p>
+                    <p class="mt-4">L’intime est politique, et il est temps de reconnaître les règles non comme une affaire individuelle mais bel et bien comme une question de société et de santé publique à part entière.</p>
+                    <p class="mt-4">Permettre à toutes et tous de se former, s’informer et de vivre ses règles dignement est un enjeu d’égalité réelle et de justice sociale.</p>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-remaroon text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex justify-center">
+                <div class="w-full md:w-3/4 font-lorimer-condensed text-3xl md:text-5xl text-center">
+                    <p>Changer le monde commence par changer les règles et notre regard sur elles,<br/>ici et maintenant</p>                                
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full">
+                    <h2 class="text-rered">Notre histoire</h2>
+                </div>                
+                <div class="w-full md:w-1/2 md:pe-10">                    
+                    <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">Tout commence en 2015</div>
+                    <p class="mt-8">Étudiante en Angleterre, Tara Heuzé-Sarmini participe à sa première collecte de protections périodiques.<br/>Un geste simple, mais qui révèle une injustice criante : en France, personne ne parle de “précarité menstruelle”. L’expression elle-même n’existe pas.<br/>Pourtant, des millions de personnes en souffrent, dans le silence et l’invisibilité.</p>
+                    <p class="mt-6">De retour à Paris, Tara décide d’agir. Elle crée Règles Élémentaires avec une conviction : le tabou autour des règles nourrit les inégalités, et il faut le briser.</p>
+                    <p class="mt-6">La première arme choisie ? La mobilisation citoyenne. Organiser une collecte de protections périodiques doit être aussi simple que d’organiser une collecte de vêtements ou de nourriture. Très vite, partout en France, des Nadège, Henri ou Fadoua lancent leur propre collecte, permettant à des associations et structures médico-sociales partenaires de distribuer des produits indispensables. Depuis, des milliers de collectes ont été organisées permettant de redistribuer des dizaines de millions de produits périodiques.</p>
+                    <div class="flex justify-center">
+                        <Image class="w-30 md:w-50 mt-6" src={ReglesFlag} alt="" />
+                    </div>                    
+                </div>
+                <div class="w-full md:w-1/2 md:ps-10">                    
+                    <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">Mais le combat ne s’arrête pas là</div>
+                    <p class="mt-8">Car la précarité menstruelle n’est que la partie émergée de l’iceberg : elle révèle un problème plus profond, celui du tabou des règles.</p>
+                    <p class="mt-6">C’est pourquoi Règles Élémentaires a élargi son action :</p>
+                    <ul class="list-disc ms-5">
+                        <li>changer les mentalités, en brisant les stéréotypes et en rendant les règles visibles dans l’espace public ;</li>
+                        <li>rendre visible et convaincre, pour que la santé menstruelle devienne un enjeu reconnu et pris en compte par les pouvoirs publics ;</li>
+                        <li>proposer des solutions concrètes, en accompagnant institutions, collectivités et entreprises vers plus d’égalité.</li>
+                    </ul>
+                    <div class="mt-10 bg-rebeige-500 p-6 md:p-10">
+                        <p class="font-bold">En dix ans, Règles Élémentaires est devenue l’association de référence sur le sujet des règles en France.</p>
+                        <p class="mt-6 font-bold">Ses victoires sont nombreuses :</p>
+                        <p>gratuité des protections en prison, décret encadrant leur composition, grandes enquêtes nationales sur les règles, mobilisation des candidat·es à la présidentielle, remboursement des protections réutilisables pour les moins de 26 ans… autant de jalons qui ont contribué à faire de la santé menstruelle un enjeu d’intérêt public.</p>
+                        <p class="mt-6">Aujourd’hui, nous continuons à nous battre pour que les règles ne soient plus jamais un obstacle à l’égalité réelle.</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-6/11">
+                    <h2 class="text-rered md:text-right md:pe-10">Le conseil<br/>d'admini&shy;stration</h2>
+                </div>
+                <div class="w-full md:w-5/11 mt-6 md:mt-0">
+                    <p>Le conseil d'administration pilote la stratégie d’intervention et de développement de l’association. ll arbitre également les positions de plaidoyer et les grandes décisions budgétaires. Les administratrices sont élues pour 4 ans et apportent expertise et réseau. La présidente coordonne le travail du conseil et est la responsable légale de l’association.</p>
+                    <p class="mt-4">Le conseil d'administration travaille en lien étroit avec l’équipe salariée et bénévoles pour la mise en place des projets.</p>
+                </div>
+                <div class="w-full bg-white rounded-3xl md:rounded-[60px] mt-20 md:mt-30 px-4 md:px-10 pb-8 md:pb-14 flex flex-wrap">
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 -mt-10 md:-mt-14">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Soria} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Soria Blatmann
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Présidente
+                            </span>
+                        </div>  
+                        <p class="mt-4">Spécialiste des enjeux de société, des droits humains et du dialogue avec la société civile</p>                                             
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 mt-8 md:-mt-14">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Esther} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Esther Vogel
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Secrétaire générale
+                            </span>
+                        </div>  
+                        <p class="mt-4">Ex avocate en droit de la santé, en formation de sage femme</p>                                             
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 mt-8 md:-mt-14">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Emeline} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Emeline Foster
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Trésorière
+                            </span>
+                        </div>  
+                        <p class="mt-4">Conseillère en stratégie pour projets associatifs</p>                                             
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 mt-8 md:mt-10">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Nadege} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Nadège Moreau
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Administratrice
+                            </span>
+                        </div>  
+                        <p class="mt-4">Responsable communication chez Auditoria - Ancienne présidente (2020-2025)</p>                                             
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 mt-8 md:mt-10">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Tess} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Tess Pettavino
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Administratrice
+                            </span>
+                        </div>  
+                        <p class="mt-4">Conseil aux Dirigeants et Directrice de la Fondation Only Watch</p>                                             
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col px-4 md:px-12 mt-8 md:mt-10">
+                        <div class="rounded-full flex justify-center">
+                            <Image class="rounded-full md:w-5/6" src={Tara} alt="" />
+                        </div>
+                        <div class="-mt-4">
+                            <span class="inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed-black px-3 py-1 text-2xl md:text-3xl">
+                                Tara Heuzé-Sarmini
+                            </span>
+                        </div>  
+                        <div class="">
+                            <span class="inline-block bg-rebeige-500 text-remaroon px-3 py-2 font-bold">
+                                Fondatrice & administratrice
+                            </span>
+                        </div>  
+                        <p class="mt-4">Cofondatrice & CEO de Commune</p>                                             
+                    </div>
+                </div>
+            </div>
 		</div>
 	</main>
 </Base>
