@@ -11,6 +11,12 @@ import Emeline from '../assets/qui-sommes-nous/emeline-foster.jpg';
 import Nadege from '../assets/qui-sommes-nous/nadege-moreau.jpg';
 import Tess from '../assets/qui-sommes-nous/tess-pettavino.jpg';
 import Tara from '../assets/qui-sommes-nous/tara-heuze.jpg';
+import DixAns from '../assets/qui-sommes-nous/10-ans.png';
+import Pdl from '../assets/qui-sommes-nous/pdl.jpg';
+import Cvl from '../assets/qui-sommes-nous/cvl.jpg';
+import Paca from '../assets/qui-sommes-nous/paca.jpg';
+import Idf from '../assets/qui-sommes-nous/idf.jpg';
+import MaroonGoutte from '../assets/maroon-goutte.svg';
 
 ---
 
@@ -211,5 +217,149 @@ import Tara from '../assets/qui-sommes-nous/tara-heuze.jpg';
                 </div>
             </div>
 		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-1/2 md:-mt-8">
+                    <Image class="md:w-5/6" src={DixAns} alt="" />
+                </div>
+                <div class="w-full md:w-1/2 mt-10 md:mt-0">
+                    <h3>Règles Élémentaires<br/>fête ses 10 ans</h3>
+                    <p class="mt-6 md:mt-10">…et ouvre une nouvelle ère.<br/>Nouveau logo. Nouvelle identité. Nouveau cap.<br/>Mais une même conviction, intacte depuis le premier jour : les règles ne doivent jamais être un obstacle à la dignité, à la santé et à l’égalité.</p>
+                    <p class="mt-4">Depuis 10 ans, nous agissons pour que toutes les personnes qui ont, ont eu ou auront leurs règles puissent les vivre <b>sans précarité, sans tabou, sans honte.</b></p>
+                </div>
+                <div class="w-full flex justify-center mt-10 iframe-container">
+                    <iframe src="https://www.youtube.com/embed/Em5pUtG0814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-col items-center">
+                <h2 class="mb-10 md:mb-20">Retrouvez nos antennes</h2>
+                <div id="pdl" class="antenne w-full cursor-pointer transition-all duration-500 rounded-2xl py-10 text-rebeige-500 flex flex-col items-center">
+                    <div class="font-lorimer-condensed text-3xl md:text-5xl text-center">Pays de la loire</div>
+                    <div class="font-lorimer-condensed md:text-2xl">Créée en septembre 2023</div>
+                    <div class="antenne-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <Image class="md:w-5/6" src={Pdl} alt="" />
+                        </div>
+                        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Faire des règles un sujet visible et concret dans tous les espaces de vie</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Accompagner un réseau de structures partenaires (associatif, éducatif, médico-social)</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Sensibiliser et former des publics variés, des collégien·nes aux étudiant·es</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Porter des projets innovants, notamment autour des règles  et du sport</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cvl" class="antenne w-full cursor-pointer transition-all duration-500 rounded-2xl py-10 text-rebeige-500 flex flex-col items-center mt-6">
+                    <div class="font-lorimer-condensed text-3xl md:text-5xl text-center">Centre-Val de Loire</div>
+                    <div class="font-lorimer-condensed md:text-2xl">Créée en juin 2024</div>
+                    <div class="antenne-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <Image class="md:w-5/6" src={Cvl} alt="" />
+                        </div>
+                        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Structurer un territoire en pleine mobilisation autour de la santé menstruelle</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Déployer des ateliers d’éducation menstruelle auprès des jeunes et des relais éducatifs</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Organiser des collectes et redistribuer des protections périodiques aux structures locales</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Fédérer un réseau d’acteur·ices et accompagner l’émergence de projets territoriaux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="paca" class="antenne w-full cursor-pointer transition-all duration-500 rounded-2xl py-10 text-rebeige-500 flex flex-col items-center mt-6">
+                    <div class="font-lorimer-condensed text-3xl md:text-5xl text-center">Provence-alpes-côte d’azur</div>
+                    <div class="font-lorimer-condensed md:text-2xl">Créée en juillet 2024</div>
+                    <div class="antenne-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <Image class="md:w-5/6" src={Paca} alt="" />
+                        </div>
+                        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Ancrer durablement la santé menstruelle dans les dynamiques locales</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Collecter et redistribuer des protections périodiques à un réseau associatif</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Sensibiliser tous les publics : jeunes, étudiant·es, professionnel·les, grand public</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Développer des projets innovants (sport, monde du travail, inclusion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="idf" class="antenne w-full cursor-pointer transition-all duration-500 rounded-2xl py-10 text-rebeige-500 flex flex-col items-center mt-6">
+                    <div class="font-lorimer-condensed text-3xl md:text-5xl text-center">île-de-france</div>
+                    <div class="font-lorimer-condensed md:text-2xl">Créée en septembre 2024</div>
+                    <div class="antenne-content overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-500 flex flex-wrap">
+                        <div class="w-full md:w-1/2">
+                            <Image class="md:w-5/6" src={Idf} alt="" />
+                        </div>
+                        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Changer d’échelle pour répondre à l’ampleur des besoins du territoire</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Coordonner un large réseau de partenaires et de distributions de protections périodiques</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Sensibiliser massivement jeunes et adultes à la santé menstruelle</p>
+                            </div>
+                            <div class="flex items-start">
+                                <Image class="mt-2" src={MaroonGoutte} alt="" />
+                                <p class="ms-2">Former les professionnel·les et développer des projets innovants avec les acteur·ices locaux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</main>
 </Base>
+
+<script>
+    document.querySelectorAll('.antenne').forEach((antenne) => {
+        antenne.addEventListener('click', () => {                    
+            antenne.classList.remove('text-rebeige-500');                                
+            antenne.classList.remove('cursor-pointer');                                
+            antenne.classList.add('bg-none-important');  
+            antenne.querySelector('.antenne-content').classList.add('opacity-100');
+            antenne.querySelector('.antenne-content').classList.add('max-h-[800px]');
+            antenne.querySelector('.antenne-content').classList.add('translate-y-0');
+            antenne.querySelector('.antenne-content').classList.add('pt-10');
+            antenne.querySelector('.antenne-content').classList.remove('max-h-0');
+            antenne.querySelector('.antenne-content').classList.remove('-translate-y-2');                                                             
+        });
+    });
+</script>

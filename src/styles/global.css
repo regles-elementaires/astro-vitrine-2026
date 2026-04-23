@@ -166,10 +166,56 @@ img {
 	background-repeat: no-repeat;
 }
 
+/* HOME */
+
 #hero {
 	background-image: url('/images/hero.png');
 	background-size: cover;
 	background-repeat: no-repeat;	
+}
+
+/* QUI SOMMES NOUS */
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.5%;
+    height: 0;    
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-none-important {
+	background-image: none !important;
+}
+
+#pdl, #cvl, #paca, #idf {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#pdl {
+	background-image: url('/images/pdl-bg.png');
+	background-position: top right;
+}
+
+#cvl {
+	background-image: url('/images/cvl-bg.png');
+	background-position: top center;
+}
+
+#paca {
+	background-image: url('/images/paca-bg.png');
+	background-position: top right 10%;
+}
+
+#idf {
+	background-image: url('/images/idf-bg.png');
+	background-position: top center;
 }
 
 /* INFORMER */
