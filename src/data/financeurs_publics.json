@@ -1,44 +1,133 @@
 {
-    "Category": "Financeurs publics",
-    "Partners": [
-        {
-            "Name": "Ville de Paris",
-            "Image": "/images/partners/ville-paris.png"
-        },
-        {
-            "Name": "Test 2",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 3",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 4",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 5",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 6",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 7",
-            "Link": "",
-            "Image": ""
-        },
-        {
-            "Name": "Test 8",
-            "Link": "",
-            "Image": ""
-        }
-    ]
+"category": "Financeurs publics",
+"partners": [
+	{ 
+	"name": "Cités éducatives",
+	"image": "images/partenaires/financeurs-publics/cites-educatives.png"
+	},
+	{ 
+	"name": "Région IDF",
+	"image": "images/partenaires/financeurs-publics/idf.png"
+	},
+	{ 
+	"name": "Préfecture Seine-Saint-Denis",
+	"image": "images/partenaires/financeurs-publics/prefet-saint-denis.png"
+	},
+	{ 
+	"name": "DRDFE PDL",
+	"image": "images/partenaires/financeurs-publics/prefet-pdl.png"
+	},
+	{ 
+	"name": "DRIHL IDF",
+	"image": "images/partenaires/financeurs-publics/drihl.png"
+	},
+	{ 
+	"name": "Ville de Paris",
+	"image": "images/partenaires/financeurs-publics/ville-paris.png"
+	},
+	{ 
+	"name": "DRDFE IDF",
+	"image": "images/partenaires/financeurs-publics/drdfe-idf.png"
+	},
+	{ 
+	"name": "DRIEETS 94",
+	"image": "images/partenaires/financeurs-publics/drieets-94.png"
+	},
+	{ 
+	"name": "Métropole Lyon",
+	"image": "images/partenaires/financeurs-publics/metropole-lyon.png"
+	},
+	{ 
+	"name": "DGCS",
+	"image": "images/partenaires/financeurs-publics/dgcs.jpeg"
+	},
+	{ 
+	"name": "Ministère chargé de l'égalité entre les femmes et les hommes",
+	"image": "images/partenaires/financeurs-publics/sdfe.png"
+	},
+	{ 
+	"name": "Direction de l'administration pénitentiaire",
+	"image": "images/partenaires/financeurs-publics/dap.png"
+	},
+	{ 
+	"name": "Fond pour le développement de la vie associative",
+	"image": "images/partenaires/financeurs-publics/fdva.png"
+	},
+	{ 
+	"name": "Ville de Nantes",
+	"image": "images/partenaires/financeurs-publics/nantes.png"
+	},
+	{ 
+	"name": "Conseil départemental 93",
+	"image": "images/partenaires/financeurs-publics/seine-saint-denis.png"
+	},
+	{ 
+	"name": "DDFE-94",
+	"image": "images/partenaires/financeurs-publics/prefet-val-marne.png"
+	},
+	{ 
+	"name": "Ville de Nanterre",
+	"image": "images/partenaires/financeurs-publics/nanterre.png"
+	},
+	{ 
+	"name": "Région Centre-Val de Loire",
+	"image": "images/partenaires/financeurs-publics/centre-val-de-loire.png"
+	},
+	{ 
+	"name": "Erasmus",
+	"image": "images/partenaires/financeurs-publics/erasmus.png"
+	},
+	{ 
+	"name": "Fonds Social Européen",
+	"image": "images/partenaires/financeurs-publics/fonds-social-europeen.png"
+	},
+	{ 
+	"name": "Prefecture Indre-et-Loire",
+	"image": "images/partenaires/financeurs-publics/indre-et-loire.png"
+	},
+	{ 
+	"name": "Métropole Le Mans",
+	"image": "images/partenaires/financeurs-publics/le-mans.png"
+	},
+	{ 
+	"name": "Prefecture Mayotte",
+	"image": "images/partenaires/financeurs-publics/mayotte.png"
+	},
+	{ 
+	"name": "Région PACA",
+	"image": "images/partenaires/financeurs-publics/paca.png"
+	},
+	{ 
+	"name": "Ville de Marseille",
+	"image": "images/partenaires/financeurs-publics/marseille.png"
+	},
+	{ 
+	"name": "Aix Marseille Université",
+	"image": "images/partenaires/financeurs-publics/aix-marseille-universite.png"
+	},
+	{ 
+	"name": "Ville de Pantin",
+	"image": "images/partenaires/financeurs-publics/pantin.png"
+	},
+	{ 
+	"name": "DGESCO",
+	"image": "images/partenaires/financeurs-publics/dgesco.png"
+	},
+	{ 
+	"name": "ARS IDF",
+	"image": "images/partenaires/financeurs-publics/ars-idf.jpg"
+	},
+	{ 
+	"name": "Ville de Tours",
+	"image": "images/partenaires/financeurs-publics/tours.png"
+	},
+	{ 
+	"name": "Région Pays de la Loire",
+	"image": "images/partenaires/financeurs-publics/pays-de-la-loire.png"
+	},
+	{ 
+	"name": "Ville d'Allonnes",
+	"image": "images/partenaires/financeurs-publics/allonnes.jpg"
+	}
+]
 }

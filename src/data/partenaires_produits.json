@@ -1,0 +1,20 @@
+{
+"category": "Partenaires produits",
+"partners": [
+	  { "name": "Always"
+      ,"image": "images/partenaires/produits/always.png"
+    },{ "name": "Modibodi"
+      ,"image": "images/partenaires/produits/modibodi.jpg"
+    },{ "name": "Les petites choses"
+      ,"image": "images/partenaires/produits/lespetiteschoses.png"
+    },{ "name": "Lola Health"
+      ,"image": "images/partenaires/produits/lolahealth.png"
+    },{ "name": "Fava"
+      ,"image": "images/partenaires/produits/fava.png"
+    },{ "name": "TotalEnergies"
+      ,"image": "images/partenaires/produits/total.png"
+    },{ "name": "JuvaSanté"
+      ,"image": "images/partenaires/produits/juvasante.png"
+    }
+]
+}
