@@ -2,19 +2,19 @@
 "category": "Mécénat de compétences",
 "partners": [
 	  { "name": "Astek"
-      ,"image": "images/partenaires/mecenat/astek.png"
+      ,"image": "/images/partenaires/mecenat/astek.png"
     },{ "name": "make.org"
-      ,"image": "images/partenaires/mecenat/makeorg.png"
+      ,"image": "/images/partenaires/mecenat/makeorg.png"
     },{ "name": "Service Plan"
-      ,"image": "images/partenaires/mecenat/serviceplan.png"
+      ,"image": "/images/partenaires/mecenat/serviceplan.png"
     },{ "name": "Share it"
-      ,"image": "images/partenaires/mecenat/share-it.svg"
+      ,"image": "/images/partenaires/mecenat/share-it.svg"
     },{ "name": "Fondation des femmes"
-      ,"image": "images/partenaires/financeurs-prives/fondation-des-femmes.png"
+      ,"image": "/images/partenaires/financeurs-prives/fondation-des-femmes.png"
     },{ "name": "Alter'incub CVL"
-      ,"image": "images/partenaires/operationnels/alterincub-cvl.png"
+      ,"image": "/images/partenaires/operationnels/alterincub-cvl.png"
     },{ "name": "Accenture"
-      ,"image": "images/partenaires/mecenat/accenture.png"
+      ,"image": "/images/partenaires/mecenat/accenture.png"
   }
 ]
 }
