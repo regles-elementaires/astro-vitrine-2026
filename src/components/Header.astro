@@ -6,6 +6,7 @@ import RightArrow from '../assets/right-arrow.svg';
 import ParlonsRegles from '../assets/parlons-regles.png';
 import Regla from '../assets/regla.png';
 import UEFlag from '../assets/ue-flag.png';
+import ActuFestival from '../assets/festival-10-ans-banniere.png';
 ---
 
 <header>
@@ -85,20 +86,25 @@ import UEFlag from '../assets/ue-flag.png';
             <div id="mega-actu" class="text-rebeige-300 px-6 flex flex-col">
               <div>
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
-              </div>              
-              <span class="font-lorimer-condensed text-4xl mt-6">Actu à venir</span>
-              <p class="font-extrabold text-sm mt-2">20 mars 2026</p>
-              <p class="mt-2">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, r adipiscing elit. Etiam eu turpis molestie, dictu</p>
+              </div>       
+              <a href="/actus/festival-10-ans">
+                <Image class="mt-4 w-3/4" src={ActuFestival} alt="" />      
+                <div class="font-lorimer-condensed text-4xl mt-4">Changer les règles pour changer le monde !</div>
+                <p class="font-extrabold text-sm mt-2">24 avril 2026</p>
+                <p class="mt-2">Découvrez la programmation de notre festival ! On vous donne rendez-vous en mai pour un mois riche en événements partout en France !</p>
+              </a>              
+              <!--
               <div class="mt-2">
                 <a href="#" class="inline-block">
                   <div class="flex items-center">
                       <div class="bg-rebeige-300 rounded-full flex items-center justify-center h-10 w-10 border-4 border-remaroon -me-4 z-200">
                           <Image class="w-2/3" src={RightArrow} alt="" />
-                      </div>    
+                      </div>                      
                       <div class="bg-rebeige-300 text-remaroon font-bold text-sm ps-6 py-0.5 pe-2">Voir toutes les actus</div>
-                  </div>
+                    </div>
                 </a>
-              </div>              
+              </div> 
+              -->             
             </div>
             <ul id="mega-nos-actions-submenu" class="text-rebeige-300">
               <li><a href="/actions/lutter-contre-la-precarite-menstruelle">Lutter contre la précarité menstruelle</a></li>

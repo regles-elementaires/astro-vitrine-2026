@@ -6,9 +6,9 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'actus'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, heroImage, tag } = Astro.props;
 ---
 
 <html lang="fr">
@@ -20,25 +20,25 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+					<div class="w-11/12 md:w-10/12 py-15 md:py-30 flex flex-col items-center">
+						<div class="bg-rered text-white font-lorimer-condensed text-3xl md:text-5xl px-6 py-2 -rotate-3">{tag}</div>
+						<h1 class="md:w-2/3 text-center mt-10">{title}</h1>
 					</div>
-					<slot />
+				</div>
+				<div class="w-full">
+					{heroImage && <Image src={heroImage} alt="" />}
+				</div>
+				<div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+					<div class="w-11/12 md:w-8/12 py-10 md:py-20">
+						<div class="border-b-2 pb-4">
+							Publié le <FormattedDate date={pubDate} />
+						</div>				
+						<p class="mt-10 mb-6 font-bold">
+							{description}
+						</p>
+						<slot />
+					</div>
 				</div>
 			</article>
 		</main>

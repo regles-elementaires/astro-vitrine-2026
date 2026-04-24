@@ -80,6 +80,11 @@ h1 {
 	font-size: 122px;
 	line-height: 95%;
 }
+article {
+	h1 {
+		font-size: 80px;
+	}
+}
 h2 {
 	font-size: 80px;
 	line-height: 95%;
@@ -315,6 +320,13 @@ img {
   transform: rotateY(180deg);
 } 
 
+/* ACTUS */
+article {
+	a {
+		text-decoration: underline;
+	}
+}
+
 @media (width < 48rem) { 
 	body {
 		font-size: 13px;
@@ -328,6 +340,11 @@ img {
 	h1 {
 		font-size: 64px;
 		line-height: 95%;
+	}
+	article {
+		h1 {
+			font-size: 56px;
+		}
 	}
 	h2 {
 		font-size: 56px;
