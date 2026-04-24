@@ -1,0 +1,44 @@
+{
+    "Category": "Financeurs publics",
+    "Partners": [
+        {
+            "Name": "Ville de Paris",
+            "Image": "/images/partners/ville-paris.png"
+        },
+        {
+            "Name": "Test 2",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 3",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 4",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 5",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 6",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 7",
+            "Link": "",
+            "Image": ""
+        },
+        {
+            "Name": "Test 8",
+            "Link": "",
+            "Image": ""
+        }
+    ]
+}

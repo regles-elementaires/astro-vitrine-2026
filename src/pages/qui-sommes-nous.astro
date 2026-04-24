@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import FinanceursPublics from '../components/partners/FinanceursPublics.astro';
 import Megaphone from '../assets/informer/URGENCE.png';
 import Equipe from '../assets/qui-sommes-nous/equipe-10-ans.jpg';
 import NotreRaison from '../assets/qui-sommes-nous/notre-raison.jpg';
@@ -218,7 +219,7 @@ import MaroonGoutte from '../assets/maroon-goutte.svg';
             </div>
 		</div>
         <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
-			<div class="w-11/12 py-10 md:py-20 flex flex-wrap">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
                 <div class="w-full md:w-1/2 md:-mt-8">
                     <Image class="md:w-5/6" src={DixAns} alt="" />
                 </div>
@@ -233,7 +234,7 @@ import MaroonGoutte from '../assets/maroon-goutte.svg';
             </div>
         </div>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
-			<div class="w-11/12 py-10 md:py-20 flex flex-col items-center">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
                 <h2 class="mb-10 md:mb-20">Retrouvez nos antennes</h2>
                 <div id="pdl" class="antenne w-full cursor-pointer transition-all duration-500 rounded-2xl py-10 text-rebeige-500 flex flex-col items-center">
                     <div class="font-lorimer-condensed text-3xl md:text-5xl text-center">Pays de la loire</div>
@@ -345,6 +346,31 @@ import MaroonGoutte from '../assets/maroon-goutte.svg';
                 </div>
             </div>
         </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col">
+                <h4>Nos rapports d'activité</h4>
+                <div class="w-full mt-10 flex flex-wrap">
+                    <div class="w-1/2 md:w-1/3">
+                        <div class="font-lorimer-condensed text-4xl md:text-5xl mb-4">2024</div>
+                        <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/Rapport_activite_A4_RE_2024.pdf" target="_blank" rel="noreferrer">Télécharger</a>
+                    </div>
+                    <div class="w-1/2 md:w-1/3">
+                        <div class="font-lorimer-condensed text-4xl md:text-5xl mb-4">2023</div>
+                        <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/RA_2023.pdf" target="_blank" rel="noreferrer">Télécharger</a>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mt-6 md:mt-0">
+                        <div class="font-lorimer-condensed text-4xl md:text-5xl mb-4">2022</div>
+                        <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/rapport_activit%C3%A9_2022_RE.pdf" target="_blank" rel="noreferrer">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col">
+                <h2 class="text-center">Partenaires</h2>
+                <FinanceursPublics />                    
+            </div>
+        </div>
 	</main>
 </Base>
 
@@ -354,12 +380,12 @@ import MaroonGoutte from '../assets/maroon-goutte.svg';
             antenne.classList.remove('text-rebeige-500');                                
             antenne.classList.remove('cursor-pointer');                                
             antenne.classList.add('bg-none-important');  
-            antenne.querySelector('.antenne-content').classList.add('opacity-100');
-            antenne.querySelector('.antenne-content').classList.add('max-h-[800px]');
-            antenne.querySelector('.antenne-content').classList.add('translate-y-0');
-            antenne.querySelector('.antenne-content').classList.add('pt-10');
-            antenne.querySelector('.antenne-content').classList.remove('max-h-0');
-            antenne.querySelector('.antenne-content').classList.remove('-translate-y-2');                                                             
+            antenne.querySelector('.antenne-content')!.classList.add('opacity-100');
+            antenne.querySelector('.antenne-content')!.classList.add('max-h-[800px]');
+            antenne.querySelector('.antenne-content')!.classList.add('translate-y-0');
+            antenne.querySelector('.antenne-content')!.classList.add('pt-10');
+            antenne.querySelector('.antenne-content')!.classList.remove('max-h-0');
+            antenne.querySelector('.antenne-content')!.classList.remove('-translate-y-2');                                                             
         });
     });
 </script>

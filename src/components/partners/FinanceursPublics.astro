@@ -1,0 +1,64 @@
+---
+import partnersData from "../../data/financeurs_publics.json";
+---
+
+<div>
+    <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">{partnersData.Category}</div>
+</div>
+
+<div class="relative" id="container-carousel-publics">
+    <div class="overflow-hidden py-4 px-6"> 
+        <div id="track-publics" class="flex transition-transform duration-500 ease-out">
+        {
+            partnersData.Partners.map((partner) => (
+                <div class="min-w-full md:min-w-1/5 p-4">
+                    <div class="bg-white rounded-xl p-4 h-30 text-center flex items-center justify-center transition-all duration-300">
+                        <img class="max-h-full w-auto" src={partner.Image} alt={partner.Name} />
+                    </div>
+                </div>
+            ))
+        }         
+        </div>
+    </div>
+
+    <button id="prevBtn-publics" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-2 md:-translate-x-6 bg-white p-3 rounded-full z-10 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button id="nextBtn-publics" class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-2 md:translate-x-6 bg-white p-3 rounded-full z-10 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+</div>
+
+<script>
+    /* https://tailwindflex.com/@Starboy/our-services */
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('track-publics');
+        const nextBtn = document.getElementById('nextBtn-publics');
+        const prevBtn = document.getElementById('prevBtn-publics');
+        
+        let index = 0;
+        const items = track!.children;
+        const itemsPerView = window.innerWidth >= 768 ? 5 : 1;
+        const maxIndex = items.length - itemsPerView;
+
+
+        function updateCarousel() {
+            track!.style.transform = `translateX(-${(index * 100) / itemsPerView}%)`;
+        }
+
+        function nextSlide() {
+            index = index < maxIndex ? index + 1 : 0;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            index = index > 0 ? index - 1 : maxIndex;
+            updateCarousel();
+        }
+
+        nextBtn!.addEventListener('click', () => { nextSlide(); });
+        prevBtn!.addEventListener('click', () => { prevSlide(); });
+        
+    });
+</script>
