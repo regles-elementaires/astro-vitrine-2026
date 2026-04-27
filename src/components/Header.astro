@@ -6,6 +6,7 @@ import RightArrow from '../assets/right-arrow.svg';
 import ParlonsRegles from '../assets/parlons-regles.png';
 import Regla from '../assets/regla.png';
 import UEFlag from '../assets/ue-flag.png';
+import NavRedArrow from '../assets/nav-red-arrow.png';
 import ActuFestival from '../assets/festival-10-ans-banniere.png';
 ---
 
@@ -32,8 +33,8 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
       <div class="hidden md:block nav-column second-nav-column"></div>
       <div class="hidden md:flex justify-end nav-column third-nav-column">
         <div class="nav-right-buttons">
-          <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4" href="/">Ressources</a>
-          <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="/">Faire un don</a>
+          <!-- <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4" href="/">Ressources</a> -->
+          <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="https://regleselementaires.don-en-ligne.com/findannee2024/?lang=fr_FR&frequency=once&amount=16000" target="_blank">Faire un don</a>
         </div>        
       </div>
     </div>
@@ -60,8 +61,8 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
           <!-- MOBILE ONLY -->
           <div class="block md:hidden">
             <div class="bg-remaroon w-full p-4 flex flex-wrap justify-center">
-              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Ressources</a>
-              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Actualités</a>
+              <!-- <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Ressources</a> -->
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/actus/festival-10-ans">Notre festival !</a>
               <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Faire un don</a>
             </div>  
             <div class="flex">
@@ -83,7 +84,7 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
           </div>
           <!-- END MOBILE ONLY -->
           <div class="hidden md:block nav-column bg-remaroon py-6">
-            <div id="mega-actu" class="text-rebeige-300 px-6 flex flex-col">
+            <div id="mega-actu" class="text-rebeige-300 px-8 flex flex-col">
               <div>
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
               </div>       
@@ -106,24 +107,38 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
               </div> 
               -->             
             </div>
-            <ul id="mega-nos-actions-submenu" class="text-rebeige-300">
-              <li><a href="/actions/lutter-contre-la-precarite-menstruelle">Lutter contre la précarité menstruelle</a></li>
-              <li><a href="/actions/deployer-education-menstruelle">Déployer l'éducation menstruelle</a></li>
-              <li><a href="/informer#sensibiliser">Informer et sensibiliser</a></li>
-              <li><a href="/actions/former">Former</a></li>
-              <li><a href="/actions/mobiliser">Mobiliser</a></li>
-              <li><a href="/plaidoyer">Changer les règles</a></li>
-              <li><a href="/europe">Actions à l’échelle européenne</a></li>
-            </ul>
-            <ul id="mega-sengager-submenu" class="text-rebeige-300">
-              <li><a href="/s-engager">Faire un don</a></li>
-              <li><a href="/s-engager">Organiser une collecte</a></li>
-              <li><a href="/s-engager">Devenir bénévole</a></li>
-              <li><a href="/s-engager">Devenir partenaire</a></li>
-              <li><a href="/s-engager">Devenir une entreprise engagée</a></li>
-              <li><a href="/s-engager">Devenir une collectivité engagée</a></li>
-              <li><a href="/s-engager">Devenir un établissement engagé</a></li>
-            </ul>
+            <div id="mega-nos-actions-submenu" class="flex items-center">
+              <div class="w-1/10 pe-4">
+                <Image src={NavRedArrow} alt="" />
+              </div>
+              <div class="w-9/10 pe-4"> 
+                <ul class="text-rebeige-300">
+                  <li><a href="/actions/lutter-contre-la-precarite-menstruelle">Lutter contre la précarité menstruelle</a></li>
+                  <li><a href="/actions/deployer-education-menstruelle">Déployer l'éducation menstruelle</a></li>
+                  <li><a href="/informer#sensibiliser">Informer et sensibiliser</a></li>
+                  <li><a href="/actions/former">Former</a></li>
+                  <li><a href="/actions/mobiliser">Mobiliser</a></li>
+                  <li><a href="/plaidoyer">Changer les règles</a></li>
+                  <li><a href="/europe">Actions à l’échelle européenne</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="mega-sengager-submenu" class="flex items-center">
+              <div class="w-1/10 pe-4">
+                <Image src={NavRedArrow} alt="" />
+              </div>
+              <div class="w-9/10 pe-4">
+                <ul class="text-rebeige-300">
+                  <li><a href="/s-engager">Faire un don</a></li>
+                  <li><a href="/s-engager">Organiser une collecte</a></li>
+                  <li><a href="/s-engager">Devenir bénévole</a></li>
+                  <li><a href="/s-engager">Devenir partenaire</a></li>
+                  <li><a href="/s-engager">Devenir une entreprise engagée</a></li>
+                  <li><a href="/s-engager">Devenir une collectivité engagée</a></li>
+                  <li><a href="/s-engager">Devenir un établissement engagé</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="hidden md:block nav-column bg-rebeige-100 flex-wrap">
             <div class="w-full flex py-8 pe-15">
@@ -144,6 +159,7 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
                 <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.regla-app.fr/" target="_blank">Découvrir</a>
               </div>
             </div>
+            <!--
             <div class="w-full flex flex-col bg-regreen py-6 ps-6 pe-15">
               <span class="font-lorimer-condensed text-remaroon text-4xl">Nos ressources</span>
               <div class="mt-2">
@@ -156,7 +172,8 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
                   </div>
                 </a>
               </div>
-            </div>
+            </div> 
+            -->
           </div>
         </div>
       </div>

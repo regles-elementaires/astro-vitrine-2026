@@ -1,0 +1,148 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import HeaderImage from '../assets/s-engager/s-engager-header.jpg';
+import HeaderPicto from '../assets/actions/SANG-ACCEPTE.png';
+import Argent from '../assets/s-engager/ARGENT.png';
+import Collecte from '../assets/s-engager/COLLECTE.png';
+import DownArrow from '../assets/down-arrow.svg';
+import CollectePersonne from '../assets/actions/COLLECTE-PERSONNE.png';
+import Collecte1 from '../assets/s-engager/collecte-1.jpg';
+import Collecte2 from '../assets/s-engager/collecte-2.jpg';
+import Collecte3 from '../assets/s-engager/collecte-3.jpg';
+---
+
+<Base title="S'engager - Règles Élémentaires">
+	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full text-rered relative z-2">
+					<h1>S'engager<br/>à nos côtés</h1>
+				</div>
+                <div class="">
+                    <Image class="absolute w-25 md:w-50 -mt-5 md:mt-10 -ms-20 md:-ms-50 z-1" src={HeaderPicto} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-white">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-between">
+                <div class="w-full md:w-1/2">
+                    <p class="font-bold">Changer les règles,<br/>c’est l’affaire de toutes et tous !</p>
+                    <p class="mt-4">Depuis 2015, des milliers de citoyen·nes, bénévoles, organisations, entreprises et collectivités se mobilisent à nos côtés pour lutter contre la précarité menstruelle et faire reculer le tabou des règles.</p>
+                </div>
+                <div class="w-full md:w-4/10">
+                    <Image class="hidden md:block md:-mt-50" src={HeaderImage} alt="" />
+                </div>
+                <div class="w-full mt-4">
+                    <p class="font-bold">Cette mobilisation collective a déjà permis :</p>
+                    <div class="flex flex-wrap mt-10">
+                        <div class="w-full md:w-1/4 flex md:pe-4">
+                            <div class="bg-rebeige-500 grow flex flex-col rounded-xl p-8 text-remaroon mb-4">
+                                <div class="font-lorimer-condensed-black text-4xl">29 millions</div>
+                                <div class="mt-2">de protections périodiques redistribuées</div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/4 flex md:pe-4">
+                            <div class="bg-rebeige-500 grow flex flex-col rounded-xl p-8 text-remaroon mb-4">
+                                <div class="font-lorimer-condensed-black text-4xl">3,3 millions</div>
+                                <div class="mt-2">de mois de règles<br/>couverts</div>
+                            </div>
+                        </div> 
+                        <div class="w-full md:w-1/4 flex md:pe-4">
+                            <div class="bg-rebeige-500 grow flex flex-col rounded-xl p-8 text-remaroon mb-4">
+                                <div class="font-lorimer-condensed-black text-4xl">1 million</div>
+                                <div class="mt-2">de personnes accompagnées</div>
+                            </div>
+                        </div>    
+                        <div class="w-full md:w-1/4 flex">
+                            <div class="bg-rebeige-500 grow flex flex-col rounded-xl p-8 text-remaroon mb-4">
+                                <div class="font-lorimer-condensed-black text-4xl">1 800</div>
+                                <div class="mt-2">structures partenaires sur tout le rerritoire</div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-remaroon text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex justify-center">
+                <div class="w-full md:w-3/4 font-lorimer-condensed text-3xl md:text-5xl text-center">
+                    <p>Chaque engagement compte.<br/>À votre échelle, vous pouvez contribuer à faire avancer la justice menstruelle.</p>                                
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+                <h2 class="w-3/4 md:w-auto bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3">Faire un don</h2>
+                <div class="w-full flex flex-wrap mt-10 md:mt-20">
+                    <div class="w-full md:w-1/2 md:pe-10 flex flex-col">
+                        <h3 class="px-8 md:px-16 -mb-14 md:-mb-20">
+                            <span class="relative z-2">Soutenir<br/>financièrement<br/>nos actions</span>
+                            <Image class="hidden md:block absolute w-46 z-1 ms-[24%] -mt-50 z-1" src={Argent} alt="" />
+                        </h3>
+                        <div class="bg-white grow rounded-xl px-8 md:px-16 pt-20 md:pt-26 pb-6 md:pb-10">
+                            <p>Faire un don, c’est permettre à l’association de développer ses actions de terrain, ses programmes d’éducation menstruelle, ses formations et ses campagnes de plaidoyer.<br/>Votre soutien contribue concrètement à :</p>
+                            <p class="mt-4">financer des programmes de sensibilisation</p>
+                            <ul class="list-disc ms-5">
+                                <li>développer des solutions concrètes contre la précarité menstruelle</li>
+                                <li>produire des études et des données</li>
+                                <li>faire évoluer les politiques publiques</li>
+                            </ul>
+                            <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rered text-rebeige-300 p-2.5" href="https://regleselementaires.don-en-ligne.com/findannee2024/?lang=fr_FR&frequency=once&amount=16000" target="_blank">Faire un don</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:ps-10 mt-10 md:mt-0">
+                        <h3 class="px-8 md:px-16 -mb-14 md:-mb-20">
+                            <span class="relative z-2">Faire un don<br/>de produits<br/>périodiques</span>
+                            <Image class="hidden md:block absolute w-52 z-1 ms-[24%] -mt-50 z-1" src={Collecte} alt="" />
+                        </h3>
+                        <div class="bg-white rounded-xl px-8 md:px-16 pt-20 md:pt-26 pb-6 md:pb-10 flex flex-col items-center">
+                            <p>Vous pouvez également soutenir l’association en donnant des protections périodiques (serviettes, tampons, cups, culottes menstruelles…). Ces produits sont redistribués à des associations et structures médico-sociales qui accompagnent des personnes en situation de précarité.</p>
+                            <p class="font-bold mt-4 w-full">Produits acceptés :</p>
+                            <p class="">Les paquets entamés peuvent être acceptés si les protections sont emballées individuellement.</p>
+                            <div class="mt-4 big-maroon-shadow bg-rebeige-100 h-16 w-16 flex items-center justify-center">	
+                                <Image src={DownArrow} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="md:ps-15 md:pe-0 flex justify-center md:justify-end bg-remaroon text-rebeige-300">
+			<div class="w-full md:w-11/12 flex flex-wrap justify-center">
+                <div class="w-11/12 md:w-5/11 flex flex-wrap py-10 md:py-20 px-5 md:px-0">
+                    <div class="w-full md:w-3/4">
+                        <h4>Où donner ?</h4>
+                        <p class="mt-6 font-bold">Vous ne trouvez pas de point de collecte autour de vous ? </p>
+                        <p>Envoyez vos protections bien emballées directement dans nos locaux :</p>
+                        <div class="mt-6 border-s-2 border-rebeige-300 ps-8">
+                            Règles Élémentaires<br/>
+                            13 rue Santeuil75005<br/>
+                            Paris
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 flex justify-center">
+                        <Image class="md:absolute w-40 md:w-50 md:mt-20 md:-rotate-12" src={CollectePersonne} alt="" />
+                    </div>
+                </div> 		
+                <div class="w-full md:w-6/11">
+                    <iframe aria-label="carte des collectes" class="w-full min-h-80 h-full" src="https://collectes.regleselementaires.com/map/home_vitrine"></iframe>
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-white text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-center">
+                <div class="w-full md:w-4/10">
+                    <Image src={Collecte1} alt="" />
+                </div> 		
+                <div class="w-full md:w-6/10 md:ps-14 mt-6 md:mt-0">
+                    <h3 class="text-rered">Organiser une collecte</h3>
+                    <p class="mt-6">Depuis la première collecte organisée en 2015, la mobilisation citoyenne est au cœur de l’action de l’association. Aujourd’hui encore, des collectes s’organisent partout en France dans des écoles, des entreprises, des commerces, des associations ou des événements locaux.</p>
+                    <p class="mt-4">Ces collectes permettent de récupérer des produits essentiels qui sont ensuite redistribués à des associations et structures médico-sociales partenaires, en contact direct avec les publics concernés.</p>
+                    <p class="mt-4">Nous vous accompagnons avec des outils et des ressources pour organiser votre collecte simplement.</p>
+                    <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://collectes.regleselementaires.com/" target="_blank">Je crée mon compte</a>
+                </div> 		
+			</>
+		</div>
+    </main>
+</Base>

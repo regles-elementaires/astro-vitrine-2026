@@ -107,7 +107,6 @@ nav:has(.wrapper #menu-btn:checked){
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    padding-left: 30px;
     li a {
       font-family: "LorimerCondensed";
       text-transform: uppercase;
@@ -117,6 +116,9 @@ nav:has(.wrapper #menu-btn:checked){
       padding-bottom: 14px;
     }
   }
+  #mega-actu {
+    transition: all 0.3s ease;
+  }
 }
 
 #mega-nos-actions-submenu:hover, #mega-sengager-submenu:hover {
@@ -124,10 +126,14 @@ nav:has(.wrapper #menu-btn:checked){
   visibility: visible !important;
 }
 
-nav:has(#mega-nos-actions-submenu:hover), nav:has(#mega-sengager-submenu:hover){
-  .second-nav-column{
-    /* ADD ARROW */
-  }
+#mega-actu:has(~ #mega-nos-actions-submenu:hover) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+#mega-actu:has(~ #mega-sengager-submenu:hover) {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 nav:has(#nos-actions-link:hover){
@@ -135,8 +141,9 @@ nav:has(#nos-actions-link:hover){
     opacity: 1;
     visibility: visible;
   }
-  .second-nav-column{
-    /* ADD ARROW */
+  #mega-actu {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -144,6 +151,10 @@ nav:has(#sengager-link:hover){
   #mega-sengager-submenu {
     opacity: 1;
     visibility: visible;
+  }
+  #mega-actu {
+    opacity: 0;
+    visibility: hidden;
   }
   .second-nav-column{
     /* ADD ARROW */

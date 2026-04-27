@@ -7,7 +7,7 @@ import DecapCMS from '@jee-r/astro-decap-cms';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://regleselementaires.com',
   integrations: [
     sitemap(),
     DecapCMS({
