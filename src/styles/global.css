@@ -159,6 +159,7 @@ img {
 	-webkit-text-stroke: 2.44px var(--color-remaroon);
 	text-shadow: -3.65px 6.09px 0px var(--color-remaroon);
 	font-family: "LorimerCondensedBlack", sans-serif;
+	letter-spacing: -0.025em;
 }
 
 .text-border-black {

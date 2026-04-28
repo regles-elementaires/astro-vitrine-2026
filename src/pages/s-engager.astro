@@ -7,9 +7,20 @@ import Argent from '../assets/s-engager/ARGENT.png';
 import Collecte from '../assets/s-engager/COLLECTE.png';
 import DownArrow from '../assets/down-arrow.svg';
 import CollectePersonne from '../assets/actions/COLLECTE-PERSONNE.png';
+import CollecteCarton from '../assets/s-engager/COLLECTE-CARTON.png';
 import Collecte1 from '../assets/s-engager/collecte-1.jpg';
 import Collecte2 from '../assets/s-engager/collecte-2.jpg';
 import Collecte3 from '../assets/s-engager/collecte-3.jpg';
+import PinIcon from '../assets/s-engager/pin.svg';
+import PeopleIcon from '../assets/s-engager/people.svg';
+import ClockIcon from '../assets/s-engager/clock.svg';
+import Benevole from '../assets/s-engager/benevole.jpg';
+import UEFlag from '../assets/ue-flag.png';
+import Communaute from '../assets/home/COMMUNAUTE.png';
+import DevenirPartenaire from '../assets/s-engager/devenir-partenaire.jpg';
+import DevenirEntreprise from '../assets/s-engager/devenir-entreprise.jpg';
+import DevenirCollectivite from '../assets/s-engager/devenir-collectivite.jpg';
+import DevenirEtablissement from '../assets/s-engager/devenir-etablissement.jpg';
 ---
 
 <Base title="S'engager - Règles Élémentaires">
@@ -71,7 +82,7 @@ import Collecte3 from '../assets/s-engager/collecte-3.jpg';
                 </div> 		
 			</div>
 		</div>
-        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+        <div id="faire-un-don" class="anchor px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
                 <h2 class="w-3/4 md:w-auto bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3">Faire un don</h2>
                 <div class="w-full flex flex-wrap mt-10 md:mt-20">
@@ -96,7 +107,7 @@ import Collecte3 from '../assets/s-engager/collecte-3.jpg';
                             <span class="relative z-2">Faire un don<br/>de produits<br/>périodiques</span>
                             <Image class="hidden md:block absolute w-52 z-1 ms-[24%] -mt-50 z-1" src={Collecte} alt="" />
                         </h3>
-                        <div class="bg-white rounded-xl px-8 md:px-16 pt-20 md:pt-26 pb-6 md:pb-10 flex flex-col items-center">
+                        <div class="bg-white grow rounded-xl px-8 md:px-16 pt-20 md:pt-26 pb-6 md:pb-10 flex flex-col items-center">
                             <p>Vous pouvez également soutenir l’association en donnant des protections périodiques (serviettes, tampons, cups, culottes menstruelles…). Ces produits sont redistribués à des associations et structures médico-sociales qui accompagnent des personnes en situation de précarité.</p>
                             <p class="font-bold mt-4 w-full">Produits acceptés :</p>
                             <p class="">Les paquets entamés peuvent être acceptés si les protections sont emballées individuellement.</p>
@@ -130,8 +141,8 @@ import Collecte3 from '../assets/s-engager/collecte-3.jpg';
                 </div> 		
 			</div>
 		</div>
-        <div class="px-5 md:px-15 flex justify-center bg-white text-remaroon">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-center">
+        <div id="organiser-collecte" class="anchor px-5 md:px-15 flex justify-center bg-white text-remaroon">
+			<div class="w-11/12 md:w-10/12 pt-10 md:pt-20 pb-20 md:pb-30 flex flex-wrap justify-center">
                 <div class="w-full md:w-4/10">
                     <Image src={Collecte1} alt="" />
                 </div> 		
@@ -142,7 +153,193 @@ import Collecte3 from '../assets/s-engager/collecte-3.jpg';
                     <p class="mt-4">Nous vous accompagnons avec des outils et des ressources pour organiser votre collecte simplement.</p>
                     <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://collectes.regleselementaires.com/" target="_blank">Je crée mon compte</a>
                 </div> 		
-			</>
+			</div>
 		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-remaroon">
+			<div class="w-11/12 md:w-10/12 pb-10 md:pb-20 flex flex-wrap justify-center">
+                <h3 class="text-maroon-shadow text-rebeige-100 text-center -mt-5 md:-mt-8">Deux options existent</h3>
+                <Image class="hidden md:block absolute w-50 ms-[60%] -mt-26" src={CollecteCarton} alt="" />
+                <div class="w-full flex flex-wrap mt-10 md:mt-20">
+                    <div class="w-full md:w-1/2 flex flex-col md:pe-10">
+                        <div class="bg-rebeige-100 p-4 text-center font-lorimer-condensed text-4xl rounded-xl">
+                            La collecte en supermarché
+                        </div>
+                        <Image class="mt-6" src={Collecte2} alt="" />
+                        <div class="mt-6 bg-rebeige-100 big-maroon-shadow px-7 py-9">
+                            <div class="flex items-center">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={PinIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Lieu :</b> dans un supermarché de votre choix
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={PeopleIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Nombre de personnes qui collectent :</b><br/>3 minimum
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={ClockIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Durée :</b> une demi-journée ou plus
+                                </div>
+                            </div>
+                            <p class="mt-6">La collecte en supermarché est le mode de collecte le plus efficace ! En un temps record, vous collectez un maximum de protections périodiques (en moyenne de quoi assurer les besoins d’une association partenaire pendant 5 mois). C’est un mode de collecte qui nécessite d’être plusieurs, donc idéal entre ami·es ou collègues pour se lancer des défis !</p>
+                            <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://doccollectes.blob.core.windows.net/statics/Guide%20Collecte%20Supermarche%CC%81.pdf" target="_blank">Je consulte le guide</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col md:ps-10 mt-10 md:mt-0">
+                        <div class="bg-rebeige-100 p-4 text-center font-lorimer-condensed text-4xl rounded-xl">
+                            La collecte individuelle
+                        </div>
+                        <Image class="mt-6" src={Collecte3} alt="" />
+                        <div class="mt-6 bg-rebeige-100 big-maroon-shadow px-7 py-9">
+                            <div class="flex items-center">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={PinIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Lieu :</b> à vous de choisir (établissement scolaire, mairie, bibliothèque...)
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={PeopleIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Nombre de personnes qui collectent :</b><br/>1 minimum
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <div class="w-1/6 md:w-1/10 pe-4 flex justify-center">
+                                    <Image class="" src={ClockIcon} alt="" />
+                                </div>
+                                <div class="w-5/6 md:w-9/10 border-b-2 border-remaroon pb-2 md:pb-4">
+                                    <b>Durée :</b> à déterminer
+                                </div>
+                            </div>
+                            <p class="mt-6">La collecte individuelle vous permet d’emmener l’initiative dans le lieu de votre choix. Contrairement à la collecte en supermarché, elle peut être plus longue, et ne nécessite pas d’être animée tout du long. Ce a de collecte est à privilégier pour sensibiliser au sujet de la précarité menstruelle, faire naitre des discussions…</p>
+                            <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://doccollectes.blob.core.windows.net/statics/Guide%20Collecte%20Individuelle.pdf" target="_blank">Je consulte le guide</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+		</div>
+        <div id="devenir-benevole" class="anchor px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-center">
+                <div class="w-full flex flex-wrap items-end">
+                    <div class="w-full md:w-4/10">
+                        <Image class="hidden md:block w-60 absolute -mt-[15%] ms-[18%]" src={Communaute} alt="" />
+                        <h2>Devenir<br/><span class="text-rered">bénévole</span></h2>
+                    </div>
+                    <div class="w-full md:w-4/10 mt-6 md:mt-0">
+                        <Image class="" src={Benevole} alt="" />
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap">
+                    <div class="w-full md:w-5/10 mt-6 md:mt-10">
+                        <p class="font-bold">Règles Élémentaires s’appuie sur un réseau de bénévoles présent partout sur le territoire. Sensibilisation, événements, mobilisation locale : les bénévoles jouent un rôle essentiel dans le développement de nos actions.</p>
+                        <p class="mt-4">Alors, la lutte contre la précarité menstruelle et le tabou des règles est une cause qui vous tient à cœur ?<br/>Vous n’avez pas beaucoup de temps, mais de la motivation à revendre ? Vous pouvez agir concrètement !</p>
+                        <div>
+                            <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://airtable.com/appAYPWZaKGpSxkBF/shrRIe4ZvCaoJNp9w " target="_blank">Devenir bénévole</a>
+                        </div>
+                        <div>
+                            <a class="mt-6 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://devenir-benevole.regleselementaires.com/" target="_blank">Découvrir les dernières actions</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-5/10 flex flex-col items-center mt-6 md:-mt-10">
+                        <div class="md:w-3/4 bg-rebeige-100 p-6 md:p-8 rounded-3xl">
+                            <div class="flex items-center">
+                                <Image class="w-30" src={UEFlag} alt="" />
+                                <div class="font-bold ms-4">Cofinancé par<br/>l'Union européenne</div>
+                            </div>
+                            <p class="mt-4">Nos actions de mobilisation bénévoles sont cofinancées par l’Union européenne pour nous aider à accompagner et structurer le réseau bénévole et favoriser le développement de l’engagement bénévole local.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="devenir-partenaire" class="anchor px-5 md:pe-15 md:ps-0 flex justify-center md:justify-start bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap justify-center items-center">
+                <div class="w-full md:w-5/11">
+                    <Image class="" src={DevenirPartenaire} alt="" />
+                </div>  
+                <div class="w-full md:w-6/11 md:ps-10 mt-6 md:mt-0">
+                    <h2>Devenir<br/><span class="text-rered">partenaire</span></h2>
+                    <div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Construire des projets ensemble</div>
+                    <p class="mt-6">Associations, fondations, institutions, réseaux professionnels ou acteur·ices de terrain : nous travaillons avec de nombreux partenaires pour développer des projets communs et amplifier l’impact de nos actions.<br/>Partenariats, mécénat, co-construction de programmes, soutien à nos campagnes : il existe de nombreuses façons de collaborer.</p>
+                    <div>
+                        <a class="mt-8 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="mailto:partenariat@regleselementaires.com" target="_blank">Nous contacter</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div id="devenir-entreprise" class="anchor px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap justify-center items-center"> 
+                <div class="w-full md:w-6/11 md:pe-10">
+                    <h2>Devenir une<br/><span class="text-rered">entreprise engagée</span></h2>
+                    <div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Mobiliser son entreprise pour l’égalité</div>
+                    <p class="mt-6">Les entreprises peuvent jouer un rôle majeur dans la lutte contre la précarité menstruelle et le tabou des règles.</p>
+                    <p class="mt-6 font-bold">Nous accompagnons les entreprises qui souhaitent :</p>
+                    <ul class="list-disc ms-5">
+                        <li>soutenir l’association via le mécénat</li>
+                        <li>organiser des collectes de produits périodiques</li>
+                        <li>sensibiliser leurs équipes avec des formats innovants</li>
+                        <li>former les équipes</li>
+                        <li>intégrer la santé menstruelle dans leurs politiques d’égalité</li>
+                    </ul>
+                    <div>
+                        <a class="mt-8 small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://doccollectes.blob.core.windows.net/statics/offre_accompagnement_regles_au_travail.pdf" target="_blank">Téléchargez notre catalogue d’action</a>
+                    </div>
+                </div>  
+                <div class="w-full md:w-5/11 mt-6 md:mt-0">
+                    <Image class="" src={DevenirEntreprise} alt="" />
+                </div> 
+            </div>
+        </div>
+        <div id="devenir-collectivite" class="anchor px-5 md:pe-15 md:ps-0 flex justify-center md:justify-start bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap justify-center items-center">
+                <div class="w-full md:w-5/11">
+                    <Image class="" src={DevenirCollectivite} alt="" />
+                </div>  
+                <div class="w-full md:w-6/11 md:ps-10 mt-6 md:mt-0">
+                    <h2>Devenir une<br/><span class="text-rered">collectivité engagée</span></h2>
+                    <div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Agir à l’échelle des territoires</div>
+                    <p class="mt-6">Les collectivités territoriales ont un rôle essentiel pour améliorer l’accès aux protections périodiques, développer l’éducation menstruelle et intégrer les enjeux menstruels dans les politiques publiques locales.</p>
+                    <p class="mt-6 font-bold">Nous accompagnons les collectivités qui souhaitent :</p>
+                    <ul class="list-disc ms-5">
+                        <li>mettre en place des dispositifs de gratuité</li>
+                        <li>sensibiliser les publics</li>
+                        <li>former les professionnel·les</li>
+                        <li>développer des politiques locales de justice menstruelle</li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+        <div id="devenir-etablissement" class="anchor px-5 md:ps-15 md:pe-0 flex justify-center md:justify-end bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 py-10 md:py-20 flex flex-wrap justify-center items-center"> 
+                <div class="w-full md:w-6/11 md:pe-10">
+                    <h2>Devenir un<br/><span class="text-rered">établissement scolaire engagé</span></h2>
+                    <div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Faire de l’école un lieu d’égalité</div>
+                    <p class="mt-6">Les établissements scolaires sont un lieu clé pour lutter contre les tabous et développer l’éducation menstruelle.</p>
+                    <p class="mt-6 font-bold">Nous accompagnons les écoles, collèges, lycées et établissements d’enseignement supérieur qui souhaitent :</p>
+                    <ul class="list-disc ms-5">
+                        <li>organiser des collectes</li>
+                        <li>sensibiliser les élèves</li>
+                        <li>mettre en place des actions d’éducation menstruelle</li>
+                        <li>améliorer l’accès aux protections périodiques</li>
+                    </ul>
+                </div>  
+                <div class="w-full md:w-5/11 mt-6 md:mt-0">
+                    <Image class="" src={DevenirEtablissement} alt="" />
+                </div> 
+            </div>
+        </div>
     </main>
 </Base>
