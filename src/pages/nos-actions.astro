@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import HeaderImage from '../assets/actions/nos-actions.jpg';
+import HeaderPicto from '../assets/informer/URGENCE.png';
 import SmallRightArrow from '../assets/actions/small-right-arrow.svg';
 import BigRightArrow from '../assets/actions/big-right-arrow.svg';
 import LutterPrecarite from '../assets/actions/lutter-precarite.png';
@@ -16,10 +17,13 @@ import Europe from '../assets/actions/europe.svg';
 <Base title="Nos actions - Règles Élémentaires">
 	<main>
 		<div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20">
-				<div class="text-rered">
+			<div class="w-11/12 md:w-10/12 flex py-10 md:py-20">
+				<div class="w-full md:w-7/10 text-rered relative z-1">
 					<h2>Agir à tous<br/>les niveaux pour<br/>changer durable&shy;ment<br/>les règles</h2>
-				</div>			
+                </div>			
+                <div class="w-3/10">
+                    <Image class="absolute w-30 md:w-60 z-0 -ms-10 md:ms-0 mt-20 md:mt-0" src={HeaderPicto} alt="" />
+                </div>
 			</div>
 		</div>
         <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
