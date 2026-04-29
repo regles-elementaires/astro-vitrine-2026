@@ -9,7 +9,9 @@ import DecapCMS from '@jee-r/astro-decap-cms';
 export default defineConfig({
   site: 'https://regleselementaires.com',
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) => page !== 'https://regleselementaires.com/admin/',
+    }),
     DecapCMS({
       previewStyles: [
 		'/src/styles/global.css',
