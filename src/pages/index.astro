@@ -5,6 +5,7 @@ import { SITE_TITLE } from '../consts';
 import FAQ from '../components/FAQ.astro';
 import ExclamationMark from '../assets/home/exclamation-mark.svg';
 import HeroMobile from '../assets/home/hero-mobile.png';
+import ActuPicto from '../assets/home/URGENCE-REVERSE.png';
 import DownArrow from '../assets/home/down-arrow.svg';
 import Communaute from '../assets/home/COMMUNAUTE.png';
 import Sororite from '../assets/home/SORORITE.png';
@@ -15,6 +16,7 @@ import Sengager from '../assets/home/sengager.png';
 import Sinformer from '../assets/home/sinformer.png';
 import Journal from '../assets/home/JOURNAL.png';
 import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
+import ActuFestival from '../assets/festival-10-ans-banniere.png';
 ---
 
 <Base title={SITE_TITLE}>
@@ -38,6 +40,25 @@ import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
 				</div>				
 			</div>
 		</div>
+		<div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 flex flex-col items-center py-10 md:py-20">
+				<h2>Actualités</h2>
+				<Image class="absolute hidden md:block w-80 -mt-30 right-[10%] z-0" src={ActuPicto} alt="" />
+				<div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Les règles bougent. Nous aussi.</div>
+				<p class="md:w-3/4 mt-6 text-center">Campagnes, prises de parole, études, événements, plaidoyer, actions de terrain : retrouvez les actualités qui font avancer la justice menstruelle au quotidien.</p>
+				<div class="mt-10 bg-rebeige-300 text-remaroon rounded-xl p-6 md:p-10 flex flex-wrap items-center">
+					<div class="w-full md:w-1/2 md:pe-6">
+						<h4>Changer les règles pour changer le monde !</h4>
+						<p class="font-extrabold text-sm mt-2">24 avril 2026</p>
+						<p class="mt-4">Depuis 10 ans, Règles Élémentaires agit pour que toutes les femmes et les personnes qui ont, ont eu ou auront leurs règles puissent les vivre sans précarité, sans tabou, sans honte.</p>
+						<a class="mt-4 inline-block font-bold underline" href="/actus/festival-10-ans">En savoir plus</a>
+					</div>
+					<div class="w-full md:w-1/2 md:ps-6 mt-4 md:mt-0">
+						<Image class="" src={ActuFestival} alt="" />				
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500">
 			<div class="w-11/12 md:w-10/12 flex flex-col items-center py-10 md:py-20">
 				<h2 class="text-rered text-left md:text-center">
@@ -45,8 +66,8 @@ import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
 					<Image class="absolute right-6 -mt-20 block md:hidden w-32" src={Sororite} alt="" />
 				</h2>
 				<div class="flex mt-6 md:mt-24">
-					<div class="w-1/4 z-10">
-						<Image class="hidden md:block ms-10 -me-10" src={Sororite} alt="" />
+					<div class="hidden md:block w-1/4 z-10">
+						<Image class="ms-10 -me-10" src={Sororite} alt="" />
 					</div>
 					<div class="md:w-1/2 flex flex-col items-center">
 						<div class="bg-white rounded-xl p-6 md:p-15 text-remaroon">
@@ -68,19 +89,19 @@ import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
 				<div class="flex flex-col items-center md:-mb-80">
 					<div class="flex flex-wrap mt-8 md:mt-12 text-white">
 						<div class="w-full md:w-1/3 md:mt-16">
-							<div class="mx-4 bg-rered big-maroon-shadow px-7 py-9">
+							<div class="mx-4 bg-rered big-maroon-shadow px-5 md:px-7 py-7 md:py-9">
 								<h5 class="font-lorimer-condensed-black">L’accessibilité<br/>des produits<br/>périodiques</h5>
 								<p class="mt-6">Nous pensons qu’il faut rendre accessibles les produits périodiques en quantité suffisante et que toute personne qui en a besoin doit pouvoir en bénéficier gratuitement.</p>
 							</div>
 						</div>
 						<div class="w-full md:w-1/3 mt-6 md:mt-0">
-							<div class="mx-4 bg-redarkpink big-maroon-shadow px-7 py-9">
+							<div class="mx-4 bg-redarkpink big-maroon-shadow px-5 md:px-7 py-7 md:py-9">
 								<h5 class="font-lorimer-condensed-black">La généralisation<br/>de l’information<br/>et l’éducation menstruelle</h5>
 								<p class="mt-6">Nous pensons qu’il faut visibiliser et normaliser le sujet des règles afin de lutter contre les tabous et stigmas qui les entourent.</p>
 							</div>
 						</div>
 						<div class="w-full md:w-1/3 mt-6 md:mt-16">
-							<div class="mx-4 bg-redarkred big-maroon-shadow px-7 py-9">
+							<div class="mx-4 bg-redarkred big-maroon-shadow px-5 md:px-7 py-7 md:py-9">
 								<h5 class="font-lorimer-condensed-black">La promotion de la santé menstruelle</h5>
 								<p class="mt-6">Nous pensons qu’il faut permettre un accès démocratique à des protections saines, à des soins, et à des parcours de prévention et de santé de qualité afin que les règles ne soient plus jamais synonymes de maladies, de douleurs  ou d’inconfort.</p>
 							</div>
