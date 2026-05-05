@@ -1,18 +1,214 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import HeaderPicto from '../assets/home/DOIGTS-TAMPON.png';
+import HeaderImage from '../assets/impact/impact-header.jpg';
+import GoutteTimeline from '../assets/impact/goutte-timeline.png';
+import Timeline2015 from '../assets/impact/timeline-2015.jpg';
+import Timeline2016 from '../assets/impact/timeline-2016.png';
+import Timeline2019 from '../assets/impact/timeline-2019.png';
+import Timeline2021 from '../assets/impact/timeline-2021.jpg';
+import Timeline2024 from '../assets/impact/timeline-2024.jpg';
+import CollecteCarton from '../assets/s-engager/COLLECTE-CARTON.png';
+import FormationEcole from '../assets/actions/FORMATION-ECOLE.png';
+import Megaphone from '../assets/informer/URGENCE.png';
+import Manif from '../assets/impact/MANIF.png';
+import MaroonGoutte from '../assets/actions/maroon-goutte.svg';
 ---
 
 <Base title="Notre impact - Règles Élémentaires">
 	<main>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
-                <div class="w-full md:w-7/10 text-rered">
-					<h1>Derrière les chiffres, un impact concret</h1>
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap md:justify-end">
+                <div class="w-full md:w-9/10 text-rered relative z-1">
+					<h1>Derrière les chiffres,<br/></h1>
 				</div>
-                <div class="w-full flex justify-center mt-10">
-                    <div class="bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3 text-4xl md:text-5xl">Page en construction</div>
-                </div>                
+                <div class="md:w-1/10">
+                    <Image class="absolute w-30 md:w-40 -ms-30 md:-ms-10 mt-20 md:mt-0 z-0" src={HeaderPicto} alt="" />
+                </div>   
+                <div class="w-full md:w-5/10 text-rered relative z-1 md:ps-10">
+                    <h1>un impact concret</h1>
+                </div>    
+                <div class="md:w-1/10"></div>      
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 flex flex-wrap items-center">
+                <div class="w-full md:w-4/10 md:-mt-80">
+                    <Image class="" src={HeaderImage} alt="" />
+                </div>  
+                <div class="w-full md:w-4/10 md:ms-20 mt-6 md:mt-0">
+					<p>Depuis 2015, Règles Élémentaires agit pour que le fait d’avoir ses règles ne soit plus un obstacle à la dignité, à la santé et à l’égalité.<br/>En dix ans, un geste citoyen est devenu un mouvement national et européen, capable de transformer les pratiques, les représentations… et les lois.</p>
+				</div>                
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap items-center">
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap items-center">
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 flex flex-wrap items-center">
+                <h2 class="w-full text-rered text-center -mt-16 md:-mt-20">Plus de<br/>10 ans d’actions</h2>	
+                <div class="w-full h-full mt-10 md:mt-20 relative">
+                    
+                    <!-- middle line -->
+                    <div class="hidden md:block absolute border-remaroon h-full border-2 left-[49.94%]"></div>
+                    
+                    <!-- right timeline -->
+                    <div class="flex flex-wrap justify-between w-full">
+                        <div class="w-full md:w-5/12">
+                            <Image class="" src={Timeline2015} alt="" />
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 flex flex-col mt-4 md:mt-0">
+                            <div class="">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2015</span>
+                            </div>                            
+                            <p class="mt-4 w-full md:w-3/4">Naissance de Règles Élémentaires avec la première collecte citoyenne de protections périodiques en France.</p>
+                        </div>
+                    </div>
+
+                    <!-- left timeline -->
+                    <div class="mt-8 md:mt-14 flex flex-wrap justify-between w-full">                        
+                        <div class="w-full md:w-5/12 flex flex-col items-end order-3 md:order-1 mt-4 md:mt-0">
+                            <div class="flex justify-end">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2016-2018</span>
+                            </div>                            
+                            <p class="mt-4 w-full md:w-3/4 text-right">Structuration de l’association, premières antennes bénévoles, premières auditions institutionnelles.</p>
+                            <p class="mt-4 w-full md:w-3/4 text-right">Le terme « précarité menstruelle » entre dans le débat public.</p>
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full order-2 md:order-1">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 order-1 md:order-1">
+                            <Image class="md:-mt-20" src={Timeline2016} alt="" />
+                            <Image class="absolute w-30 md:w-40 md:-ms-30 -mt-20 md:-mt-40 z-2" src={CollecteCarton} alt="" />
+                        </div>                        
+                    </div>
+                    
+                    <!-- right timeline -->
+                    <div class="mt-8 md:mt-30 flex flex-wrap justify-between w-full">
+                        <div class="w-full md:w-5/12">
+                            <Image class="md:-mt-10" src={Timeline2019} alt="" />
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                            <Image class="mt-50" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 flex flex-col mt-4 md:mt-0">
+                            <div class="mt-4 md:mt-0">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2019</span>
+                            </div>                            
+                            <p class="mt-4 w-full md:w-3/4">Reconnaissance nationale : rapports parlementaires, partenariats publics, premières grandes collectes.</p>
+                            <div class="mt-4 md:mt-20">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2020</span>
+                            </div>                            
+                            <div class="mt-4 w-full md:w-3/4">
+                                <p>Année charnière :</p>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Premières politiques publiques sur la gratuité des protections</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Reconnaissance gouvernementale du sujet</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Lancement des actions de sensibilisation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- left timeline -->
+                    <div class="mt-8 md:mt-14 flex flex-wrap justify-between w-full">                        
+                        <div class="w-full md:w-5/12 flex flex-col items-end order-3 md:order-1 mt-4 md:mt-0">
+                            <div class="flex justify-end">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2021-2022</span>
+                            </div>                            
+                            <p class="mt-4 w-full md:w-3/4 text-right">Changement d’échelle :<br/>collectes nationales massives, déploiement de l’éducation menstruelle, grandes enquêtes nationales pour produire des données là où il n’y en avait pas</p>
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full order-2 md:order-1">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 order-1 md:order-1">
+                            <Image class="" src={Timeline2021} alt="" />
+                            <Image class="absolute w-40 md:w-60 -mt-10 md:ms-70 rotate-15 z-2" src={FormationEcole} alt="" />
+                        </div>                        
+                    </div>
+
+                    <!-- left timeline -->
+                    <div class="mt-4 md:mt-14 flex flex-wrap justify-between w-full">                        
+                        <div class="w-full md:w-5/12 flex flex-col items-end order-3 md:order-1 mt-4 md:mt-0">
+                            <div class="flex justify-end">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2023</span>
+                            </div>                            
+                            <p class="mt-4 w-full text-right">Publication d’un chiffre clé : 4 millions de personnes concernées par la précarité menstruelle en France.<br/>Annonce du remboursement des protections réutilisables pour les moins de 26 ans.</p>
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full order-2 md:order-1">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 order-1 md:order-1">
+                        </div>                        
+                    </div>
+
+                    <!-- right timeline -->
+                    <div class="mt-8 md:mt-30 flex flex-wrap justify-between w-full">
+                        <div class="w-full md:w-5/12">
+                            <Image class="hidden md:block absolute w-40 -ms-10 -mt-10 -rotate-10 z-2" src={Megaphone} alt="" />
+                            <Image class="" src={Timeline2024} alt="" />
+                            <Image class="absolute w-40 md:w-80 -mt-10 ms-50 md:ms-60 z-2" src={Manif} alt="" />
+                        </div>
+                        <div class="hidden md:block z-20 flex items-center w-10 h-10 rounded-full">
+                            <Image class="" src={GoutteTimeline} alt="" />
+                        </div>
+                        <div class="w-full md:w-5/12 flex flex-col mt-4 md:mt-0">
+                            <div class="mt-4 md:mt-0">
+                                <span class="bg-rered inline-block text-white font-lorimer-condensed text-center px-4 py-1 text-3xl md:text-5xl">2024-2025</span>
+                            </div>                            
+                            <div class="mt-4 w-full">
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Ancrage territorial renforcé (premières antennes salariées), lancement de l’organisme de formation puis certification Qualiopi</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Déploiement de projets innovants (sport, jeunesse, plateformes), et ouverture d’un nouveau chapitre : l’échelle européenne</p>
+                                </div>
+                                <p class="font-bold mt-6">Victoires législatives</p>
+                                <p>Parce que lutter contre le tabou ne suffit pas, Règles Élémentaires agit pour faire évoluer les règles du jeu.<br/>Parmi les avancées majeures obtenues ou contribué à obtenir :</p>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Fin de la taxe tampon et reconnaissance des protections comme produits de première nécessité</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Gratuité des protections périodiques en milieu carcéral</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Déploiement de dispositifs de gratuité dans les établissements scolaires et universitaires</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Décret encadrant la composition des protections périodiques et obligation de transparence</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <Image class="mt-1 md:mt-2" src={MaroonGoutte} alt="" />
+                                    <p class="ms-2">Remboursement des protections périodiques réutilisables pour les moins de 26 ans</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
