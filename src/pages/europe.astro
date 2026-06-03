@@ -1,19 +1,157 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import HeaderImage from '../assets/europe/tampon-europe.jpg';
+import HeaderPicto from '../assets/actions/europe.svg';
+import Justine from '../assets/europe/justine.png';
+import Study from '../assets/europe/study.png';
+import Men from '../assets/actions/europe.jpg';
+import MenLogo from '../assets/europe/men-logo.png';
+import MenstrualMatters from '../assets/europe/menstrualmatters.png';
+import Poids from '../assets/europe/poids-des-regles.png';
+import Poids2 from '../assets/europe/poids-des-regles-2.png';
+
 ---
 
 <Base title="Actions à l'échelle européenne - Règles Élémentaires">
 	<main>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
-                <div class="w-full md:w-9/10 text-rered">
-					<h1>Actions à l'échelle européenne</h1>
+                <div class="w-full md:w-7/10 text-rered">
+					<h1>Nos actions à l'échelle européenne</h1>
+                    <div>
+                        <a class="mt-6 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="/europe_en">English version</a>
+                    </div>  
 				</div>
-                <div class="w-full flex justify-center mt-10">
-                    <div class="bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3 text-4xl md:text-5xl">Page en construction</div>
+                <div class="w-full md:w-3/10 flex flex-col md:ps-10">
+                    <Image class="hidden md:block"src={HeaderPicto} alt="" />
                 </div>
             </div>
         </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-6/10 md:pe-10">
+                    <p>Les enjeux liés aux règles dépassent largement les frontières nationales.</p>
+                    <p class="mt-2">Précarité menstruelle et accès inégal aux protections périodiques, faiblesse des moyens dédiés à la santé et à l’éducation menstruelles, absence totale de réglementation spécifique sur la composition des produits périodiques : partout en Europe, les réalités diffèrent mais les mécanismes d’inégalités se rejoignent.</p>
+                    <p class="mt-2">Agir à l’échelle de l’UE, c’est faire circuler les pratiques, partager les expertises et porter collectivement une ambition commune : construire une Europe où les règles ne sont plus un tabou, ni un obstacle à l’égalité.</p>
+                    <p class="mt-2">Parce que les règles sont des enjeux de santé, d’égalité, de justice sociale ou encore d’environnement et de droits des consommateur•ices, elles doivent devenir un sujet pleinement européen.</p>
+                </div>
+                <div class="w-full md:w-4/10 md:ps-10">
+                    <Image class="mt-4 md:mt-0" src={HeaderImage} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-5/10 md:pe-20">
+                    <Image class="w-1/2 hidden md:block" src={MenLogo} alt="" />
+                    <Image class="mt-4" src={Men} alt="" />                    
+                </div>
+                <div class="w-full md:w-5/10 mt-4 md:mt-0">
+                    <h2>Coopérer</h2>	
+                    <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Menstrual Education Network</div>
+                    <p class="mt-4">Menstrual Education Network est le premier projet européen porté par Règles Élémentaires, avec le soutien du programme Erasmus+ et de Fondation Hippocrène.</p>
+                    <p class="mt-2">Ce réseau réunit également <a class="underline" href="https://www.bruzelle.be/fr/" target="_blank">BruZelle</a> et <a class="underline" href="https://tiiiitinc.com/en" target="_blank">Tiiiit! Inc.</a> autour d’un objectif commun : partager les meilleures pratiques d’éducation menstruelle en Europe.</p>
+                    <p class="mt-2">Le projet repose sur une conviction simple : les jeunes doivent être pleinement associé·es à la construction des réponses. Des groupes de travail transnationaux permettent ainsi de faire émerger des outils et des approches ancrés dans les réalités vécues.</p>
+                    <p class="mt-2">Cette dynamique a été récompensée par le prix <b>Inspiring Young Europeans</b> dans la catégorie égalité de genre.</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col">
+                <h2 class="text-center mb-10">Plaider</h2>	
+                <div class="w-full flex flex-wrap">
+                    <div class="w-full md:w-5/10 flex flex-col md:pe-4">
+                        <Image class="" src={Justine} alt="" />
+                        <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Faire entrer les règles dans l'agenda politique européen</div>
+                        <p class="mt-4">Règles Élémentaires développe un plaidoyer européen pour que les règles soient reconnues comme un enjeu de santé publique, d’égalité et de droits fondamentaux.</p>
+                        <p class="mt-4">Cette mobilisation a franchi une étape majeure lors de la première audition parlementaire de l’histoire de l’Union européenne consacrée à la précarité et à la santé menstruelle.</p>
+                        <p class="mt-4 font-bold">À cette occasion, nous avons porté plusieurs priorités :</p>
+                        <ul class="list-disc ms-5">
+                            <li>développer une approche transsectorielle de la santé menstruelle</li>
+                            <li>produire des données fiables à l’échelle européenne</li>
+                            <li>financer la recherche, l’éducation menstruelle et l’innovation</li>
+                            <li>soutenir les associations de terrain</li>
+                            <li>renforcer la réglementation des produits menstruels</li>
+                        </ul>
+                        <p class="mt-4">En 2025, Règles Élémentaires a aussi coordonné l’étude : <i><b>Tackling period poverty in the EU current challenges pathways and way forward</i></b> (The Greens/EFA, Nicole Spohr & Maria Carmen Punzi), et participé à l'événement de lancement au Parlement Européen.</p>
+                        <div class="mt-4">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://issuu.com/saskiabricmont/docs/tackling_period_poverty_in_the_eu_current_challe" target="_blank" rel="noreferrer">Lire l'étude</a>
+                        </div>  
+                    </div>
+                    <div class="w-full md:w-5/10 flex flex-col md:ps-4 mt-4 md:mt-0">
+                        <Image class="order-last md:order-first mt-6 md:mt-0" src={Study} alt="" />
+                        <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Réguler la composition des produits menstruels</div>
+                        <p class="mt-4">En 2026, nous avons publié un rapport inédit : <i><b>Better Regulating Menstrual Products: Why Does It Matter?</b></i></p>
+                        <p class="mt-4">Ce rapport synthétise les connaissances scientifiques actuelles sur les substances retrouvées dans les protections périodiques : PFAS, pesticides, métaux lourds, dioxines ou phtalates.<br/>Il met en évidence un vide réglementaire majeur : malgré un usage répété pendant des décennies, les produits menstruels ne disposent toujours pas d’un cadre réglementaire européen spécifique.</p>
+                        <p class="mt-4 font-bold">Nous appelons à :</p>
+                        <ul class="list-disc ms-5">
+                            <li>un cadre européen dédié</li>
+                            <li>une transparence complète sur la composition</li>
+                            <li>un renforcement des exigences sanitaires et environnementales</li>
+                            <li>un soutien accru à la recherche indépendante</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/europe/SYNTHESE-reglementer-produits-menstruels.pdf" target="_blank" rel="noreferrer">Lire la synthèse de l'étude</a>
+                        </div>  
+                        <div class="mt-6">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/europe/ETUDE-reglementer-produits-menstruels.pdf" target="_blank" rel="noreferrer">Consulter le rapport complet</a>
+                        </div>                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">                
+                <div class="w-full md:w-5/10">
+                    <h2>Mobiliser</h2>	
+                    <p class="mt-4">Menstrual Matters est un mouvement lancé par plusieurs associations européennes pour rendre visible un sujet encore trop absent des politiques européennes : les règles.</p>
+                    <p class="mt-2">À travers la mise en réseau, le partage d’expertise et l’action collective, #MenstrualMattersEU défend une conviction : l’accès à la santé menstruelle doit être reconnu comme un droit fondamental.</p>
+                    <p class="mt-2">Cette dynamique permet de faire émerger une parole commune à l’échelle européenne et de renforcer la capacité d’action collective face aux inégalités menstruelles.</p>
+                </div>
+                <div class="w-full md:w-5/10 md:ps-20 mt-6 md:mt-0 flex flex-col justify-between">
+                    <Image class="" src={MenstrualMatters} alt="" />
+                    <div>
+                        <a class="mt-4 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://menstrualmatters.eu/fr/" target="_blank">En savoir plus</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-5/10 md:pe-20">
+                    <Image class="" src={Poids} alt="" />
+                    <Image class="hidden md:block mt-4" src={Poids2} alt="" />
+                </div>
+                <div class="w-full md:w-5/10 mt-4 md:mt-0">
+                    <h2>Produire des données</h2>	
+                    <p class="mt-4">Avec la campagne <b>Le poids des règles</b>, nous avons porté la première enquête européenne sur le tabou menstruel et la précarité menstruelle.</p>
+                    <p class="mt-2">Cette enquête documente la manière dont les règles continuent de peser sur les parcours de vie, la santé, l’éducation, le travail et la participation sociale dans plusieurs pays européens.</p>
+                    <p class="mt-2">Produire des données est indispensable car trop souvent, les menstruations restent absentes des statistiques publiques, ce qui freine la mise en place de réponses adaptées. Au niveau européen, il n’existait jusqu’alors que des données par pays, et les recherches paneuropéennes sur le sujet étaient limitées.</p>
+                    <p class="mt-2">Rendre visible les réalités vécues par des millions de personnes, c’est déjà transformer le regard porté sur les règles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500 text-remaroon py-8 md:py-14">
+			<h3 class="text-maroon-shadow text-rebeige-100 text-center">Chiffres clés</h3>
+			<div class="w-11/12 md:w-10/12 flex flex-wrap mt-10">
+				<div class="w-full md:w-1/3 ps-4 md:px-14 md:border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">112 millions</div>
+					<div class="md:mt-2">de personnes qui ont leurs règles dans l’UE</div>
+				</div>
+				<div class="w-full md:w-1/3 mt-4 md:mt-0 ps-4 md:px-14 md:border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">42%</div>
+					<div class="md:mt-2">d’européen·nes en situation de précarité menstruelle</div>
+				</div>
+				<div class="w-full md:w-1/3 mt-4 md:mt-0 ps-4 md:px-14">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">+ de 50%</div>
+					<div class="md:mt-2">des personnes intérrogées considère toujours le sujet des règles comme tabou</div>
+				</div>
+			</div>
+            <div>
+                <a class="mt-6 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/Etude_2025_Le_poids_des_regles_en_Europe.pdf" target="_blank">Lire notre étude</a>
+            </div>   
+		</div>
     </main>
 </Base>

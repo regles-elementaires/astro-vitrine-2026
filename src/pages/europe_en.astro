@@ -1,0 +1,157 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import HeaderImage from '../assets/europe/tampon-europe.jpg';
+import HeaderPicto from '../assets/actions/europe.svg';
+import Justine from '../assets/europe/justine.png';
+import Study from '../assets/europe/study.png';
+import Men from '../assets/actions/europe.jpg';
+import MenLogo from '../assets/europe/men-logo.png';
+import MenstrualMatters from '../assets/europe/menstrualmatters.png';
+import Poids from '../assets/europe/poids-des-regles.png';
+import Poids2 from '../assets/europe/poids-des-regles-2.png';
+
+---
+
+<Base title="Actions à l'échelle européenne - Règles Élémentaires">
+	<main>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-7/10 text-rered">
+					<h1>Our european actions</h1>
+                    <div>
+                        <a class="mt-6 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="/europe">Version française</a>
+                    </div>  
+				</div>
+                <div class="w-full md:w-3/10 flex flex-col md:ps-10">
+                    <Image class="hidden md:block"src={HeaderPicto} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-6/10 md:pe-10">
+                    <p>Menstruation knows no borders.</p>
+                    <p class="mt-2">Period poverty and unequal access to menstrual products, chronic underinvestment in menstrual health and education, a near-total absence of regulation on the composition of period products : across Europe, the circumstances may vary, but the patterns of inequality are remarkably consistent.</p>
+                    <p class="mt-2">Working at EU level means exchanging knowledge, sharing what works, and collectively championing a common ambition: building a Europe where menstruation is neither a taboo nor a barrier to equality.</p>
+                    <p class="mt-2">Because menstruation sits at the intersection of health, equality, social justice, environmental responsibility, and consumer rights, it is time it became a fully European cause.</p>
+                </div>
+                <div class="w-full md:w-4/10 md:ps-10">
+                    <Image class="mt-4 md:mt-0" src={HeaderImage} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-5/10 md:pe-20">
+                    <Image class="w-1/2 hidden md:block" src={MenLogo} alt="" />
+                    <Image class="mt-4" src={Men} alt="" />                    
+                </div>
+                <div class="w-full md:w-5/10 mt-4 md:mt-0">
+                    <h2>Cooperating</h2>	
+                    <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Menstrual Education Network</div>
+                    <p class="mt-4">The Menstrual Education Network is the first European project led by Règles Élémentaires, with the support of the Erasmus+ and the Fondation Hippocrène.</p>
+                    <p class="mt-2">The network also brings together <a class="underline" href="https://www.bruzelle.be/fr/" target="_blank">BruZelle</a> and <a class="underline" href="https://tiiiitinc.com/en" target="_blank">Tiiiit! Inc.</a> around a shared objective: exchanging and promoting best practices in menstrual education across Europe.</p>
+                    <p class="mt-2">The project is built on a common conviction: young people must be fully involved in shaping solutions for menstrual education. Transnational working groups therefore help develop tools and approaches grounded in lived experiences and everyday realities.</p>
+                    <p class="mt-2">This collaborative initiative was awarded with the <b>Inspiring Young Europeans Award</b> for Gender Equality.</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col">
+                <h2 class="text-center mb-10">Advocating</h2>	
+                <div class="w-full flex flex-wrap">
+                    <div class="w-full md:w-5/10 flex flex-col md:pe-4">
+                        <Image class="" src={Justine} alt="" />
+                        <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Advancing menstrual rights on the European agenda</div>
+                        <p class="mt-4">Règles Élémentaires is building European-level advocacy to ensure that menstruation is recognised as a matter of public health, equality, and fundamental rights.</p>
+                        <p class="mt-4">This work reached a major milestone with the first parliamentary hearing in the history of the European Union dedicated to period poverty and menstrual health.</p>
+                        <p class="mt-4 font-bold">It was the occasion to represent our EU advocacy priorities:</p>
+                        <ul class="list-disc ms-5">
+                            <li>developing a cross-sectoral approach to menstrual health</li>
+                            <li>producing reliable data at the European level</li>
+                            <li>funding research, menstrual education, and innovation</li>
+                            <li>supporting grassroots organisations</li>
+                            <li>strengthening regulations on menstrual products</li>
+                        </ul>
+                        <p class="mt-4">In 2025, Règles Élémentaires also coordinated the study <i><b>Tackling period poverty in the EU current challenges pathways and way forward</i></b> (The Greens/EFA, Nicole Spohr & Maria Carmen Punzi), and took part in its launch event at the European Parliament.</p>
+                        <div class="mt-4">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://issuu.com/saskiabricmont/docs/tackling_period_poverty_in_the_eu_current_challe" target="_blank" rel="noreferrer">Read the study</a>
+                        </div>  
+                    </div>
+                    <div class="w-full md:w-5/10 flex flex-col md:ps-4 mt-4 md:mt-0">
+                        <Image class="order-last md:order-first mt-6 md:mt-0" src={Study} alt="" />
+                        <div class="inline-block square-title mt-4 bg-remaroon text-rebeige-300 text-2xl">Regulating the composition of menstrual products</div>
+                        <p class="mt-4">In 2026, Règles Élémentaires published a groundbreaking report: <i><b>Better Regulating Menstrual Products: Why Does It Matter?</b></i></p>
+                        <p class="mt-4">The report brings together current scientific knowledge on substances found in menstrual products, including PFAS, pesticides, heavy metals, dioxins, or phthalates.<br/>It highlights a major regulatory gap: despite being used repeatedly over decades, menstrual products still lack a specific European regulatory framework.</p>
+                        <p class="mt-4 font-bold">We are calling for:</p>
+                        <ul class="list-disc ms-5">
+                            <li>a dedicated European framework</li>
+                            <li>full transparency regarding product composition</li>
+                            <li>stronger health and environmental standards</li>
+                            <li>increased support for independent research</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/europe/SYNTHESIS-regulating-menstrual-product.pdf" target="_blank" rel="noreferrer">Read the synthesis</a>
+                        </div>  
+                        <div class="mt-6">
+                            <a class="small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/europe/STUDY-regulating-menstrual-product.pdf" target="_blank" rel="noreferrer">Read the full study</a>
+                        </div>                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">                
+                <div class="w-full md:w-5/10">
+                    <h2>Mobilising</h2>	
+                    <p class="mt-4">Menstrual Matters EU is a movement launched by several European organisations to raise awareness about an issue that remains largely absent from European policies: menstruation.</p>
+                    <p class="mt-2">Through network-building, knowledge-sharing, and collective action, Menstrual Matters EU champions a shared conviction: access to menstrual health must be recognised as a fundamental right.</p>
+                    <p class="mt-2">This growing momentum helps amplify a common voice at European level and strengthens coordinated action against menstrual inequality across the continent.</p>
+                </div>
+                <div class="w-full md:w-5/10 md:ps-20 mt-6 md:mt-0 flex flex-col justify-between">
+                    <Image class="" src={MenstrualMatters} alt="" />
+                    <div>
+                        <a class="mt-4 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://menstrualmatters.eu/en/" target="_blank">Find out more</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-5/10 md:pe-20">
+                    <Image class="" src={Poids} alt="" />
+                    <Image class="hidden md:block mt-4" src={Poids2} alt="" />
+                </div>
+                <div class="w-full md:w-5/10 mt-4 md:mt-0">
+                    <h2>Producing data</h2>	
+                    <p class="mt-4">Through <b>The Weight of Periods</b> campaign, Règles Élémentaires led the first paneuropean survey on menstrual stigma and period poverty.</p>
+                    <p class="mt-2">This survey documents how menstruation continues to affect people’s lives, health, education, work, and social participation across several EU countries.</p>
+                    <p class="mt-2">Producing robust, reliable data is essential. Menstruation remains conspicuously absent from public statistics, which severely limits the development of effective, targeted policies.</p>
+                    <p class="mt-2">Making an issue visible is already a step towards change.</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500 text-remaroon py-8 md:py-14">
+			<h3 class="text-maroon-shadow text-rebeige-100 text-center">Key figures</h3>
+			<div class="w-11/12 md:w-10/12 flex flex-wrap mt-10">
+				<div class="w-full md:w-1/3 ps-4 md:px-14 md:border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">112 million</div>
+					<div class="md:mt-2">people menstruate in Europe</div>
+				</div>
+				<div class="w-full md:w-1/3 mt-4 md:mt-0 ps-4 md:px-14 md:border-e-4 border-remaroon">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">42%</div>
+					<div class="md:mt-2"> of Europeans have experienced period poverty</div>
+				</div>
+				<div class="w-full md:w-1/3 mt-4 md:mt-0 ps-4 md:px-14">
+					<div class="font-lorimer-condensed-black text-3xl md:text-5xl">More than 50%</div>
+					<div class="md:mt-2">people still consider menstruation a taboo subject</div>
+				</div>
+			</div>
+            <div>
+                <a class="mt-6 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/Survey_2025_The_weight_of_period_poverty_in_Europe.pdf" target="_blank">Read the study</a>
+            </div>   
+		</div>
+    </main>
+</Base>
