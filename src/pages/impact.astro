@@ -4,6 +4,8 @@ import Base from '../layouts/Base.astro';
 import HeaderPicto from '../assets/home/DOIGTS-TAMPON.png';
 import HeaderImage from '../assets/impact/impact-header.jpg';
 import Carte from '../assets/impact/carte-10ans.png';
+import CarteMobile from '../assets/impact/carte-10ans-mobile.png';
+import LegendeMobile from '../assets/impact/legende-mobile.png';
 import Impact1 from '../assets/impact/impact-1.png';
 import Impact2 from '../assets/impact/impact-2.png';
 import Impact3 from '../assets/impact/impact-3.png';
@@ -104,7 +106,7 @@ import DixAns from '../assets/qui-sommes-nous/10-ans.png';
 			<div class="w-full md:w-10/12 py-10 md:py-20 flex flex-wrap items-center justify-center">
                 <h2 class="w-full text-center">10 ans d'impact territorial</h2>
                 <p class="mt-4 md:mt-8 text-center">Répartition des actions cumulées entre 2015 et 2025</p>
-                <Image class="w-11/12" src={Carte} alt="Île-de-France : plus de 2000000 de produits redistribués;
+                <Image class="w-11/12 hidden md:block" src={Carte} alt="Île-de-France : plus de 2000000 de produits redistribués;
                     Auvergne-Rhône-Alpes : plus de 2000000 de produits redistribués;
                     Provence-Alpes-Côte d'Azur : plus de 2000000 de produits redistribués;
                     Hauts-de-France : entre 500000 et 1000000 de produits redistribués;
@@ -120,6 +122,8 @@ import DixAns from '../assets/qui-sommes-nous/10-ans.png';
                     Réunion : moins de 200000 produits redistribués;
                     Mayotte : moins de 200000 produits redistribués;
                     Guadeloupe : moins de 200000 produits redistribués;" />
+                <Image class="w-11/12 md:hidden" src={CarteMobile} alt="" />
+                <Image class="w-10/12 md:hidden" src={LegendeMobile} alt="" />
             </div>
         </div>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
