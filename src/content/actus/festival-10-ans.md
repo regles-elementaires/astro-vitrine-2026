@@ -1,9 +1,12 @@
 ---
-title: 'Changer les règles pour changer le monde !'
-description: 'Depuis 10 ans, Règles Élémentaires agit pour que toutes les femmes et les personnes qui ont, ont eu ou auront leurs règles puissent les vivre sans précarité, sans tabou, sans honte.'
-pubDate: '2026-04-24'
-heroImage: '../../assets/festival-10-ans-banniere.png'
-tag: 'actualité'
+title: Changer les règles pour changer le monde !
+description: Depuis 10 ans, Règles Élémentaires agit pour que toutes les femmes
+  et les personnes qui ont, ont eu ou auront leurs règles puissent les vivre
+  sans précarité, sans tabou, sans honte.
+pubDate: 2026-04-24
+heroImage: ../../assets/actualites/festival-10-ans-banniere.png
+tags:
+  - Actualité
 ---
 
 Et s’il y a bien un mois qui compte pour nous, c’est mai.

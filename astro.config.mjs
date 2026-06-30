@@ -49,7 +49,7 @@ export default defineConfig({
 					{
 						name: 'title',
 						widget: 'string',
-						label: 'Title',
+						label: 'Titre',
 					},
 					{
 						name: 'description',
@@ -59,7 +59,7 @@ export default defineConfig({
 					{
 						name: 'pubDate',
 						widget: 'datetime',
-						label: 'Publication Date',
+						label: 'Date de publication',
 						format: 'YYYY-MM-DD',
 						date_format: 'YYYY-MM-DD',
 						time_format: false,
@@ -67,7 +67,7 @@ export default defineConfig({
 					{
 						name: 'updatedDate',
 						widget: 'datetime',
-						label: 'Updated Date',
+						label: 'Date de mise à jour',
 						format: 'YYYY-MM-DD',
 						date_format: 'YYYY-MM-DD',
 						time_format: false,
@@ -76,19 +76,76 @@ export default defineConfig({
 					{
 						name: 'heroImage',
 						widget: 'image',
-						label: 'Hero Image',
-						required: false,
+						label: 'Image',
+						allow_multiple: false,
+						media_folder: '/src/assets/actualites',
 					},
 					{
-						label: 'Tag',
-						name: 'tag',
-						widget: 'text',
+						label: 'Tags',
+						name: 'tags',
+						widget: 'select',
+						multiple: true,
+						options: ['Actualité', 'Plaidoyer']		
 					},
 					{
 						name: 'body',
 						widget: 'markdown',
-						label: 'Post Content',
+						label: 'Corps du texte',
 					},
+				],
+			},
+			{
+				name: 'ressource',
+				label: 'Ressources',
+				label_singular: 'Ressource',
+				folder: 'src/content/ressources',
+				create: true,
+				delete: true,
+				fields: [
+					{
+						name: 'title',
+						label: 'Titre',
+						widget: 'string',						
+					},
+					{
+						name: 'description',
+						label: 'Description',
+						widget: 'text',						
+					},
+					{
+						name: 'type',
+						label: 'Type',
+						widget: 'select',
+						options: ['Outil', 'Guide pratique', 'Enquête et étude']			
+					},
+					{
+						name: 'themes',
+						label: 'Themes',
+						widget: 'select',
+						multiple: true,
+						options: ['Composition', 'Éducation menstruelle', 'Europe', 'Inclusivité', 'Ménopause', 'Parlons Règles', 'Précarité menstruelle', 'Reglà', 'Santé menstruelle', 'Sport']												
+					},
+					{
+						name: 'link',
+						label: 'Lien de la ressource',
+						widget: 'string',
+					},
+					{
+						name: 'image',
+						widget: 'image',
+						label: 'Image (Taille recommandée : 400px de largeur par 200px de hauteur)',
+						allow_multiple: false,
+						media_folder: '/src/assets/ressources',
+					},
+					{
+						name: 'pubDate',
+						label: 'Publication Date',
+						widget: 'datetime',						
+						format: 'YYYY-MM-DD',
+						date_format: 'YYYY-MM-DD',
+						time_format: false,
+					},
+					
 				],
 			},
 		],

@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION } from '../consts';
+
+const ressources = (await getCollection('ressources')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title="Ressources - Règles Élémentaires" description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+				<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+					<h2 class="md:w-2/3 text-center mb-10">Nos ressources</h2>
+				</div>
+			</div>
+			<div class="px-5 md:px-15 flex flex-wrap justify-center text-remaroon">
+				<div class="w-11/12 md:w-3/12">
+					<form>
+						<label for="filter">Filtrer par thématique</label>
+						<select name="filter">
+							<option>Tout</option>
+							<option>Composition</option>
+							<option>Éducation menstruelle</option>
+							<option>Europe</option>
+							<option>Inclusivité</option>
+							<option>Ménopause</option>
+							<option>Parlons Règles</option>
+							<option>Précarité menstruelle</option>
+							<option>Reglà</option>
+							<option>Santé menstruelle</option>
+							<option>Sport</option>
+						</select>
+					</form>
+				</div>
+				<div class="w-11/12 md:w-9/12 py-10 md:py-20 flex flex-wrap items-stretch">
+					{
+						ressources.map((ressource) => (
+							<div class="ressource w-full md:w-1/3 p-2" data-tags={ressource.data.themes}>
+								<div class="bg-rebeige-500 rounded-xl h-full transition-all duration-300">
+									<Image class="w-full rounded-t-xl" src={ressource.data.image} alt="" />
+									<p class="px-4 text-rered mt-4 font-lorimer-condensed-black text-3xl">{ressource.data.title}</p> 
+									<p class="mx-4 mt-2 inline-block bg-remaroon text-rebeige-300 font-lorimer-condensed px-3 py-1 text-2xl">{ressource.data.type}</p>
+									<p class="px-4 mt-2">{ressource.data.description}</p>
+									<a class="px-4 mt-2 pb-6 inline-block underline font-semibold" href={ressource.data.link} target="_blank">Consulter la ressource</a>
+								</div>
+							</div> 
+						))
+					}
+				</div>
+			</div>
+		</main>
+		<Footer />
+		<script>
+			function sortList() {
+
+				let items = document.querySelectorAll(".ressource");
+				// Get the filter select input and add listener for the change event
+				let select = document.querySelector("select");
+				select.addEventListener("change", sort);
+
+				// Actually sorting the cards
+				function sort() {
+					// Look at each item in the array
+					items.forEach(element => {
+						// Remove the "hidden" attribute if the item has the tag selected or if the selection is "All"
+						// Otherwise, add the hidden attribute to the element
+						if (element.dataset.tags.includes(select.value) | select.value == "Tout") {
+						element.removeAttribute("hidden");
+						} else { element.setAttribute("hidden", true); }
+					});
+				};
+				// perform the sort funtion on initialization to cover edge cases, such as the user refreshing the page
+				sort();
+			}
+
+			sortList();
+		</script>
+	</body>
+</html>
