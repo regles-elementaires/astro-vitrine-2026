@@ -5,7 +5,7 @@ type: Outil
 themes:
   - Éducation menstruelle
   - Parlons Règles
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_LES_SIGNAUX_ALERTES_PRECARITE__DEPLIANT.pdf
-image: /src/assets/ressources/signaux-precarite-menstruelle.png
+link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A5_flyer-parlons-regles.pdf
+image: /src/assets/ressources/flyer-pr.png
 pubDate: 2026-06-29
 ---

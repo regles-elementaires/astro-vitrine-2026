@@ -4,7 +4,8 @@ description: Pour toutes les personnes qui travaillent avec des jeunes
 type: Guide pratique
 themes:
   - Éducation menstruelle
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_LES_SIGNAUX_ALERTES_PRECARITE__DEPLIANT.pdf
-image: /src/assets/ressources/signaux-precarite-menstruelle.png
+  - Europe
+link: https://doccollectes.blob.core.windows.net/europe/FR_menstrual_education_toolbox.pdf
+image: /src/assets/ressources/boite-outils-education-menstruelle.png
 pubDate: 2026-06-29
 ---

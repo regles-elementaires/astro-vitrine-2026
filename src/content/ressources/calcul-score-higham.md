@@ -4,7 +4,7 @@ description: Un outil pratique pour savoir si vos règles sont abondantes
 type: Outil
 themes:
   - Santé menstruelle
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_LES_SIGNAUX_ALERTES_PRECARITE__DEPLIANT.pdf
-image: /src/assets/ressources/signaux-precarite-menstruelle.png
+link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A4_score-higham.pdf
+image: /src/assets/ressources/score-higham.png
 pubDate: 2026-06-29
 ---

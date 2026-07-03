@@ -4,7 +4,7 @@ description: Besoins, actions et défis des structures associatives et médico-s
 type: Enquête et étude
 themes:
   - Précarité menstruelle
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_SYNDROME_CHOC_TOXIQUE.pdf
-image: ../../assets/ressources/syndrome-choc-toxique.png
+link: https://doccollectes.blob.core.windows.net/statics/Enquete_PM_RE_2025.pdf
+image: ../../assets/ressources/enquete-2025-structures-beneficiaires.png
 pubDate: 2025-06-29
 ---

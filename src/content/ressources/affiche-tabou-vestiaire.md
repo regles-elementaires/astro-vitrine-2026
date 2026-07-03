@@ -4,7 +4,7 @@ description: Une affiche pour parler de règles au sein de votre structure sport
 type: Outil
 themes:
   - Sport
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_LES_SIGNAUX_ALERTES_PRECARITE__DEPLIANT.pdf
-image: /src/assets/ressources/signaux-precarite-menstruelle.png
+link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A3_affiche-regles-et-sport.pdf
+image: /src/assets/ressources/affiche-tabou-vestiaire.png
 pubDate: 2026-06-29
 ---

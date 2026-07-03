@@ -5,7 +5,7 @@ type: Outil
 themes:
   - Précarité menstruelle
   - Reglà
-link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A6_2_VOLETS_LES_SIGNAUX_ALERTES_PRECARITE__DEPLIANT.pdf
-image: /src/assets/ressources/signaux-precarite-menstruelle.png
+link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A3_affiche-regla.pdf
+image: /src/assets/ressources/affiche-regla.png
 pubDate: 2026-06-29
 ---

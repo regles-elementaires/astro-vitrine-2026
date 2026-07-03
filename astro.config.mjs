@@ -133,7 +133,7 @@ export default defineConfig({
 					{
 						name: 'image',
 						widget: 'image',
-						label: 'Image (Taille recommandée : 400px de largeur par 200px de hauteur)',
+						label: 'Image (Taille recommandée : 500px de largeur par 250px de hauteur)',
 						allow_multiple: false,
 						media_folder: '/src/assets/ressources',
 					},
