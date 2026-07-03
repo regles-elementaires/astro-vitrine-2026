@@ -8,7 +8,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'actus'>['data'];
 
-const { title, description, pubDate, heroImage, tag } = Astro.props;
+const { title, description, pubDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="fr">
@@ -22,7 +22,13 @@ const { title, description, pubDate, heroImage, tag } = Astro.props;
 			<article>
 				<div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
 					<div class="w-11/12 md:w-10/12 py-15 md:py-30 flex flex-col items-center">
-						<div class="bg-rered text-white font-lorimer-condensed text-3xl md:text-5xl px-6 py-2 -rotate-3">{tag}</div>
+						<div class="flex">
+							{
+								tags.map((tag) => (
+									<div class="bg-rered text-white font-lorimer-condensed text-3xl md:text-5xl px-6 py-2 -rotate-3 mx-2">{tag}</div>
+								))
+							}	
+						</div>											
 						<h1 class="md:w-2/3 text-center mt-10">{title}</h1>
 					</div>
 				</div>
