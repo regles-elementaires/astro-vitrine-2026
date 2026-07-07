@@ -1,7 +1,7 @@
 ---
 title: Affiche présentation Reglà
 description: Pour faire la promotion de Reglà, notre application de géolocalisation des protections périodiques gratuites
-type: Outil
+type: Affiche
 themes:
   - Précarité menstruelle
   - Reglà

@@ -1,7 +1,7 @@
 ---
 title: Affiche, mise à disposition protections
 description: Pour accompagner votre mise à disposition
-type: Outil
+type: Affiche
 themes:
   - Précarité menstruelle
   - Santé menstruelle

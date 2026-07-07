@@ -1,7 +1,7 @@
 ---
 title: Affiche présentation Parlons Règles
 description: Pour faire la promotion de notre plateforme d'éducation menstruelle Parlons Règles
-type: Outil
+type: Affiche
 themes:
   - Éducation menstruelle
   - Parlons Règles
