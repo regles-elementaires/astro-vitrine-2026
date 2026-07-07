@@ -1,7 +1,7 @@
 ---
 title: Affiches de présentation des guides DILCRAH
 description: À afficher dans votre structure pour promouvoir les guides sur la santé des personnes trans
-type: Outil
+type: Affiche
 themes:
   - Inclusivité
   - Santé menstruelle

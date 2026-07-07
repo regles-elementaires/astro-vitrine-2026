@@ -1,7 +1,7 @@
 ---
 title: Les signaux de la précarité menstruelle
 description: Comment repérer la précarité menstruelle ?
-type: Outil
+type: Brochure
 themes:
   - Précarité menstruelle
   - Santé menstruelle
