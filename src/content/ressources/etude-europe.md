@@ -1,7 +1,7 @@
 ---
 title: "Mieux règlementer les produits menstruels : Pourquoi est-ce si important ?"
 description: Notre étude européenne sur la composition des protections périodiques
-type: Enquête et étude
+type: Étude
 themes:
   - Composition
   - Europe

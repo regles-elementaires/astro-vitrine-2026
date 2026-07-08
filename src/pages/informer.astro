@@ -10,6 +10,7 @@ import Stand from '../assets/informer/stand.jpg';
 import Discussion from '../assets/actions/DISCUSSION.png';
 import Megaphone from '../assets/informer/URGENCE.png';
 import Cerveau from '../assets/informer/CERVEAU.png';
+import Idee from '../assets/actions/IDEE.png';
 import Silence from '../assets/informer/SILENCE.png';
 import FAQ from '../components/FAQ-mythes.astro';
 import PROrdi from '../assets/informer/parlons-regles-ordi.jpg';
@@ -94,7 +95,7 @@ import PROrdi from '../assets/informer/parlons-regles-ordi.jpg';
                 </div>
             </div>
 		</div>
-        <div id="sensibiliser" class="anchor px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+        <div id="sensibiliser" class="anchor px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
                 <h2 class="text-rered">Informer et sensibiliser</h2>	
                 <div class="inline-block square-title mt-10 bg-remaroon text-rebeige-300 text-2xl">Nos 3 champs d'action</div>
@@ -129,10 +130,39 @@ import PROrdi from '../assets/informer/parlons-regles-ordi.jpg';
                 </div>
             </div>
 		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+            <div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex flex-wrap justfiy-center">
+                <div class="w-full flex flex-col items-center">
+                    <h3 class="text-rered">Ressources</h3>
+                    <p class="mt-8 text-center md:w-1/2">
+                        <span class="font-bold">Accéder à des contenus fiables et utiles :</span><br/>
+                        Guides, études, outils pédagogiques, rapports, visuels : nous mettons à disposition des ressources pour mieux comprendre les enjeux autour des règles et agir !
+                    </p>
+                </div>                
+                <Image class="hidden md:block absolute right-40 -mt-10 w-40" src={Idee} alt="" />
+                <div class="w-full flex flex-wrap mt-4 md:mt-12">
+                    <a href="/ressources#guides" class="w-full md:w-1/3 mt-4 md:pe-4">
+                        <div class="h-full flex items-center justify-center bg-reyellow gouttes-ressources p-10 rounded-3xl text-center font-lorimer-condensed text-3xl">
+                            Guides pratiques
+                        </div>
+                    </a>
+                    <a href="/ressources#affiches" class="w-full md:w-1/3 mt-4 md:px-4">
+                        <div class="h-full flex items-center justify-center bg-reorange gouttes-ressources p-10 rounded-3xl text-center font-lorimer-condensed text-3xl">
+                            Affiches & brochures
+                        </div>
+                    </a>
+                    <a href="/ressources#enquetes" class="w-full md:w-1/3 mt-4 md:ps-4">
+                        <div class="h-full flex items-center justify-center bg-redarkpink gouttes-ressources p-10 rounded-3xl text-center font-lorimer-condensed text-3xl">
+                            Enquêtes & études
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="px-5 md:px-15 flex justify-center bg-remaroon text-rebeige-300">
 			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-center">
                 <h3 class="text-center">Les mythes<br/>à déconstruire</h3>	
-                <Image class="hidden md:block absolute w-40 ms-120 -mt-40" src={Silence} alt="" />	
+                <Image class="hidden md:block absolute w-40 ms-120 -mt-30" src={Silence} alt="" />	
                 <div class="w-full mt-0 md:mt-10">
                     <FAQ />
                 </div>               

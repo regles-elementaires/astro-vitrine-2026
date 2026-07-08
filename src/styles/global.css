@@ -172,6 +172,13 @@ img {
 	background-repeat: no-repeat;
 }
 
+.gouttes-ressources {
+	background-image: url('/images/gouttes-ressources.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 /* HOME */
 
 #hero {
