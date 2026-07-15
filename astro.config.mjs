@@ -123,7 +123,7 @@ export default defineConfig({
 						label: 'Themes',
 						widget: 'select',
 						multiple: true,
-						options: ['Composition', 'Éducation menstruelle', 'Europe', 'Inclusivité', 'Ménopause', 'Parlons Règles', 'Précarité menstruelle', 'Reglà', 'Santé menstruelle', 'Sport']												
+						options: ['Composition', 'Éducation menstruelle', 'Europe', 'Inclusivité', 'Ménopause', 'Précarité menstruelle', 'Santé menstruelle', 'Sport']												
 					},
 					{
 						name: 'link',
