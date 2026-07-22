@@ -6,6 +6,7 @@ import ParlonsRegles from '../assets/nav/parlons-regles.png';
 import Regla from '../assets/nav/regla.png';
 import UEFlag from '../assets/nav/ue-flag.png';
 import NavRedArrow from '../assets/nav/nav-red-arrow.png';
+import RightArrow from '../assets/actions/small-right-arrow.svg';
 import ActuRecit from '../assets/recit-dimpact.png';
 ---
 
@@ -60,9 +61,9 @@ import ActuRecit from '../assets/recit-dimpact.png';
           <!-- MOBILE ONLY -->
           <div class="block md:hidden grow">
             <div class="bg-remaroon w-full p-4 flex flex-wrap justify-center">
-              <!-- <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Ressources</a> -->
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/ressources">Ressources</a>
               <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/actus/festival-10-ans">Notre festival !</a>
-              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/">Faire un don</a>
+              <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/s-engager#faire-un-don">Faire un don</a>
             </div>  
             <div class="flex h-full">
               <div class="w-1/2 flex flex-col bg-rebeige-500 pt-6 pb-8 px-8">
@@ -140,7 +141,7 @@ import ActuRecit from '../assets/recit-dimpact.png';
             </div>
           </div>
           <div class="hidden md:block nav-column bg-rebeige-100 flex-wrap">
-            <div class="w-full flex py-8 pe-15">
+            <div class="w-full flex py-6 pe-15">
               <div class="w-5/12">
                  <Image class="w-3/4 mx-auto" src={ParlonsRegles} alt="Parlons Règles" />
               </div>
@@ -149,7 +150,7 @@ import ActuRecit from '../assets/recit-dimpact.png';
                 <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.parlonsregles.fr/" target="_blank">Découvrir</a>
               </div>
             </div>
-            <div class="w-full flex bg-rebeige-300 py-8 pe-15">
+            <div class="w-full flex bg-rebeige-300 py-6 pe-15">
               <div class="w-5/12">
                 <Image class="w-3/4 mx-auto" src={Regla} alt="Reglà" />
               </div>
@@ -158,11 +159,10 @@ import ActuRecit from '../assets/recit-dimpact.png';
                 <a class="small-maroon-shadow inline-block font-lorimer bg-rebeige-300 text-remaroon p-2.5 me-4 mt-2" href="https://www.regla-app.fr/" target="_blank">Découvrir</a>
               </div>
             </div>
-            <!--
             <div class="w-full flex flex-col bg-regreen py-6 ps-6 pe-15">
               <span class="font-lorimer-condensed text-remaroon text-4xl">Nos ressources</span>
               <div class="mt-2">
-                <a href="#" class="inline-block">
+                <a href="/ressources" class="inline-block">
                   <div class="flex items-center">
                       <div class="bg-rebeige-300 rounded-full flex items-center justify-center h-10 w-10 border-4 border-regreen -me-4 z-200">
                           <Image class="w-2/3" src={RightArrow} alt="" />
@@ -171,8 +171,7 @@ import ActuRecit from '../assets/recit-dimpact.png';
                   </div>
                 </a>
               </div>
-            </div> 
-            -->
+            </div>             
           </div>
         </div>
       </div>

@@ -4,7 +4,6 @@ description: Pour faire la promotion de notre plateforme d'éducation menstruell
 type: Brochure
 themes:
   - Éducation menstruelle
-  - Parlons Règles
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A5_flyer-parlons-regles.pdf
 image: /src/assets/ressources/flyer-pr.png
 pubDate: 2026-06-29
