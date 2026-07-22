@@ -7,7 +7,7 @@ import Regla from '../assets/nav/regla.png';
 import UEFlag from '../assets/nav/ue-flag.png';
 import NavRedArrow from '../assets/nav/nav-red-arrow.png';
 import RightArrow from '../assets/actions/small-right-arrow.svg';
-import ActuFestival from '../assets/festival-10-ans-banniere.png';
+import ActuRecit from '../assets/recit-dimpact.png';
 ---
 
 <header>
@@ -59,13 +59,13 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
             </div>                        
           </div>
           <!-- MOBILE ONLY -->
-          <div class="block md:hidden">
+          <div class="block md:hidden grow">
             <div class="bg-remaroon w-full p-4 flex flex-wrap justify-center">
               <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/ressources">Ressources</a>
               <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/actus/festival-10-ans">Notre festival !</a>
               <a class="font-lorimer bg-rebeige-300 text-remaroon text-base p-2 rounded-lg m-2" href="/s-engager#faire-un-don">Faire un don</a>
             </div>  
-            <div class="flex">
+            <div class="flex h-full">
               <div class="w-1/2 flex flex-col bg-rebeige-500 pt-6 pb-8 px-8">
                 <h4 class="text-rered">Parlons Règles</h4>
                 <p class="mt-4 text-xs">Notre solution pour généraliser l’éducation menstruelle</p>
@@ -88,11 +88,11 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
               <div>
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
               </div>       
-              <a href="/actus/festival-10-ans">
-                <Image class="mt-4 w-3/4" src={ActuFestival} alt="" />      
-                <div class="font-lorimer-condensed text-4xl mt-4">Changer les règles pour changer le monde !</div>
-                <p class="font-extrabold text-sm mt-2">24 avril 2026</p>
-                <p class="mt-2">Découvrez la programmation de notre festival ! On vous donne rendez-vous en mai pour un mois riche en événements partout en France !</p>
+              <a href="https://doccollectes.blob.core.windows.net/statics/Recit_dimpact_RE.pdf" target="_blank" rel="noreferrer">
+                <Image class="mt-4 w-3/4" src={ActuRecit} alt="" />      
+                <div class="font-lorimer-condensed text-4xl mt-4">Récit d'impact : 10 ans qui ont changé les règles !</div>
+                <p class="font-extrabold text-sm mt-2">02 juin 2026</p>
+                <p class="mt-2">Depuis 10 ans, Règles Élémentaires agit pour que toutes les femmes et les personnes qui ont, ont eu ou auront leurs règles puissent les vivre sans précarité, sans tabou, sans honte.</p>
               </a>              
               <!--
               <div class="mt-2">
@@ -133,9 +133,9 @@ import ActuFestival from '../assets/festival-10-ans-banniere.png';
                   <li><a href="/s-engager#organiser-collecte">Organiser une collecte</a></li>
                   <li><a href="/s-engager#devenir-benevole">Devenir bénévole</a></li>
                   <li><a href="/s-engager#devenir-partenaire">Devenir partenaire</a></li>
-                  <li><a href="/s-engager#devenir-entreprise">Devenir une entreprise engagée</a></li>
+                  <!-- <li><a href="/s-engager#devenir-entreprise">Devenir une entreprise engagée</a></li>
                   <li><a href="/s-engager#devenir-collectivite">Devenir une collectivité engagée</a></li>
-                  <li><a href="/s-engager#devenir-etablissement">Devenir un établissement engagé</a></li>
+                  <li><a href="/s-engager#devenir-etablissement">Devenir un établissement engagé</a></li> -->
                 </ul>
               </div>
             </div>

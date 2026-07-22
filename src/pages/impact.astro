@@ -3,6 +3,13 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import HeaderPicto from '../assets/home/DOIGTS-TAMPON.png';
 import HeaderImage from '../assets/impact/impact-header.jpg';
+import Carte from '../assets/impact/carte-10ans.png';
+import CarteMobile from '../assets/impact/carte-10ans-mobile.png';
+import LegendeMobile from '../assets/impact/legende-mobile.png';
+import Impact1 from '../assets/impact/impact-1.png';
+import Impact2 from '../assets/impact/impact-2.png';
+import Impact3 from '../assets/impact/impact-3.png';
+import Impact4 from '../assets/impact/impact-4.png';
 import GoutteTimeline from '../assets/impact/goutte-timeline.png';
 import Timeline2015 from '../assets/impact/timeline-2015.jpg';
 import Timeline2016 from '../assets/impact/timeline-2016.png';
@@ -14,6 +21,7 @@ import FormationEcole from '../assets/actions/FORMATION-ECOLE.png';
 import Megaphone from '../assets/informer/URGENCE.png';
 import Manif from '../assets/impact/MANIF.png';
 import MaroonGoutte from '../assets/actions/maroon-goutte.svg';
+import DixAns from '../assets/qui-sommes-nous/10-ans.png';
 ---
 
 <Base title="Notre impact - Règles Élémentaires">
@@ -39,24 +47,89 @@ import MaroonGoutte from '../assets/actions/maroon-goutte.svg';
                 </div>  
                 <div class="w-full md:w-4/10 md:ms-20 mt-6 md:mt-0">
 					<p>Depuis 2015, Règles Élémentaires agit pour que le fait d’avoir ses règles ne soit plus un obstacle à la dignité, à la santé et à l’égalité.<br/>En dix ans, un geste citoyen est devenu un mouvement national et européen, capable de transformer les pratiques, les représentations… et les lois.</p>
-				</div>     
-                <div class="w-full flex justify-center mt-10">
-                    <div class="bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3 text-4xl md:text-5xl">Page en construction</div>
-                </div>           
+				</div>              
             </div>
         </div>
-        <!--<div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap items-center">
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-full py-10 md:py-20 flex flex-wrap">
+                <div class="w-full md:w-1/4 md:pe-2 flex flex-col">
+                    <div class="rounded-xl">
+                        <Image class="rounded-xl" src={Impact1} alt="" />
+                    </div>
+                    <div class="bg-rebeige-300 grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4">
+                        <div class="font-lorimer-condensed-black text-4xl">Plus de 1 800</div>
+                        <div>structures partenaires partout sur le territoire</div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 md:px-2 flex flex-col">   
+                    <div class="bg-rebeige-100 grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4 md:mt-0 mb-4">
+                        <div class="font-lorimer-condensed-black text-4xl">1 million</div>
+                        <div>de personnes directement impactées par nos actions</div>
+                    </div>                 
+                    <div class="rounded-xl">
+                        <Image class="rounded-xl" src={Impact2} alt="" />
+                    </div>
+                    <div class="bg-rebeige-500 grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4">
+                        <div class="font-lorimer-condensed-black text-4xl">Plus de 700</div>
+                        <div>reprises presse de nos actions</div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 md:px-2 flex flex-col">
+                    <div class="bg-white grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4 md:mt-0 mb-4">
+                        <div class="font-lorimer-condensed-black text-4xl">29 millions</div>
+                        <div>de protections périodiques redistribuées</div>
+                    </div>
+                    <div class="bg-white grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mb-4">
+                        <div class="font-lorimer-condensed-black text-4xl">470 000</div>
+                        <div>personnes bénéficiaires via nos partenaires</div>
+                    </div>
+                    <div class="rounded-xl">
+                        <Image class="rounded-xl" src={Impact3} alt="" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 md:ps-2 flex flex-col">
+                    <div class="rounded-xl">
+                        <Image class="rounded-xl mt-4 md:mt-0" src={Impact4} alt="" />
+                    </div>
+                    <div class="bg-white grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4">
+                        <div class="font-lorimer-condensed-black text-4xl">20 000</div>
+                        <div>jeunes sensibilisés aux règles</div>
+                    </div>  
+                    <div class="bg-white grow flex flex-col justify-center rounded-xl p-8 md:px-10 md:py-8 text-remaroon mt-4">
+                        <div class="font-lorimer-condensed-black text-4xl">4000</div>
+                        <div>professionnel·les sensibilisé·es</div>
+                    </div>                                      
+                </div>
             </div>
-        </div>-->
+        </div>
         <div class="px-5 md:px-15 flex justify-center text-remaroon">
-			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap items-center">
+			<div class="w-full md:w-10/12 py-10 md:py-20 flex flex-wrap items-center justify-center">
+                <h2 class="w-full text-center">10 ans d'impact territorial</h2>
+                <p class="mt-4 md:mt-8 text-center">Répartition des actions cumulées entre 2015 et 2025</p>
+                <Image class="w-11/12 hidden md:block" src={Carte} alt="Île-de-France : plus de 2000000 de produits redistribués;
+                    Auvergne-Rhône-Alpes : plus de 2000000 de produits redistribués;
+                    Provence-Alpes-Côte d'Azur : plus de 2000000 de produits redistribués;
+                    Hauts-de-France : entre 500000 et 1000000 de produits redistribués;
+                    Grand Est : entre 500000 et 1000000 de produits redistribués;
+                    Centre-Val de Loire : entre 500000 et 1000000 de produits redistribués;
+                    Pays de la Loire : entre 500000 et 1000000 de produits redistribués;
+                    Bretagne : entre 500000 et 1000000 de produits redistribués;
+                    Nouvelle-Aquitaine : entre 500000 et 1000000 de produits redistribués;
+                    Normandie : entre 200000 et 500000 produits redistribués;
+                    Occitanie : entre 200000 et 500000 produits redistribués;
+                    Bourgogne-Franche-Comté : moins de 200000 produits redistribués;
+                    Corse : moins de 200000 produits redistribués;
+                    Réunion : moins de 200000 produits redistribués;
+                    Mayotte : moins de 200000 produits redistribués;
+                    Guadeloupe : moins de 200000 produits redistribués;" />
+                <Image class="w-11/12 md:hidden" src={CarteMobile} alt="" />
+                <Image class="w-10/12 md:hidden" src={LegendeMobile} alt="" />
             </div>
         </div>
         <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
-			<div class="w-11/12 md:w-10/12 py-10 md:pb-20 flex flex-wrap items-center">
+			<div class="w-11/12 md:w-10/12 pt-10 flex flex-wrap items-center">
                 <h2 class="w-full text-rered text-center -mt-16 md:-mt-20">Plus de<br/>10 ans d’actions</h2>	
-                <div class="w-full h-full mt-10 md:mt-20 relative">
+                <div class="w-full pb-10 md:pb-20 mt-10 md:mt-20 relative">
                     
                     <!-- middle line -->
                     <div class="hidden md:block absolute border-remaroon h-full border-2 left-[49.94%]"></div>
@@ -211,6 +284,22 @@ import MaroonGoutte from '../assets/actions/maroon-goutte.svg';
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rered text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justify-center">
+                <div class="w-full md:w-1/2 md:-mt-8">
+                    <Image class="md:w-5/6" src={DixAns} alt="" />
+                </div>
+                <div class="w-full md:w-1/2 mt-10 md:mt-0">
+                    <h3>Règles Élémentaires<br/>fête ses 10 ans</h3>
+                    <p class="mt-6 md:mt-10">…et ouvre une nouvelle ère.<br/>Nouveau logo. Nouvelle identité. Nouveau cap.<br/>Mais une même conviction, intacte depuis le premier jour : les règles ne doivent jamais être un obstacle à la dignité, à la santé et à l’égalité.</p>
+                    <p class="mt-4">Depuis 10 ans, nous agissons pour que toutes les personnes qui ont, ont eu ou auront leurs règles puissent les vivre <b>sans précarité, sans tabou, sans honte.</b></p>
+                    <a class="mt-8 small-maroon-shadow inline-block p-2 font-lorimer text-remaroon bg-rebeige-300" href="https://doccollectes.blob.core.windows.net/statics/Recit_dimpact_RE.pdf" target="_blank" rel="noreferrer">Télécharger le récit d'impact</a>
+                </div>
+                <div class="w-full flex justify-center mt-10 iframe-container">
+                    <iframe src="https://www.youtube.com/embed/Em5pUtG0814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

@@ -7,10 +7,10 @@ import DecapCMS from '@jee-r/astro-decap-cms';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://regleselementaires.com',
+  site: 'https://www.regleselementaires.com',
   integrations: [
     sitemap({
-      filter: (page) => page !== 'https://regleselementaires.com/admin/',
+      filter: (page) => page !== 'https://www.regleselementaires.com/admin/',
     }),
     DecapCMS({
       previewStyles: [
@@ -34,7 +34,7 @@ export default defineConfig({
 			openAuthoring: 'Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge',
 		},
 		logo_url: 'https://decapbridge.com/decapcms-with-bridge.svg',
-		site_url: 'https://re-vitrine-2026.netlify.app',
+		site_url: 'https://www.regleselementaires.com',
 		media_folder: 'src/assets',
 		public_folder: '../../assets',
         collections: [
