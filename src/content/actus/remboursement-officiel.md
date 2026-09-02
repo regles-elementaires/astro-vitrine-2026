@@ -1,7 +1,9 @@
 ---
 title: "Protections réutilisables remboursées : cette fois, c'est (vraiment) officiel"
-description: "À partir du 1er octobre 2026, certaines culottes et coupes menstruelles seront remboursées. Qui pourra en bénéficier ? Quels produits seront concernés ? À quelles conditions ? On vous explique tout."
-pubDate: 2026-09-03
+description: À partir du 1er octobre 2026, certaines culottes et coupes
+  menstruelles seront remboursées. Qui pourra en bénéficier ? Quels produits
+  seront concernés ? À quelles conditions ? On vous explique tout.
+pubDate: 2026-09-02
 heroImage: ../../assets/actualites/remboursement-officiel.jpg
 tags:
   - Actualité
