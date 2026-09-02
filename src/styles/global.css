@@ -333,6 +333,10 @@ article {
 	a {
 		text-decoration: underline;
 	}
+	ul {
+		list-style: disc;
+		padding-left: 2rem;
+	}
 }
 
 @media (width < 48rem) { 
