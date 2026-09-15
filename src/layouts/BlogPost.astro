@@ -20,8 +20,8 @@ const { title, description, pubDate, heroImage, tags } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
-					<div class="w-11/12 md:w-10/12 py-15 md:py-30 flex flex-col items-center">
+				<div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
+					<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
 						<div class="flex">
 							{
 								tags.map((tag) => (
@@ -32,11 +32,13 @@ const { title, description, pubDate, heroImage, tags } = Astro.props;
 						<h1 class="md:w-2/3 text-center mt-10">{title}</h1>
 					</div>
 				</div>
-				<div class="w-full">
-					{heroImage && <Image src={heroImage} alt="" />}
+				<div class="md:px-15 flex justify-center bg-rebeige-100">
+					<div class="md:w-2/3 w-full">
+						{heroImage && <Image src={heroImage} alt="" />}
+					</div>					
 				</div>
 				<div class="px-5 md:px-15 flex justify-center bg-rebeige-100 text-remaroon">
-					<div class="w-11/12 md:w-8/12 py-10 md:py-20">
+					<div class="w-11/12 md:w-8/12 py-10">
 						<div class="border-b-2 pb-4">
 							Publié le <FormattedDate date={pubDate} />
 						</div>				
