@@ -12,6 +12,8 @@ tags:
 ---
 **Les règles peuvent-elles empêcher de jouer au football ?**
 
+
+
 On les connaît les publicités qui nous disent qu’on peut tout faire sans aucune incidence quand on a ses règles… La réalité est un peu différente.
 
 En 2024, Règles Élémentaires et le [Fondaction du Football](https://www.fondactiondufootball.com/education-menstruelle) ont lancé l’enquête « J’ai mes règles, je fais du foot », menée auprès de 980 clubs de football amateur et de 622 joueuses âgées de 11 à 18 ans.
@@ -28,7 +30,11 @@ Derrière ces chiffres, il y a des douleurs, de l’inconfort, la peur d’une f
 
 Bref, le problème ne se trouve pas seulement sur le terrain. Il se trouve aussi dans tout ce qui manque encore autour : de l’information, des équipements adaptés, des personnes formées et des espaces où il est possible de parler de ses règles sans gêne.
 
+
+
 **Du constat à l’action**
+
+
 
 Depuis 2024, nous travaillons avec le Fondaction du Football pour mieux intégrer les enjeux de santé menstruelle dans le football amateur.
 
@@ -47,7 +53,11 @@ L’idée est de donner aux coachs les connaissances et les outils nécessaires 
 
 [Découvrir la présentation du partenariat sur le site de la Fédération Française de Football](https://www.fff.fr/article/17312-la-fff-avec-regles-elementaires-pour-lever-les-tabous.html)
 
+
+
 **Et au plus haut niveau, on en parle ?**
+
+
 
 Oui, et il était temps.
 
@@ -59,9 +69,13 @@ Avec elles, nous avons parlé de la place des règles dans le sport de haut nive
 
 Leurs témoignages rappellent que les règles peuvent avoir des effets très concrets sur la pratique sportive, quel que soit le niveau. En parler ouvertement permet aussi aux plus jeunes de comprendre qu’il n’y a aucune honte à poser des questions, à demander un aménagement ou simplement à dire que l’on a ses règles.
 
-[Regarder l’interview des joueuses sur Instagram](https://www.instagram.com/reels/DdV1JRMsDpy/)
+[Regarder l’interview des joueuses sur Instagram](https://www.instagram.com/p/DdV1JRMsDpy/)
+
+
 
 **Du football à tous les terrains**
+
+
 
 Pendant plusieurs années, notre travail s’est concentré sur le projet « J’ai mes règles, je fais du foot ». En 2025, nous avons choisi d’élargir cette démarche à l’ensemble des disciplines sportives. Le projet est ainsi devenu « J’ai mes règles, je fais du sport ».
 
@@ -78,7 +92,11 @@ Notre objectif : que les règles ne soient plus un frein à la pratique sportive
 
 Cela passe par une meilleure compréhension du cycle menstruel, mais aussi par des changements très concrets : trouver des protections sur place, avoir accès à des toilettes adaptées, pouvoir parler à une personne de confiance ou ajuster ponctuellement sa pratique lorsque cela est nécessaire.
 
+
+
 **Pour aller plus loin**
+
+
 
 Vous voulez mieux comprendre les liens entre règles et pratique sportive ou agir au sein de votre structure ?
 
