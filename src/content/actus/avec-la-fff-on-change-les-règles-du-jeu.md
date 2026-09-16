@@ -6,7 +6,7 @@ description: "À compter de la saison 2026-2027, Règles Élémentaires s’asso
   encadrant·es, création d’outils pour les clubs : l’objectif est simple, faire
   en sorte que les règles ne soient plus un frein à la pratique sportive."
 pubDate: 2026-09-16
-heroImage: /src/assets/actualites/regles_sport.jpg
+heroImage: /src/assets/actualites/regles_sport.png
 tags:
   - Actualité
 ---
