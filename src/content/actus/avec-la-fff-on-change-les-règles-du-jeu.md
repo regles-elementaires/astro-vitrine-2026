@@ -1,15 +1,15 @@
 ---
 title: Avec la FFF, on change les règles du jeu !
-description: À partir de la saison 2026-2027, Règles Élémentaires s’associe à la
-  Fédération Française de Football pour mieux intégrer la santé menstruelle dans
-  le football.
+description: "À compter de la saison 2026-2027, Règles Élémentaires s’associe à
+  la Fédération Française de Football pour mieux prendre en compte la santé
+  menstruelle dans le football. Sensibilisation des jeunes, formation des
+  encadrant·es, création d’outils pour les clubs : l’objectif est simple, faire
+  en sorte que les règles ne soient plus un frein à la pratique sportive."
 pubDate: 2026-09-16
 heroImage: /src/assets/actualites/regles_sport.jpg
 tags:
   - Actualité
 ---
-**À compter de la saison 2026-2027, Règles Élémentaires s’associe à la Fédération Française de Football pour mieux prendre en compte la santé menstruelle dans le football. Sensibilisation des jeunes, formation des encadrant·es, création d’outils pour les clubs : l’objectif est simple, faire en sorte que les règles ne soient plus un frein à la pratique sportive.**
-
 **Les règles peuvent-elles empêcher de jouer au football ?**
 
 On les connaît les publicités qui nous disent qu’on peut tout faire sans aucune incidence quand on a ses règles… La réalité est un peu différente.
