@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
 import FAQ from '../components/FAQ.astro';
 import ExclamationMark from '../assets/home/exclamation-mark.svg';
@@ -16,7 +18,11 @@ import Sengager from '../assets/home/sengager.png';
 import Sinformer from '../assets/home/sinformer.png';
 import Journal from '../assets/home/JOURNAL.png';
 import BoiteServiettes from '../assets/home/BOITE-SERVIETTES.png';
-import ActuRemboursement from '../assets/actualites/remboursement-officiel.jpg';
+
+let posts = (await getCollection('actus')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const mostRecentPost = posts.shift();
 ---
 
 <Base title={SITE_TITLE}>
@@ -46,17 +52,18 @@ import ActuRemboursement from '../assets/actualites/remboursement-officiel.jpg';
 				<Image class="absolute hidden md:block w-80 -mt-30 right-[10%] z-0" src={ActuPicto} alt="" />
 				<div class="inline-block square-title mt-6 bg-remaroon text-rebeige-300 text-2xl">Les règles bougent. Nous aussi.</div>
 				<p class="md:w-3/4 mt-6 text-center">Campagnes, prises de parole, études, événements, plaidoyer, actions de terrain : retrouvez les actualités qui font avancer la justice menstruelle au quotidien.</p>
-				<div class="mt-10 bg-rebeige-300 text-remaroon rounded-xl p-6 md:p-10 flex flex-wrap items-center">
+				<div class="mt-10 bg-rebeige-300 text-remaroon rounded-xl p-6 md:p-10 flex flex-wrap-reverse items-center">
 					<div class="w-full md:w-1/2 md:pe-6">
-						<h4>Protections réutilisables remboursées : cette fois, c'est officiel</h4>
-						<p class="font-extrabold text-sm mt-2">2 septembre 2026</p>
-						<p class="mt-4">À partir du 1er octobre 2026, certaines culottes et coupes menstruelles seront remboursées. Qui pourra en bénéficier ? Quels produits seront concernés ? À quelles conditions ? On vous explique tout.</p>
-						<a class="mt-4 inline-block font-bold underline" href="/actus/remboursement-officiel/" target="_blank" rel="noreferrer">En savoir plus</a>
+						<h4>{mostRecentPost.data.title}</h4> 
+						<p class="mt-2 font-bold"><FormattedDate date={mostRecentPost.data.pubDate} /></p>
+						<p class="mt-4">{mostRecentPost.data.description}</p>
+						<a class="mt-4 inline-block font-bold underline" href={`/actus/${mostRecentPost.id}/`} target="_blank">Lire l'article</a>
 					</div>
-					<div class="w-full md:w-1/2 md:ps-6 mt-4 md:mt-0">
-						<Image class="" src={ActuRemboursement} alt="" />				
+					<div class="w-full md:w-1/2 md:ps-6 mb-4 md:mb-0">
+						<Image class="rounded-xl" src={mostRecentPost.data.heroImage} alt="" />				
 					</div>
 				</div>
+				<a class="inline-block self-end small-maroon-shadow p-2 md:p-2.5 font-lorimer text-remaroon bg-rebeige-300 mt-4" href="/actus">Voir toutes les actus</a>
 			</div>
 		</div>
 		<div class="px-5 md:px-15 flex flex-col items-center bg-rebeige-500">

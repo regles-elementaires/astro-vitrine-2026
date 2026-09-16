@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
 import RedLogo from '../assets/nav/LOGOTYPE-RE-HORIZONTAL-ROUGE.svg';
 import WhiteLogo from '../assets/nav/LOGOTYPE-RE-HORIZONTAL-BLANC.svg';
 import ParlonsRegles from '../assets/nav/parlons-regles.png';
@@ -7,7 +9,11 @@ import Regla from '../assets/nav/regla.png';
 import UEFlag from '../assets/nav/ue-flag.png';
 import NavRedArrow from '../assets/nav/nav-red-arrow.png';
 import RightArrow from '../assets/actions/small-right-arrow.svg';
-import ActuRemboursement from '../assets/actualites/remboursement-officiel.jpg';
+
+let posts = (await getCollection('actus')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const mostRecentPost = posts.shift();
 ---
 
 <header>
@@ -89,14 +95,13 @@ import ActuRemboursement from '../assets/actualites/remboursement-officiel.jpg';
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
               </div>       
               <a href="/actus/remboursement-officiel/" target="_blank" rel="noreferrer">
-                <Image class="mt-4 w-3/4" src={ActuRemboursement} alt="" />      
-                <div class="font-lorimer-condensed text-3xl mt-4">Protections réutilisables remboursées : cette fois, c'est officiel</div>
-                <p class="font-extrabold text-sm mt-2">2 septembre 2026</p>
-                <p class="mt-2">À partir du 1er octobre 2026, certaines culottes et coupes menstruelles seront remboursées. Qui pourra en bénéficier ? Quels produits seront concernés ? À quelles conditions ? On vous explique tout.</p>
+                <Image class="mt-4 w-3/4" src={mostRecentPost.data.heroImage} alt="" />      
+                <div class="font-lorimer-condensed text-3xl mt-4">{mostRecentPost.data.title}</div>
+                <p class="font-extrabold text-sm mt-2"><FormattedDate date={mostRecentPost.data.pubDate} /></p>
+                <!--<p class="mt-2">{mostRecentPost.data.description}</p>-->
               </a>              
-              <!--
-              <div class="mt-2">
-                <a href="#" class="inline-block">
+              <div class="mt-6">
+                <a href="/actus" class="inline-block">
                   <div class="flex items-center">
                       <div class="bg-rebeige-300 rounded-full flex items-center justify-center h-10 w-10 border-4 border-remaroon -me-4 z-200">
                           <Image class="w-2/3" src={RightArrow} alt="" />
@@ -104,8 +109,7 @@ import ActuRemboursement from '../assets/actualites/remboursement-officiel.jpg';
                       <div class="bg-rebeige-300 text-remaroon font-bold text-sm ps-6 py-0.5 pe-2">Voir toutes les actus</div>
                     </div>
                 </a>
-              </div> 
-              -->             
+              </div>           
             </div>
             <div id="mega-nos-actions-submenu" class="flex items-center">
               <div class="w-1/10 pe-4">

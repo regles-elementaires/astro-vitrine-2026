@@ -34,15 +34,15 @@ const mostRecentPost = posts.shift();
 			</div>
 			<div class="flex justify-center bg-rered py-10 md:py-20">
 				<div class="hidden md:block absolute right-[5%] -mt-4 rotate-10 bg-reorange text-white font-lorimer-condensed text-5xl py-2 px-4">à la une</div>
-				<div class="w-11/12 md:w-10/12 flex flex-wrap-reverse p-8 md:p-10 text-remaroon bg-rebeige-300 rounded-xl">
+				<div class="w-11/12 md:w-10/12 flex flex-wrap-reverse p-6 md:p-10 text-remaroon bg-rebeige-300 rounded-xl">
 					<div class="w-full md:w-1/2 md:pr-5">
-						<p class="font-lorimer-condensed-black text-4xl">{mostRecentPost.data.title}</p> 
+						<h4>{mostRecentPost.data.title}</h4> 
 						<p class="mt-2 font-bold"><FormattedDate date={mostRecentPost.data.pubDate} /></p>
 						<p class="mt-4">{mostRecentPost.data.description}</p>
-						<a class="mt-3 inline-block underline font-semibold" href={`/actus/${mostRecentPost.id}/`} target="_blank">Lire l'article</a>
+						<a class="mt-4 inline-block font-bold underline" href={`/actus/${mostRecentPost.id}/`} target="_blank">Lire l'article</a>
 					</div>
 					<div class="w-full md:w-1/2 md:pl-5 mb-6 md:mb-0">
-						<Image class="w-full rounded-xl" src={mostRecentPost.data.heroImage} alt="" />
+						<Image class="rounded-xl" src={mostRecentPost.data.heroImage} alt="" />
 					</div>
 				</div>				
 			</div>
