@@ -94,7 +94,7 @@ const mostRecentPost = posts.shift();
               <div>
                 <span class="square-title inline-block bg-rered text-rebeige-300 text-2xl">Actualité à la une</span>
               </div>       
-              <a href="/actus/remboursement-officiel/" target="_blank" rel="noreferrer">
+              <a href={`/actus/${mostRecentPost.id}/`} target="_blank" rel="noreferrer">
                 <Image class="mt-4 w-3/4" src={mostRecentPost.data.heroImage} alt="" />      
                 <div class="font-lorimer-condensed text-3xl mt-4">{mostRecentPost.data.title}</div>
                 <p class="font-extrabold text-sm mt-2"><FormattedDate date={mostRecentPost.data.pubDate} /></p>

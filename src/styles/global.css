@@ -337,6 +337,13 @@ article {
 		list-style: disc;
 		padding-left: 2rem;
 	}
+	img {
+		max-height: 600px;
+		width: auto;
+	}
+	p, ul{
+		margin-bottom: 18px;
+	}
 }
 
 @media (width < 48rem) { 
