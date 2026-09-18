@@ -28,6 +28,8 @@ C’est tout cela que nous avons voulu raconter.
 
 ![](../../assets/inventaire3.jpg "Coucou Tara Heuzé-Sarmini, fondatrice de Règles Élémentaires qui organise la toute première collecte !")
 
+*Coucou Tara Heuzé-Sarmini, fondatrice de Règles Élémentaires qui organise la toute première collecte !*
+
 Lorsque l’association est née en 2015, la précarité menstruelle était encore largement absente du débat public. Le terme lui-même était peu utilisé et les conséquences très concrètes du manque d’accès aux protections périodiques restaient invisibilisées.
 
 Alors nous avons commencé par collecter.
