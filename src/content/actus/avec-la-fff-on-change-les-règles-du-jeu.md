@@ -85,6 +85,7 @@ Vous voulez mieux comprendre les liens entre règles et pratique sportive ou agi
 * [Découvrir notre campagne « Règles et sport : carton rouge sur les tabous » et les résultats de notre enquête](https://cartonrouge.regleselementaires.com/)
 * [Télécharger la brochure « J’ai mes règles, je fais du sport », spécialement conçue pour les jeunes](https://doccollectes.blob.core.windows.net/statics/brochure_sport_jeunes_A5-web.pdf)
 * [Découvrir notre travail avec le Fondaction du Football](https://www.fondactiondufootball.com/education-menstruelle)
+* Contacter notre équipe : guillemette.bailleul@regleselementaires.com
 
 Le sport peut être un formidable espace d’émancipation, de confiance et de collectif.
 
