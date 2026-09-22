@@ -1,7 +1,7 @@
 ---
 title: "10KM de Tours : Une équipe Règles Élémentaires sur la ligne de départ !"
 description: "Cette équipe, réunie par notre antenne Centre-Val de Loire, s’est
-  lancé un double défi : parcourir ensemble les 10 kilomètres de la course et
+  lancée un double défi : parcourir ensemble les 10 kilomètres de la course et
   collecter des fonds pour soutenir les actions de l’association."
 pubDate: 2026-09-22
 heroImage: /src/assets/actualites/10km_tours.jpg
