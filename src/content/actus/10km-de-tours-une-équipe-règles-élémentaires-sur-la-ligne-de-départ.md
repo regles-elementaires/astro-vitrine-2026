@@ -12,11 +12,9 @@ tags:
 
 Le dimanche 27 septembre, 12 coureurs et coureuses prendront le départ des 10 km de Tours sous les couleurs de Règles Élémentaires.
 
-Les coureur·euses ont donc créé une cagnotte solidaire pour permettre à leur entourage, aux Tourangeaux·elles et à toutes les personnes qui le souhaitent de les encourager. Les dons collectés contribueront directement à nos actions.
+Les coureur·euses ont donc créé une [cagnotte solidaire](https://www.leetchi.org/fundraisers/emmanuelle-vedrenne?utm_campaign=leetchi-org&utm_content=new_action&utm_medium=email-auto&utm_source=kentaa) pour permettre à leur entourage, aux Tourangeaux·elles et à toutes les personnes qui le souhaitent de les encourager. Les dons collectés contribueront directement à nos actions.
 
 Est-ce que ce n'est pas le compromis parfait ? Souffrir sur 10KM MAIS se dire qu’on le fait pour la bonne cause ;) 
-
-
 
 **Comment la course à pied est entrée dans la vie de Règles Élémentaires** 
 
@@ -33,8 +31,6 @@ Alors on a bien envie de tester ce nouveau mode d’engagement pour voir si ça 
 Du coup…. Vous avez prévu de participer à une course prochainement ? Vous avez envie de le faire à titre individuel ou de monter une équipe ? Et si vous en profitiez pour collecter des fonds pour Règles Élémentaires ?
 
 Que vous prépariez un 5 km, un marathon, un trail ou n’importe quel autre défi sportif, vous pouvez courir sous nos couleurs et mobiliser vos proches autour de notre cause. Nous pouvons vous accompagner pour créer votre cagnotte (on a une page [Leetchi](https://www.leetchi.org/project/regles-elementaires) qui permet à n’importe qui d’ouvrir une cagnotte pour notre asso !), vous mettre à dispo des petits supports de communication et tenter de vous accompagner au mieux ! 
-
-
 
 **La course à pied et les règles, tout un monde qui s’ouvre à nous !**
 
@@ -53,8 +49,6 @@ Toutes ces difficultés restent encore très peu évoquées dans le monde de la 
 Alors, évidemment, on aimerait aller plus loin !!
 
 On aimerait que des protections périodiques soient mises à disposition sur les courses. Que les sanitaires soient pensés pour permettre à tout le monde de changer de protection dans de bonnes conditions. Et surtout, que les règles puissent être abordées simplement, sans gêne ni tabou, dans les clubs comme sur les lignes de départ.
-
-
 
 **Faire du sport sans que les règles soient un obstacle**
 
