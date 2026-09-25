@@ -5,6 +5,6 @@ type: Brochure
 themes:
   - Santé
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A4_score-higham.pdf
-image: /src/assets/ressources/score-higham.png
+image: /src/assets/ressources/20.png
 pubDate: 2026-06-29
 ---
