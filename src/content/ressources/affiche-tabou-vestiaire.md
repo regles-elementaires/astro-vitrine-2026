@@ -5,6 +5,6 @@ type: Affiche
 themes:
   - Éducation menstruelle
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A3_affiche-regles-et-sport.pdf
-image: /src/assets/ressources/affiche-tabou-vestiaire.png
+image: /src/assets/ressources/19.png
 pubDate: 2026-06-29
 ---
