@@ -1,10 +1,11 @@
 ---
 title: Flyer présentation Reglà
-description: Pour faire la promotion de Reglà, notre application de géolocalisation des protections périodiques gratuites
+description: Pour faire la promotion de Reglà, notre application de
+  géolocalisation des protections périodiques gratuites
 type: Brochure
 themes:
   - Précarité menstruelle
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A5_flyer-regla.pdf
-image: /src/assets/ressources/flyer-regla.png
+image: /src/assets/ressources/9.png
 pubDate: 2026-06-29
 ---
