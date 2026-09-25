@@ -5,6 +5,6 @@ type: Enquête
 themes:
   - Éducation menstruelle
 link: https://doccollectes.blob.core.windows.net/statics/enquete_regles_et_sport.pdf
-image: ../../assets/ressources/enquete-2023-sport.png
+image: /src/assets/ressources/22.png
 pubDate: 2024-06-29
 ---
