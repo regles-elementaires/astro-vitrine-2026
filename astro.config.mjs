@@ -116,7 +116,7 @@ export default defineConfig({
 						name: 'type',
 						label: 'Type',
 						widget: 'select',
-						options: ['Affiche', 'Brochure', 'Guide pratique', 'Enquête', 'Étude']			
+						options: ['Affiche', 'Brochure', 'Guide pratique', 'Enquête', 'Étude', 'Plateforme en ligne']			
 					},
 					{
 						name: 'themes',
