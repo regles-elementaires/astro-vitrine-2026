@@ -5,6 +5,6 @@ type: Enquête
 themes:
   - Précarité menstruelle
 link: https://doccollectes.blob.core.windows.net/statics/Barometre_2022_Regles_Elementaires_Opinion_Way.pdf
-image: ../../assets/ressources/enquete-2022.png
+image: /src/assets/ressources/23.png
 pubDate: 2022-06-29
 ---
