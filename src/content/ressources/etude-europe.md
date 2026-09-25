@@ -5,6 +5,6 @@ type: Étude
 themes:
   - Santé
 link: https://doccollectes.blob.core.windows.net/europe/ETUDE-reglementer-produits-menstruels.pdf
-image: ../../assets/ressources/enquete-europe.png
+image: /src/assets/ressources/28.png
 pubDate: 2026-06-29
 ---
