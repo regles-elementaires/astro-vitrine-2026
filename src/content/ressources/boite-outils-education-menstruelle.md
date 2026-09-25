@@ -5,6 +5,6 @@ type: Guide pratique
 themes:
   - Éducation menstruelle
 link: https://doccollectes.blob.core.windows.net/europe/FR_menstrual_education_toolbox.pdf
-image: /src/assets/ressources/boite-outils-education-menstruelle.png
+image: /src/assets/ressources/4.png
 pubDate: 2026-06-29
 ---
