@@ -5,6 +5,6 @@ type: Brochure
 themes:
   - Santé
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A5_RESSOURCES-SANTE-MENSTRUELLE-AVRIL-2026.pdf
-image: ../../assets/ressources/ressources-sante-menstruelle.png
+image: /src/assets/ressources/17.png
 pubDate: 2026-06-29
 ---
