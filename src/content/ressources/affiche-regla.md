@@ -1,10 +1,11 @@
 ---
 title: Affiche présentation Reglà
-description: Pour faire la promotion de Reglà, notre application de géolocalisation des protections périodiques gratuites
+description: Pour faire la promotion de Reglà, notre application de
+  géolocalisation des protections périodiques gratuites
 type: Affiche
 themes:
   - Précarité menstruelle
 link: https://doccollectes.blob.core.windows.net/ressources-site-vitrine/A3_affiche-regla.pdf
-image: /src/assets/ressources/affiche-regla.png
+image: /src/assets/ressources/18.png
 pubDate: 2026-06-29
 ---
