@@ -5,6 +5,6 @@ type: Guide pratique
 themes:
   - Éducation menstruelle
 link: https://doccollectes.blob.core.windows.net/statics/brochure_sport_jeunes_A5-web.pdf
-image: /src/assets/ressources/guide-regles-sport.png
+image: /src/assets/ressources/5.png
 pubDate: 2026-06-29
 ---
