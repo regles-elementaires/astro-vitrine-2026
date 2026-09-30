@@ -19,6 +19,13 @@ Pour nous, cette mesure constitue une avancée vers la justice menstruelle : ell
 
 Pour vous aider à y voir plus clair, on a essayé de compiler toutes les informations dont on dispose sous forme de FAQ. On la fera sans doute évoluer au fil de l’eau mais comptez sur nous pour suivre de près toutes les actus autour de cette mesure ! 
 
+## Sommaire
+1. [Qui peut en bénéficier ?](#qui-peut-beneficier)
+2. [Comment ça se passe à la pharmacie ?](#pharmacie)
+3. [Quelles protections peut-on choisir ?](#protections)
+4. [Et si je ne trouve pas le bon produit ?](#produit)
+
+<a name="qui-peut-beneficier"></a>
 ***Qui peut en bénéficier ?***
 
 **Qui a droit au remboursement ?**
@@ -48,6 +55,7 @@ Lors de nos échanges avec les services du ministère, il nous a été indiqué 
 
 Nous resterons attentif·ves à ce que ce droit soit accessible sans discrimination ni demande de justification intrusive.
 
+<a name="pharmacie"></a>
 ***Comment ça se passe à la pharmacie ?***
 
 **Est-ce qu’il faut une ordonnance ?**
@@ -76,6 +84,7 @@ Cela dépend de votre couverture santé et du tiers payant pratiqué par la phar
 
 Par exemple, pour une culotte à 19 €, la part restant à payer sans mutuelle est de **7,60 €**. Pensez à demander à la pharmacie ce que vous aurez à régler avant l’achat.
 
+<a name="protections"></a>
 ***Quelles protections peut-on choisir ?***
 
 **Toutes les protections périodiques sont-elles remboursées ?**
@@ -118,6 +127,7 @@ Gardez une trace de la date de votre premier achat : elle sert de repère pour v
 
 L’Assurance Maladie annonce pour novembre 2026 un outil permettant aux pharmacies de consulter l’historique des délivrances. Il ne faut donc pas compter sur ce suivi dès le lancement du dispositif. Les informations disponibles ne précisent pas l’existence d’un compteur dédié dans le compte ameli des bénéficiaires.
 
+<a name="produit"></a>
 ***Et si je ne trouve pas le bon produit ?***
 
 **Toutes les pharmacies proposeront-elles toutes les marques et toutes les tailles ?**
