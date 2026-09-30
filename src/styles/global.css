@@ -352,6 +352,11 @@ article {
 	p, ul{
 		margin-bottom: 18px;
 	}
+	ol {
+		list-style: decimal;
+		padding-left: 1rem;
+		margin: 1rem 0;
+	}
 }
 
 @media (width < 48rem) { 

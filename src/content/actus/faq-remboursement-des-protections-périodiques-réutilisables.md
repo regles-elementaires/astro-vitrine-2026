@@ -19,15 +19,38 @@ Pour nous, cette mesure constitue une avancée vers la justice menstruelle : ell
 
 Pour vous aider à y voir plus clair, on a essayé de compiler toutes les informations dont on dispose sous forme de FAQ. On la fera sans doute évoluer au fil de l’eau mais comptez sur nous pour suivre de près toutes les actus autour de cette mesure ! 
 
-## Sommaire
-1. [Qui peut en bénéficier ?](#qui-peut-beneficier)
-2. [Comment ça se passe à la pharmacie ?](#pharmacie)
-3. [Quelles protections peut-on choisir ?](#protections)
-4. [Et si je ne trouve pas le bon produit ?](#produit)
+##### Sommaire
 
-<a name="qui-peut-beneficier"></a>
+1. [Qui peut en bénéficier ?](#qui-peut-beneficier)
+    * [Qui a droit au remboursement ?](#remboursement)
+    * [Y a-t-il un âge minimum ?](#age-minimum)
+    * [Je vais avoir 26 ans : est-ce que je garde mes droits jusqu’à la fin des douze mois ?](#26-ans)
+    * [Les hommes trans et les personnes non binaires qui ont leurs règles sont-iels concerné·es ?](#hommes-trans)
+2. [Comment ça se passe à la pharmacie ?](#pharmacie)
+    * [Est-ce qu’il faut une ordonnance ?](#ordonnance)
+    * [Quels documents dois-je présenter ?](#documents)
+    * [Je suis mineur·e : comment faire ?](#mineur)
+    * [Est-ce que je devrai avancer de l’argent ?](#argent)
+3. [Quelles protections peut-on choisir ?](#protections)
+    * [Toutes les protections périodiques sont-elles remboursées ?](#toutes-protections)
+    * [Où trouver la liste des produits remboursables ?](#liste)
+    * [Est-ce que je peux les acheter en ligne ou en grande surface ?](#achat-en-ligne)
+    * [Combien de protections sont remboursées ?](#combien)
+    * [Dois-je prendre les deux produits en même temps ?](#meme-temps)
+    * [Puis-je choisir une culotte et une coupe, ou deux culottes de tailles différentes ?](#choix)
+    * [Puis-je acheter mes deux produits dans des pharmacies différentes ?](#pharmacies-differentes)
+    * [Comment connaître la date à laquelle je pourrai obtenir de nouveaux produits ?](#date-renouvellement)
+4. [Et si je ne trouve pas le bon produit ?](#produit)
+    * [Toutes les pharmacies proposeront-elles toutes les marques et toutes les tailles ?](#marques-tailles)
+    * [La pharmacie peut-elle commander ma taille ?](#commande)
+    * [Puis-je échanger une culotte si la taille ne convient pas ?](#echange)
+    * [Que faire si le produit présente un défaut ?](#defaut)
+    * [Qui peut m’aider à utiliser ma culotte ou ma coupe ?](#aide)
+
+<a class="anchor" name="qui-peut-beneficier"></a>
 ***Qui peut en bénéficier ?***
 
+<a class="anchor" name="remboursement"></a>
 **Qui a droit au remboursement ?**
 
 Vous pouvez bénéficier du dispositif si vous avez vos règles, êtes assuré·e auprès de l’Assurance Maladie et remplissez l’une de ces conditions :
@@ -37,16 +60,19 @@ Vous pouvez bénéficier du dispositif si vous avez vos règles, êtes assuré·
 
 La CSS est une aide qui permet de couvrir les dépenses de santé des personnes disposant de ressources modestes.
 
+<a class="anchor" name="age-minimum"></a>
 **Y a-t-il un âge minimum ?**
 
 Aucun âge minimum n’est prévu dans les conditions annoncées : les personnes mineures qui ont leurs règles sont donc concernées (elles doivent pouvoir présenter une carte vitale). Pour les bénéficiaires de la CSS, il n’existe pas non plus de limite d’âge supérieure.
 
+<a class="anchor" name="26-ans"></a>
 **Je vais avoir 26 ans : est-ce que je garde mes droits jusqu’à la fin des douze mois ?**
 
 Le critère est d’avoir moins de 26 ans au moment de la délivrance. Si vous achetez un premier produit à 25 ans, cela ne prolonge pas votre éligibilité après votre 26e anniversaire.
 
 Vous pouvez toutefois continuer à bénéficier du dispositif si vous êtes bénéficiaire de la CSS, puisque cette aide ouvre droit à la prise en charge sans condition d’âge.
 
+<a class="anchor" name="hommes-trans"></a>
 **Les hommes trans et les personnes non binaires qui ont leurs règles sont-iels concerné·es ?**
 
 **Oui : le dispositif s’adresse aux personnes menstruées.** Les informations destinées aux pharmacies utilisent elles aussi cette formulation.
@@ -55,25 +81,29 @@ Lors de nos échanges avec les services du ministère, il nous a été indiqué 
 
 Nous resterons attentif·ves à ce que ce droit soit accessible sans discrimination ni demande de justification intrusive.
 
-<a name="pharmacie"></a>
+<a class="anchor" name="pharmacie"></a>
 ***Comment ça se passe à la pharmacie ?***
 
+<a class="anchor" name="ordonnance"></a>
 **Est-ce qu’il faut une ordonnance ?**
 
 **Non.** Vous n’avez pas besoin de consulter un médecin ni d’obtenir une ordonnance pour bénéficier de cette prise en charge. La délivrance se fait directement en pharmacie.
 
+<a class="anchor" name="documents"></a>
 **Quels documents dois-je présenter ?**
 
 Prévoyez votre **carte Vitale à jour**, ou l’application carte Vitale, ainsi que votre **carte de mutuelle** si vous en avez une.
 
 La pharmacie pourra vérifier vos droits et vous orienter vers les produits éligibles disponibles.
 
+<a class="anchor" name="mineur"></a>
 **Je suis mineur·e : comment faire ?**
 
 Vous êtes éligible si vous avez vos règles. Si vous possédez votre propre carte Vitale, prenez-la avec vous.
 
 Si vous êtes encore rattaché·e à la carte Vitale d’un parent, les indications recueillies auprès du ministère prévoient l’utilisation de cette carte. En revanche, les modalités permettant d’obtenir ces protections sans intervention d’un·e responsable légal, ainsi que la confidentialité des informations de remboursement, restent à préciser. Nous ne pouvons donc pas garantir à ce stade une délivrance anonyme.
 
+<a class="anchor" name="argent"></a>
 **Est-ce que je devrai avancer de l’argent ?**
 
 Cela dépend de votre couverture santé et du tiers payant pratiqué par la pharmacie. Le tiers payant permet de ne pas avancer la part prise en charge.
@@ -84,76 +114,89 @@ Cela dépend de votre couverture santé et du tiers payant pratiqué par la phar
 
 Par exemple, pour une culotte à 19 €, la part restant à payer sans mutuelle est de **7,60 €**. Pensez à demander à la pharmacie ce que vous aurez à régler avant l’achat.
 
-<a name="protections"></a>
+<a class="anchor" name="protections"></a>
 ***Quelles protections peut-on choisir ?***
 
+<a class="anchor" name="toutes-protections"></a>
 **Toutes les protections périodiques sont-elles remboursées ?**
 
 Non. Le dispositif concerne uniquement certaines culottes menstruelles et coupes menstruelles, aussi appelées cups, référencées par le ministère de la Santé.
 
 Les serviettes et tampons jetables, ainsi que les serviettes lavables, ne sont pas couverts par cette mesure. Une marque peut aussi commercialiser plusieurs produits dont seuls certains sont éligibles : vérifiez bien la référence avec la pharmacie.
 
+<a class="anchor" name="liste"></a>
 **Où trouver la liste des produits remboursables ?**
 
 La liste est publiée sur le[ site du ministère de la Santé](https://sante.gouv.fr/actualites-presse/actualites-du-ministere/article/precarite-menstruelle-prise-en-charge-des-protections-periodiques-reutilisables). Elle pourra évoluer avec le référencement de nouveaux produits.
 
 Votre pharmacie peut vous aider à identifier les références prises en charge.
 
+<a class="anchor" name="achat-en-ligne"></a>
 **Est-ce que je peux les acheter en ligne ou en grande surface ?**
 
 Pour bénéficier de ce dispositif de remboursement, l’achat doit être effectué en pharmacie. Un achat sur le site d’une marque ou en grande surface n’ouvre pas droit à cette prise en charge.
 
+<a class="anchor" name="combien"></a>
 **Combien de protections sont remboursées ?**
 
 La limite est de deux produits par période de douze mois, calculée à partir de votre premier achat. Elle ne se remet donc pas automatiquement à zéro le 1er janvier.
 
 Par exemple, si votre premier achat a lieu le 15 octobre 2026, la première période court jusqu’au 14 octobre 2027. Une nouvelle période commence le 15 octobre 2027, sous réserve de remplir toujours les conditions d’éligibilité.
 
+<a class="anchor" name="meme-temps"></a>
 **Dois-je prendre les deux produits en même temps ?**
 
 Non. D’après les précisions recueillies auprès du ministère, vous pouvez acheter un premier produit, puis le second plusieurs mois plus tard, dans la même période de douze mois.
 
+<a class="anchor" name="choix"></a>
 **Puis-je choisir une culotte et une coupe, ou deux culottes de tailles différentes ?**
 
 Oui. Les deux produits peuvent appartenir à des catégories différentes, ou à la même catégorie avec des tailles différentes. Vous pouvez donc choisir une culotte et une coupe, deux culottes ou deux coupes, à condition que chaque référence soit éligible.
 
+<a class="anchor" name="pharmacies-differentes"></a>
 **Puis-je acheter mes deux produits dans des pharmacies différentes ?**
 
 Oui. La limite de deux produits s’applique à la personne bénéficiaire, quel que soit le nombre de pharmacies fréquentées.
 
+<a class="anchor" name="date-renouvellement"></a>
 **Comment connaître la date à laquelle je pourrai obtenir de nouveaux produits ?**
 
 Gardez une trace de la date de votre premier achat : elle sert de repère pour votre période de douze mois.
 
 L’Assurance Maladie annonce pour novembre 2026 un outil permettant aux pharmacies de consulter l’historique des délivrances. Il ne faut donc pas compter sur ce suivi dès le lancement du dispositif. Les informations disponibles ne précisent pas l’existence d’un compteur dédié dans le compte ameli des bénéficiaires.
 
-<a name="produit"></a>
+<a class="anchor" name="produit"></a>
 ***Et si je ne trouve pas le bon produit ?***
 
+<a class="anchor" name="marques-tailles"></a>
 **Toutes les pharmacies proposeront-elles toutes les marques et toutes les tailles ?**
 
 Non. Selon les précisions obtenues auprès du ministère, les pharmacies restent libres de constituer leur assortiment : elles n’ont pas l’obligation de proposer toutes les références éligibles.
 
 Les exigences de gamme concernent les fabricants. Pour les culottes, ceux-ci doivent notamment proposer au moins huit tailles et une référence adaptée aux adolescent·es. Cela ne signifie pas que chaque pharmacie aura toutes ces tailles en stock.
 
+<a class="anchor" name="commande"></a>
 **La pharmacie peut-elle commander ma taille ?**
 
 Une commande peut être possible, selon les fournisseurs et les accords commerciaux de la pharmacie. Demandez si elle peut obtenir la référence et la taille adaptées à vos besoins.
 
 Si elle ne les propose pas, vous pouvez vous renseigner auprès d’une autre officine. L’accès réel à une gamme suffisante sera un point important à suivre dans la mise en œuvre de la mesure.
 
+<a class="anchor" name="echange"></a>
 **Puis-je échanger une culotte si la taille ne convient pas ?**
 
 Le dispositif de remboursement ne prévoit pas de procédure particulière d’échange pour une erreur de taille. Les possibilités dépendent des conditions de la pharmacie et du fabricant, notamment pour les produits ouverts ou essayés.
 
 Demandez les conditions d’échange avant l’achat et consultez le guide des tailles : une taille habituelle de sous-vêtement ne correspond pas toujours à celle d’une autre marque.
 
+<a class="anchor" name="defaut"></a>
 **Que faire si le produit présente un défaut ?**
 
 Contactez la pharmacie avec votre preuve d’achat pour demander les modalités de prise en charge du défaut.
 
 D’après les échanges avec le ministère, le remplacement relève de la relation commerciale avec le fabricant, et non d’un mécanisme spécifique de l’Assurance Maladie. Nous n’avons pas, à ce stade, de confirmation sur la façon dont un remplacement serait enregistré dans le quota annuel.
 
+<a class="anchor" name="aide"></a>
 **Qui peut m’aider à utiliser ma culotte ou ma coupe ?**
 
 Lisez la notice fournie avec le produit, notamment les consignes d’utilisation et d’entretien. Vous pouvez également demander conseil à votre pharmacie.
