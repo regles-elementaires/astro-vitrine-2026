@@ -44,6 +44,6 @@ L’aménagement des toilettes, leur accessibilité pendant les cours et la mise
 
 **Faire de la santé menstruelle un enjeu partagé**
 
-Animée par Emmanuelle Vedrenne, responsable de l'antenne Centre-Val de Loire, de Règles Élémentaires, cette table ronde réunissait Élise Pereira-Nunes et Sandrine Sousa-Pacheco pour la Ville de Tours, Pascal Létard et Nathalie Langlais pour l’Éducation nationale, Sophie Lizé-Robidas, médecin généraliste, et Justine Okolodkoff, directrice générale adjointe de notre association.
+Animée par Emmanuelle Vedrenne, responsable de l'antenne Centre-Val de Loire, de Règles Élémentaires, cette table ronde réunissait Élise Pereira-Nunes et Sandrine Sousa-Pacheco pour la Ville de Tours, Pascal Létard pour l’Éducation nationale, Sophie Lizé-Robidas, médecin généraliste, et Justine Okolodkoff, directrice générale adjointe de notre association.
 
 En réunissant ces différent·es acteur·ices, nous souhaitions mettre en lien les connaissances, les pratiques et les responsabilités de chacun·e. Car permettre aux élèves de vivre leurs règles dans de bonnes conditions nécessite une mobilisation collective.
