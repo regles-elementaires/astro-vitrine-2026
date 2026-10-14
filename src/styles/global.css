@@ -357,6 +357,11 @@ article {
 		padding-left: 1rem;
 		margin: 1rem 0;
 	}
+	h2 {
+		font-size: 38px;
+		margin-bottom: 36px;
+		padding-top: 18px;
+	}
 }
 
 @media (width < 48rem) { 
