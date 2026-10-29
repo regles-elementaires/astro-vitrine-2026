@@ -364,6 +364,14 @@ article {
 	}
 }
 
+/* MECENAT */
+.mecenat-type-bloc {
+	ul {
+		list-style: disc;
+		padding-left: 2rem;
+	}
+}
+
 @media (width < 48rem) { 
 	body {
 		font-size: 13px;

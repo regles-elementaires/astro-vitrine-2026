@@ -1,0 +1,227 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import HeaderImage from '../assets/mecenat/mecenat-header.jpg';
+import Collecte from '../assets/s-engager/COLLECTE.png';
+import Ecole from '../assets/actions/FORMATION-ECOLE.png';
+import Ecole2 from '../assets/actions/FORMATION-ECOLE-2.png';
+import Communaute from '../assets/home/COMMUNAUTE.png';
+import Serviettes from '../assets/s-engager/SERVIETTES.png';
+import Megaphone from '../assets/informer/URGENCE.png';
+import BoiteServiette from '../assets/mecenat/BOITE-SERVIETTE.png';
+import Idee from '../assets/mecenat/IDEE.png';
+import Sororite from '../assets/home/SORORITE.png';
+
+---
+
+<Base title="Mécénat - Règles Élémentaires" description="Précarité, éducation, santé, égalité : votre entreprise peut agir. En devenant mécène de Règles Élémentaires, vous permettez à davantage de personnes de vivre leurs règles dignement, sans tabou et en sécurité. Et vous fédérez vos équipes autour d’un engagement concret.">
+	<main>
+        <div class="px-5 md:px-15 flex justify-center md:justify-end bg-rebeige-100">
+			<div class="w-11/12 py-10 md:pb-20 md:pt-10 flex items-end justify-between">
+				<div class="w-full md:w-6/11 text-rered relative z-1">
+					<h1>Entreprises : changeons les règles, ensemble !</h1>                                    
+				</div>
+                <div class="md:w-5/11 md:-ms-30">
+                    <Image class="z-0 hidden md:block"src={HeaderImage} alt="" />
+                </div> 		
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap items-center">				
+                <div class="w-full md:w-1/2">
+                    <p class="font-bold">Précarité, éducation, santé, égalité : votre entreprise peut agir.</p>
+                    <p class="mt-4">En devenant mécène de Règles Élémentaires, vous permettez à davantage de personnes de vivre leurs règles dignement, sans tabou et en sécurité. Et vous fédérez vos équipes autour d’un engagement concret.</p>
+                </div> 		
+                <div class="w-full md:w-1/2 md:ps-20 mt-8 md:mt-0 text-center">      
+                    <div>
+                        <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="https://don.regleselementaires.com/entreprise/~mon-don" target="_blank">Faire un don</a>
+                    </div> 
+                    <div class="mt-10 md:mt-12 mb-4 md:mb-0">
+                        <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://doccollectes.blob.core.windows.net/statics/PLAQUETTE_MECENAT.pdf" target="_blank">Télécharger notre plaquette</a>
+                    </div>                                        
+				</div>
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+                <h3 class="w-full md:w-auto bg-rered text-white font-lorimer-condensed text-center px-10 py-4 -rotate-3">Votre soutien peut changer les règles</h3>
+                <p class="w-3/4 md:w-1/2 mt-8 md:mt-16 text-center">Depuis 2015, nous agissons pour répondre à l’urgence et faire reculer durablement les inégalités liées aux règles. À nos côtés, vous contribuez à :</p>
+                <div class="flex flex-wrap mt-24 md:mt-30 text-white">
+                    <div class="w-full md:w-1/3 md:mt-8">
+                        <div class="mx-4 bg-rered big-maroon-shadow px-7 py-9">
+                            <Image class="w-3/4 mx-auto -mt-[60%]" src={Collecte} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">Lutter contre la précarité menstruelle</h5>
+                            <p class="mt-6">En facilitant l’accès aux protections périodiques et en formant les professionnel·les de terrain.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 mt-16 md:mt-0">
+                        <div class="mx-4 bg-redarkpink big-maroon-shadow px-7 py-9">
+                            <Image class="w-3/4 mx-auto -mt-[40%]" src={Ecole} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">Développer l’éducation menstruelle</h5>
+                            <p class="mt-6">Grâce à des ateliers, des formations et des ressources accessibles.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 mt-16 md:mt-16">
+                        <div class="mx-4 bg-redarkred big-maroon-shadow px-7 py-9">
+                            <Image class="w-2/3 mx-auto -mt-[40%]" src={Megaphone} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">Transformer la société</h5>
+                            <p class="mt-6">En soutenant nos campagnes, notre plaidoyer et de nouvelles solutions autour du sport, du handicap ou du travail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+            <div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+                <h2>Notre impact <span class="text-rered">en chiffres</span></h2>
+                <p class="md:w-1/2 mt-8 md:text-center">Depuis 2015, Règles Élémentaires agit pour faire reculer la précarité menstruelle, développer l’éducation menstruelle et briser les tabous.</p>
+                <div class="flex flex-wrap mt-8 md:mt-12">
+                    <div class="w-full md:w-1/4">
+                        <div class="flex flex-col justify-center md:mx-4 small-maroon-shadow bg-white px-5 md:px-7 py-7 md:py-9 text-center h-full">
+                            <Image class="w-1/3 md:w-2/3 mx-auto" src={Communaute} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">1 million</h5>
+                            <p class="mt-4 text-base">de personnes directement impactées par nos actions</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                        <div class="flex flex-col justify-center md:mx-4 small-maroon-shadow bg-white px-5 md:px-7 py-7 md:py-9 text-center h-full">
+                            <Image class="w-1/4 md:w-1/2 mx-auto" src={Serviettes} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">29 millions</h5>
+                            <p class="mt-4 text-base">de protections périodiques redistribuées</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                        <div class="flex flex-col justify-center md:mx-4 small-maroon-shadow bg-white px-5 md:px-7 py-7 md:py-9 text-center h-full">
+                            <Image class="w-1/4 md:w-1/2 mx-auto" src={Ecole2} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-6">20 000</h5>
+                            <p class="mt-4 text-base">jeunes sensibilisés aux règles</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                        <div class="flex flex-col justify-center md:mx-4 small-maroon-shadow bg-white px-5 md:px-7 py-7 md:py-9 text-center h-full">
+                            <Image class="w-1/3 md:w-2/3 mx-auto" src={Ecole} alt="" />
+                            <h5 class="font-lorimer-condensed-black mt-4">4 000</h5>
+                            <p class="mt-4 text-base">professionnel·les sensibilisé·es</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="md:w-1/2 mt-12 md:text-center">Derrière ces chiffres, il y a des personnes qui trouvent des protections, des jeunes qui comprennent mieux leur corps et des professionnel·les mieux préparé·es à les accompagner.</p>
+                <p class="md:w-1/2 mt-8 md:text-center font-semibold">Votre soutien nous permet de poursuivre ce travail.</p>
+                <div class="mt-10 md:mt-12 mb-4 md:mb-0">
+                    <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="/impact">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-remaroon text-rebeige-300">
+			<div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center">
+                <h3>Nous soutenir financièrement</h3>
+                <div class="w-full flex flex-wrap mt-8 md:mt-16 text-remaroon">
+                    <div class="w-full md:w-1/2">
+                        <div class="mecenat-type-bloc bg-reyellow flex flex-col justify-start md:mx-4 px-5 md:px-7 py-7 md:py-9 h-full">
+                            <span class="font-lorimer-condensed text-3xl md:text-4xl">Partenaire solidaire</span>
+                            <Image class="hidden md:block absolute w-26 ms-80 -mt-14 z-0 rotate-6" src={BoiteServiette} alt="" />
+                            <span class="font-lorimer-condensed text-2xl md:text-3xl">Jusqu’à 5 000 €</span>
+                            <p class="mt-4 font-semibold">Permettre à davantage de personnes de vivre leurs règles dignement.</p>
+                            <p class="mt-4">Avec <span class="font-semibold">5 000 €</span>, vous permettez à <span class="font-semibold">1 000</span> personnes d’accéder à des protections périodiques pendant un an.</p>
+                            <p class="mt-4">Pour faire vivre votre engagement :</p>
+                            <ul class="">
+                                <li>Des actualités sur nos actions et leur impact.</li>
+                                <li>Un kit de communication pour partager votre soutien.</li>
+                                <li>Une présence parmi nos partenaires et des invitations à nos temps forts.</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                        <div class="mecenat-type-bloc bg-repink flex flex-col justify-start md:mx-4 px-5 md:px-7 py-7 md:py-9 h-full">
+                            <span class="font-lorimer-condensed text-3xl md:text-4xl">Partenaire engagé</span>
+                            <Image class="hidden md:block absolute w-40 ms-80 -mt-18 z-0" src={Sororite} alt="" />
+                            <span class="font-lorimer-condensed text-2xl md:text-3xl">Jusqu’à 20 000 €</span>
+                            <p class="mt-4 font-semibold">Donner aux jeunes et aux associations les moyens de faire reculer les tabous.</p>
+                            <p class="mt-4">Avec <span class="font-semibold">10 000 €</span>, vous permettez de former <span class="font-semibold">75</span> associations. Avec <span class="font-semibold">20 000 €</span>, vous rendez des cours d’éducation menstruelle accessibles à <span class="font-semibold">1 000 élèves.</span></p>
+                            <p class="mt-4">Pour faire vivre votre engagement :</p>
+                            <ul class="">
+                                <li>Une mise en avant de votre soutien sur nos supports de communication.</li>
+                                <li>Un rendez-vous annuel et des contenus sur les coulisses de nos actions.</li>
+                                <li>Un webinaire ou une animation de sensibilisation pour vos équipes.</li>
+                                <li>La participation de vos collaborateur·rices à une collecte solidaire.</li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <div class="w-full md:w-1/2 mt-8">
+                        <div class="mecenat-type-bloc bg-regreen flex flex-col justify-start md:mx-4 px-5 md:px-7 py-7 md:py-9 h-full">
+                            <span class="font-lorimer-condensed text-3xl md:text-4xl">Partenaire stratégique</span>
+                            <Image class="hidden md:block absolute w-28 ms-90 -mt-12 z-0 -rotate-14" src={Ecole2} alt="" />
+                            <span class="font-lorimer-condensed text-2xl md:text-3xl">Jusqu’à 50 000 €</span>
+                            <p class="mt-4 font-semibold">Agir sur les besoins immédiats et les causes profondes des inégalités.</p>
+                            <p class="mt-4">Votre soutien renforce l’accès aux protections, l’éducation menstruelle et la défense des droits.</p>
+                            <p class="mt-4">Pour faire vivre votre engagement :</p>
+                            <ul class="">
+                                <li>Un suivi renforcé et une note d’impact sur les axes soutenus.</li>
+                                <li>Une occasion de témoigner lors d’un temps fort de l’association.</li>
+                                <li>Une formation pour vos équipes et une rencontre sur le terrain.</li>
+                                <li>Un accès anticipé à certaines de nos études.</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="w-full md:w-1/2 mt-8">
+                        <div class="mecenat-type-bloc bg-reorange flex flex-col justify-start md:mx-4 px-5 md:px-7 py-7 md:py-9 h-full">
+                            <span class="font-lorimer-condensed text-3xl md:text-4xl">Partenaire allié</span>
+                            <Image class="hidden md:block absolute w-34 ms-90 -mt-12 z-0 rotate-10" src={Idee} alt="" />
+                            <span class="font-lorimer-condensed text-2xl md:text-3xl">50 000 € et plus</span>
+                            <p class="mt-4 font-semibold">Faire grandir nos actions et construire un engagement durable.</p>
+                            <p class="mt-4">Votre soutien nous permet de pérenniser nos programmes, d’agir dans de nouveaux territoires et de développer des projets adaptés aux besoins du terrain.</p>
+                            <p class="mt-4">Pour faire vivre votre engagement :</p>
+                            <ul class="">
+                                <li>Un accompagnement sur mesure et des rendez-vous trimestriels.</li>
+                                <li>Une mise en avant renforcée sur nos supports de communication.</li>
+                                <li>Plusieurs temps de sensibilisation ou de formation pour vos équipes.</li>
+                                <li>Des rencontres sur le terrain pour découvrir les projets soutenus.</li>
+                            </ul>
+                            <p class="mt-4">Selon vos envies, vous pouvez également bénéficier des propositions des paliers précédents.</p>
+                        </div>
+                    </div>                 
+                </div>                
+			</div>
+		</div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-300 text-remaroon">
+            <div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-wrap justfiy-center">
+                <div class="w-full md:w-5/11">
+                    <h3>Votre don ouvre droit à une réduction fiscale !</h3>
+                    <h3 class="text-rered">RÉDUISEZ DE 60% LE MONTANT DE VOTRE DON.</h3>
+                    <p class="mt-8">Votre entreprise peut bénéficier d’une réduction d’impôt de 60 % du montant de son don, dans les conditions et limites prévues par la réglementation.*</p>
+                    <p class="mt-4 italic">*Sous réserve de l’éligibilité de votre entreprise et des plafonds applicables.</p>                    
+                </div>
+                <div class="w-full md:w-6/11 flex flex-col justify-center">
+                    <div class="flex flex-wrap items-stretch justify-center md:justify-end mt-8 md:mt-0">
+                        <div class="w-2/3 md:w-1/3 small-maroon-shadow flex flex-col items-center justify-center px-5 md:px-7 py-7 md:py-9">
+                            <span class="font-lorimer-condensed text-xl">Votre don de</span>
+                            <span class="font-lorimer-condensed-black text-4xl md:text-5xl">10 000€</span>
+                        </div>
+                        <div class="w-2/3 md:w-1/6 flex justify-center items-center font-lorimer-condensed-black text-3xl my-4 md:my-0">=</div>
+                        <div class="w-2/3 md:w-1/3 small-maroon-shadow bg-rered text-rebeige-100 flex flex-col items-center justify-center px-5 md:px-7 py-7 md:py-9">
+                            <span class="font-lorimer-condensed text-xl">Vous revient à</span>
+                            <span class="font-lorimer-condensed-black text-4xl md:text-5xl">4 000€</span>
+                            <span class="text-center text-xs italic mt-2">après réduction d'impôt</span>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="w-full flex justify-center mt-12">
+                    <a class="small-maroon-shadow font-lorimer bg-rered text-rebeige-300 p-2.5" href="https://don.regleselementaires.com/entreprise/~mon-don" target="_blank">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 md:px-15 flex justify-center bg-rebeige-500 text-remaroon">
+            <div class="w-11/12 md:w-10/12 py-10 md:py-20 flex flex-col items-center text-center">
+                <h3 class="md:w-3/4 text-center">Et vous, comment voulez-vous<br/><span class="text-rered">changer les règles ?</span></h3>
+                <div class="md:w-3/4">
+                    <p class="mt-8">Don ponctuel ou pluriannuel, mécénat de compétences, mobilisation de vos équipes : construisons un partenariat adapté à votre entreprise.</p>
+                    <p class="mt-4">Une idée, une question ? Pas besoin d’avoir un projet déjà ficelé pour en parler.</p>
+                    <p class="mt-4 font-semibold">Nous contacter : <a class="underline" href="mailto:mecenat@regleselementaires.com">mecenat@regleselementaires.com</a></p>
+                    <div class="mt-10 md:mt-12">
+                        <a class="small-maroon-shadow font-lorimer bg-rebeige-300 text-remaroon p-2.5" href="https://doccollectes.blob.core.windows.net/statics/PLAQUETTE_MECENAT.pdf" target="_blank">Télécharger notre plaquette</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+</Base>
