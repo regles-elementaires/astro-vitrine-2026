@@ -7,6 +7,7 @@ pubDate: 2026-09-02
 heroImage: ../../assets/actualites/remboursement-officiel.jpg
 tags:
   - Actualité
+  - Plaidoyer
 ---
 **D'abord, pourquoi on en parle maintenant ?**<br/>
 Petit retour en arrière.<br/>
