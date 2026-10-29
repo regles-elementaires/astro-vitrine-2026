@@ -1,5 +1,5 @@
 ---
-title: Changer les règles pour changer le monde !
+title: "Changer les règles pour changer le monde : on lance notre festival !"
 description: Depuis 10 ans, Règles Élémentaires agit pour que toutes les femmes
   et les personnes qui ont, ont eu ou auront leurs règles puissent les vivre
   sans précarité, sans tabou, sans honte.
