@@ -7,6 +7,7 @@ description: À Aixe-sur-Vienne, en Haute-Vienne, la mairie a installé un
   au milieu d’une sortie, ou permettre à quelqu’un qui n’avait pas de protection
   de rester à son cours de natation.
 pubDate: 2026-11-16
+updatedDate: 2026-11-16
 heroImage: /src/assets/actualites/distributeur-protections-nantes-1200x800.jpg
 tags:
   - Actualité
