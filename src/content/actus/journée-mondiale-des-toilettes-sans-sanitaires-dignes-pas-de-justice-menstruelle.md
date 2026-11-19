@@ -33,6 +33,8 @@ Le constat est tout aussi alarmant dans les établissements scolaires :
 
 Derrière ces chiffres, il y a des élèves qui passent leurs journées à éviter un lieu censé répondre à un besoin élémentaire, avec ce que cela implique pour leur santé, leur confort et leur concentration.
 
+[(Rendez-vous sur notre site parlonsregles.fr pour découvrir nos articles sur le sujet)](https://www.parlonsregles.fr/)
+
 ## **Pourquoi les toilettes sont une question de justice menstruelle**
 
 **L'accès aux sanitaires n'est pas neutre du point de vue du genre.** Distribuer des protections périodiques ne suffit pas : sans toilettes accessibles, propres et équipées, il est impossible de les utiliser dans de bonnes conditions. Le manque de produits et le manque de sanitaires se cumulent.
