@@ -77,7 +77,7 @@ C'est aussi le sens de notre travail sur la composition des protections périodi
 
 Vous avez été exposé·e ?
 
-Si vous constatez des symptômes inhabituels après une exposition (douleurs intenses, saignements très abondants, signes de fatigue importante), consultez un·e professionnel·le de santé. En cas de grossesse, de douleurs violentes ou d'hémorragie, rendez-vous aux urgences. Vous pouvez aussi partager votre témoignage avec le collectif Lacrymos de Sang \[lien vers leur compte / questionnaire].
+Si vous constatez des symptômes inhabituels après une exposition (douleurs intenses, saignements très abondants, signes de fatigue importante), consultez un·e professionnel·le de santé. En cas de grossesse, de douleurs violentes ou d'hémorragie, rendez-vous aux urgences. Vous pouvez aussi partager votre témoignage avec le collectif [Lacrymos de Sang](https://www.instagram.com/lacrymos_de_sang/).
 
 Sources
 
