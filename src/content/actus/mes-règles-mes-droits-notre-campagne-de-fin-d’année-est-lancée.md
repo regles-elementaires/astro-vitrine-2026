@@ -26,7 +26,7 @@ Quand Nina a participé à l’un de nos ateliers d’éducation menstruelle, el
 
 À ses côtés, il y a Enora Malagré, qui parle publiquement de son endométriose depuis des années, et Camille Aumont Carnel, militante féministe qui parle de règles même quand ça dérange. Surtout quand ça dérange.
 
-Il y a aussi Mona Guba, rappeuse de talent en pleine ascension qui a dit oui quand on lui a proposé d’écrire un morceau sur les règles pour nos dix ans. Nadège Mongerard, qui parle sur scène et ailleurs de ce qu’on tait trop souvent, de la maternité à la santé mentale. Et Emma Razafimahefa, journaliste à Radio Nova et engagée pour les droits humains, qui relaie nos combats avec conviction.
+Il y a aussi Mona Guba, rappeuse de talent en pleine ascension qui a dit oui quand on lui a proposé d’écrire un morceau sur les règles pour nos dix ans. Angéline qui s'est confiée au micro de notre podcast sur son endométriose, sans filtre. Nadège Mongerard, qui parle sur scène et ailleurs de ce qu’on tait trop souvent, de la maternité à la santé mentale. Et Emma Razafimahefa, journaliste à Radio Nova et engagée pour les droits humains, qui relaie nos combats avec conviction.
 
 ![](../../assets/actualités-site-6-.png)
 
